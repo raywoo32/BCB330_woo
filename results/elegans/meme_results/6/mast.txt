@@ -1,0 +1,3424 @@
+********************************************************************************
+MAST - Motif Alignment and Search Tool
+********************************************************************************
+	MAST version 5.0.4 (Release date: Wed Jan 23 14:05:40 2019 -0800)
+
+	For further information on how to interpret these results please access http://meme-suite.org/.
+	To get a copy of the MAST software please access http://meme-suite.org.
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+	If you use this program in your research, please cite:
+
+	Timothy L. Bailey and Michael Gribskov,
+	"Combining evidence using p-values: application to sequence homology
+	searches", Bioinformatics, 14(48-54), 1998.
+********************************************************************************
+
+
+********************************************************************************
+DATABASE AND MOTIFS
+********************************************************************************
+	DATABASE 6.txt (nucleotide)
+	Last updated on Mon Feb 25 13:05:06 2019
+	Database contains 380 sequences, 75912 residues
+
+	Scores for positive and reverse complement strands are combined.
+
+	MOTIFS meme.xml (nucleotide)
+	MOTIF ID                   ALT ID  WIDTH BEST POSSIBLE MATCH
+	----- -------------------- ------- ----- -------------------
+	    1 TTTTYHTHHWTTTTYTTTTY MEME-1     20 TTTTCCTCCATTTTCTTTTC
+	    2 GSGBGBSGSYCKCGCAGCG  MEME-2     19 GCGGGCGGGCCGCGCAGCG
+	    3 CGCTCGC              MEME-3      7 CGCTCGC
+	    4 SSCGCC               MEME-4      6 CCCGCC
+	    5 CTTGGC               MEME-5      6 CTTGGC
+	    6 TCTCGC               MEME-6      6 TCTCGC
+	    7 AATTTWTCGAA          MEME-7     11 AATTTTTCGAA
+	    8 CAAAAAATMAWT         MEME-8     12 CAAAAAATAATT
+	    9 GMAATDKGBCRCSKTTRCA  MEME-9     19 GCAATGGGCCGCGGTTGCA
+	   10 CTGMAAAA             MEME-10     8 CTGAAAAA
+	   11 AAAATMARYRATTT       MEME-11    14 AAAATCAGCAATTT
+	   12 SHKDAAA              MEME-12     7 GCGGAAA
+	   13 AKKWTAATTMAGT        MEME-13    13 AGGATAATTAAGT
+	   14 AKMTSTCGTCKHKSTSG    MEME-14    17 AGCTGTCGTCTCGGTCG
+	   15 TGTGTG               MEME-15     6 TGTGTG
+
+	PAIRWISE MOTIF CORRELATIONS:
+	MOTIF     1     2     3     4     5     6     7     8     9    10    11    12    13    14
+	----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+	   2   0.18
+	   3   0.41  0.57
+	   4   0.56  0.66  0.54
+	   5   0.44  0.47  0.51  0.40
+	   6   0.67  0.59  0.72  0.49  0.46
+	   7   0.26  0.05  0.26 -0.02  0.24  0.50
+	   8   0.14  0.08  0.16  0.16  0.16  0.20  0.45
+	   9   0.10  0.19  0.39  0.54  0.55  0.37  0.26  0.29
+	  10   0.12  0.10  0.14  0.21  0.20  0.17  0.36  0.50  0.38
+	  11   0.22  0.08  0.11  0.30  0.28  0.41  0.39  0.41  0.23  0.46
+	  12   0.13  0.18  0.22  0.33  0.32  0.25  0.25  0.34  0.36  0.59  0.28
+	  13   0.15  0.03  0.13  0.07  0.11  0.20  0.35  0.33  0.25  0.28  0.44  0.32
+	  14   0.28  0.31  0.61  0.41  0.54  0.65  0.30  0.16  0.12  0.18  0.11  0.20  0.19
+	  15   0.25  0.34  0.11  0.25  0.22  0.18  0.19  0.17  0.31  0.28  0.37  0.19  0.35  0.38
+	Correlations above 0.60 may cause some combined p-values and
+	E-values to be underestimates.
+	Removing motifs 4, 6 and 14 from the query may be advisable.
+
+	Random model letter frequencies (from non-redundant database):
+	A 0.274 C 0.225 G 0.225 T 0.274 
+********************************************************************************
+
+
+********************************************************************************
+SECTION I: HIGH-SCORING SEQUENCES
+********************************************************************************
+	- Each of the following 158 sequences has E-value less than 10.
+	- The E-value of a sequence is the expected number of sequences
+	  in a random database of the same size that would match the motifs as
+	  well as the sequence does and is equal to the combined p-value of the
+	  sequence times the number of sequences in the database.
+	- The combined p-value of a sequence measures the strength of the
+	  match of the sequence to all the motifs and is calculated by
+	    o finding the score of the single best match of each motif
+	      to the sequence (best matches may overlap),
+	    o calculating the sequence p-value of each score,
+	    o forming the product of the p-values,
+	    o taking the p-value of the product.
+	- The sequence p-value of a score is defined as the
+	  probability of a random sequence of the same length containing
+	  some match with as good or better a score.
+	- The score for the match of a position in a sequence to a motif
+	  is computed by by summing the appropriate entry from each column of
+	  the position-dependent scoring matrix that represents the motif.
+	- Sequences shorter than one or more of the motifs are skipped.
+	- The table is sorted by increasing E-value.
+********************************************************************************
+
+SEQUENCE NAME                      DESCRIPTION                   E-VALUE  LENGTH
+-------------                      -----------                   -------- ------
+caenorhabditis_elegans_prjna13758|                                3.6e-06    200
+caenorhabditis_elegans_prjna13758|                                0.00017    200
+caenorhabditis_elegans_prjna13758|                                0.00034    200
+caenorhabditis_elegans_prjna13758|                                0.00043    200
+caenorhabditis_elegans_prjna13758|                                0.00066    200
+caenorhabditis_elegans_prjna13758|                                0.00078    200
+caenorhabditis_elegans_prjna13758|                                 0.0028    200
+caenorhabditis_elegans_prjna13758|                                 0.0041    200
+caenorhabditis_elegans_prjna13758|                                 0.0048    200
+caenorhabditis_elegans_prjna13758|                                 0.0054    200
+caenorhabditis_elegans_prjna13758|                                 0.0061    200
+caenorhabditis_elegans_prjna13758|                                 0.0073    200
+caenorhabditis_elegans_prjna13758|                                 0.0085    200
+caenorhabditis_elegans_prjna13758|                                 0.0094    200
+caenorhabditis_elegans_prjna13758|                                 0.0097    200
+caenorhabditis_elegans_prjna13758|                                 0.0098    200
+caenorhabditis_elegans_prjna13758|                                  0.012    200
+caenorhabditis_elegans_prjna13758|                                  0.013    200
+caenorhabditis_elegans_prjna13758|                                  0.017    200
+caenorhabditis_elegans_prjna13758|                                  0.025    200
+caenorhabditis_elegans_prjna13758|                                  0.028    200
+caenorhabditis_elegans_prjna13758|                                  0.035    200
+caenorhabditis_elegans_prjna13758|                                  0.044    200
+caenorhabditis_elegans_prjna13758|                                  0.045    200
+caenorhabditis_elegans_prjna13758|                                  0.046    200
+caenorhabditis_elegans_prjna13758|                                  0.046    200
+caenorhabditis_elegans_prjna13758|                                  0.051    200
+caenorhabditis_elegans_prjna13758|                                  0.054    200
+caenorhabditis_elegans_prjna13758|                                  0.057    200
+caenorhabditis_elegans_prjna13758|                                   0.08    200
+caenorhabditis_elegans_prjna13758|                                  0.093    200
+caenorhabditis_elegans_prjna13758|                                  0.098    200
+caenorhabditis_elegans_prjna13758|                                    0.1    200
+caenorhabditis_elegans_prjna13758|                                   0.11    200
+caenorhabditis_elegans_prjna13758|                                   0.11    200
+caenorhabditis_elegans_prjna13758|                                   0.11    200
+caenorhabditis_elegans_prjna13758|                                   0.17    200
+caenorhabditis_elegans_prjna13758|                                   0.18    200
+caenorhabditis_elegans_prjna13758|                                   0.18    200
+caenorhabditis_elegans_prjna13758|                                   0.19    200
+caenorhabditis_elegans_prjna13758|                                   0.23    200
+caenorhabditis_elegans_prjna13758|                                   0.25    200
+caenorhabditis_elegans_prjna13758|                                   0.31    200
+caenorhabditis_elegans_prjna13758|                                   0.33    200
+caenorhabditis_elegans_prjna13758|                                   0.38    200
+caenorhabditis_elegans_prjna13758|                                   0.38    200
+caenorhabditis_elegans_prjna13758|                                   0.41    200
+caenorhabditis_elegans_prjna13758|                                   0.45    200
+caenorhabditis_elegans_prjna13758|                                   0.46    200
+caenorhabditis_elegans_prjna13758|                                   0.48    200
+caenorhabditis_elegans_prjna13758|                                    0.5    200
+caenorhabditis_elegans_prjna13758|                                    0.5    200
+caenorhabditis_elegans_prjna13758|                                   0.51    200
+caenorhabditis_elegans_prjna13758|                                   0.53    200
+caenorhabditis_elegans_prjna13758|                                   0.54    200
+caenorhabditis_elegans_prjna13758|                                    0.6    200
+caenorhabditis_elegans_prjna13758|                                   0.61    200
+caenorhabditis_elegans_prjna13758|                                   0.68    200
+caenorhabditis_elegans_prjna13758|                                   0.73    200
+caenorhabditis_elegans_prjna13758|                                   0.74    200
+caenorhabditis_elegans_prjna13758|                                   0.79    200
+caenorhabditis_elegans_prjna13758|                                    0.8    200
+caenorhabditis_elegans_prjna13758|                                   0.84    200
+caenorhabditis_elegans_prjna13758|                                   0.85    200
+caenorhabditis_elegans_prjna13758|                                   0.89    200
+caenorhabditis_elegans_prjna13758|                                   0.95    200
+caenorhabditis_elegans_prjna13758|                                    1.1    200
+caenorhabditis_elegans_prjna13758|                                    1.1    200
+caenorhabditis_elegans_prjna13758|                                    1.1    200
+caenorhabditis_elegans_prjna13758|                                    1.1    200
+caenorhabditis_elegans_prjna13758|                                    1.2    200
+caenorhabditis_elegans_prjna13758|                                    1.4    200
+caenorhabditis_elegans_prjna13758|                                    1.4    200
+caenorhabditis_elegans_prjna13758|                                    1.5    200
+caenorhabditis_elegans_prjna13758|                                    1.5    200
+caenorhabditis_elegans_prjna13758|                                    1.6    200
+caenorhabditis_elegans_prjna13758|                                    1.7    200
+caenorhabditis_elegans_prjna13758|                                    1.7    200
+caenorhabditis_elegans_prjna13758|                                    1.8    200
+caenorhabditis_elegans_prjna13758|                                    1.8    200
+caenorhabditis_elegans_prjna13758|                                    1.9    200
+caenorhabditis_elegans_prjna13758|                                    1.9    200
+caenorhabditis_elegans_prjna13758|                                    1.9    200
+caenorhabditis_elegans_prjna13758|                                    1.9    200
+caenorhabditis_elegans_prjna13758|                                      2    200
+caenorhabditis_elegans_prjna13758|                                    2.1    200
+caenorhabditis_elegans_prjna13758|                                    2.1    200
+caenorhabditis_elegans_prjna13758|                                    2.1    200
+caenorhabditis_elegans_prjna13758|                                    2.2    200
+caenorhabditis_elegans_prjna13758|                                    2.2    200
+caenorhabditis_elegans_prjna13758|                                    2.3    200
+caenorhabditis_elegans_prjna13758|                                    2.3    200
+caenorhabditis_elegans_prjna13758|                                    2.5    200
+caenorhabditis_elegans_prjna13758|                                    2.5    200
+caenorhabditis_elegans_prjna13758|                                    2.6    200
+caenorhabditis_elegans_prjna13758|                                    2.6    200
+caenorhabditis_elegans_prjna13758|                                    2.6    200
+caenorhabditis_elegans_prjna13758|                                    2.7    200
+caenorhabditis_elegans_prjna13758|                                    2.8    200
+caenorhabditis_elegans_prjna13758|                                    2.9    200
+caenorhabditis_elegans_prjna13758|                                    3.1    200
+caenorhabditis_elegans_prjna13758|                                    3.1    200
+caenorhabditis_elegans_prjna13758|                                    3.2    200
+caenorhabditis_elegans_prjna13758|                                    3.3    200
+caenorhabditis_elegans_prjna13758|                                    3.3    200
+caenorhabditis_elegans_prjna13758|                                    3.4    200
+caenorhabditis_elegans_prjna13758|                                    3.4    200
+caenorhabditis_elegans_prjna13758|                                    3.4    200
+caenorhabditis_elegans_prjna13758|                                    3.6    200
+caenorhabditis_elegans_prjna13758|                                    3.6    200
+caenorhabditis_elegans_prjna13758|                                    3.7    200
+caenorhabditis_elegans_prjna13758|                                    3.8    200
+caenorhabditis_elegans_prjna13758|                                    3.8    200
+caenorhabditis_elegans_prjna13758|                                    3.9    200
+caenorhabditis_elegans_prjna13758|                                    4.1    200
+caenorhabditis_elegans_prjna13758|                                    4.1    200
+caenorhabditis_elegans_prjna13758|                                    4.1    200
+caenorhabditis_elegans_prjna13758|                                    4.4    200
+caenorhabditis_elegans_prjna13758|                                    4.4    200
+caenorhabditis_elegans_prjna13758|                                    4.5    200
+caenorhabditis_elegans_prjna13758|                                    4.6    200
+caenorhabditis_elegans_prjna13758|                                    4.6    200
+caenorhabditis_elegans_prjna13758|                                    4.7    200
+caenorhabditis_elegans_prjna13758|                                      5    200
+caenorhabditis_elegans_prjna13758|                                    5.1    200
+caenorhabditis_elegans_prjna13758|                                    5.2    200
+caenorhabditis_elegans_prjna13758|                                    5.4    200
+caenorhabditis_elegans_prjna13758|                                    5.4    200
+caenorhabditis_elegans_prjna13758|                                    5.6    200
+caenorhabditis_elegans_prjna13758|                                    5.7    200
+caenorhabditis_elegans_prjna13758|                                    6.2    200
+caenorhabditis_elegans_prjna13758|                                    6.2    200
+caenorhabditis_elegans_prjna13758|                                    6.2    200
+caenorhabditis_elegans_prjna13758|                                    6.4    200
+caenorhabditis_elegans_prjna13758|                                    6.6    200
+caenorhabditis_elegans_prjna13758|                                    6.8    200
+caenorhabditis_elegans_prjna13758|                                    7.3    200
+caenorhabditis_elegans_prjna13758|                                    7.3    200
+caenorhabditis_elegans_prjna13758|                                    7.4    200
+caenorhabditis_elegans_prjna13758|                                    7.4    200
+caenorhabditis_elegans_prjna13758|                                    7.5    200
+caenorhabditis_elegans_prjna13758|                                    7.7    200
+caenorhabditis_elegans_prjna13758|                                    7.7    200
+caenorhabditis_elegans_prjna13758|                                    7.9    200
+caenorhabditis_elegans_prjna13758|                                    8.2    200
+caenorhabditis_elegans_prjna13758|                                    8.8    200
+caenorhabditis_elegans_prjna13758|                                    8.8    200
+caenorhabditis_elegans_prjna13758|                                      9    200
+caenorhabditis_elegans_prjna13758|                                    9.1    200
+caenorhabditis_elegans_prjna13758|                                    9.1    200
+caenorhabditis_elegans_prjna13758|                                    9.4    200
+caenorhabditis_elegans_prjna13758|                                    9.4    200
+caenorhabditis_elegans_prjna13758|                                    9.5    200
+caenorhabditis_elegans_prjna13758|                                    9.5    200
+caenorhabditis_elegans_prjna13758|                                    9.6    200
+caenorhabditis_elegans_prjna13758|                                    9.6    200
+caenorhabditis_elegans_prjna13758|                                    9.7    200
+caenorhabditis_elegans_prjna13758|                                    9.8    200
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION II: MOTIF DIAGRAMS
+********************************************************************************
+	- The ordering and spacing of all non-overlapping motif occurrences
+	  are shown for each high-scoring sequence listed in Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001.
+	- The POSITION p-value of a match is the probability of
+	  a single random subsequence of the length of the motif
+	  scoring at least as well as the observed match.
+	- For each sequence, all motif occurrences are shown unless there
+	  are overlaps.  In that case, a motif occurrence is shown only if its
+	  p-value is less than the product of the p-values of the other
+	  (lower-numbered) motif occurrences that it overlaps.
+	- The table also shows the E-value of each sequence.
+	- Spacers and motif occurences are indicated by
+	   o -d-    `d' residues separate the end of the preceding motif 
+		    occurrence and the start of the following motif occurrence
+	   o [sn]  occurrence of motif `n' with p-value less than 0.0001.
+		    A minus sign indicates that the occurrence is on the
+		    reverse complement strand.
+********************************************************************************
+
+SEQUENCE NAME                      E-VALUE   MOTIF DIAGRAM
+-------------                      --------  -------------
+caenorhabditis_elegans_prjna13758|  3.6e-06  19-[-1]-81-[+2]-6-[-14]-12-[+2]-7
+caenorhabditis_elegans_prjna13758|  0.00017  67-[-11]-46-[+1]-11-[+9]-5-[-11]-4
+caenorhabditis_elegans_prjna13758|  0.00043  11-[-11]-60-[-9]-26-[+1]-50
+caenorhabditis_elegans_prjna13758|  0.00066  21-[+1]-17-[-7]-34-[-8]-43-[+7]-3-[-8]-16
+caenorhabditis_elegans_prjna13758|  0.00078  36-[+1]-4-[-8]-47-[-14]-37-[+7]-16
+caenorhabditis_elegans_prjna13758|   0.0028  18-[-10]-43-[-11]-1-[-1]-96
+caenorhabditis_elegans_prjna13758|   0.0041  36-[+1]-11-[+1]-47-[+3]-19-[+13]-[-13]-14
+caenorhabditis_elegans_prjna13758|   0.0048  5-[-8]-80-[+11]-52-[+1]-[+11]-3
+caenorhabditis_elegans_prjna13758|   0.0061  18-[-9]-65-[-11]-57-[-1]-7
+caenorhabditis_elegans_prjna13758|   0.0085  119-[-9]-28-[+2]-15
+caenorhabditis_elegans_prjna13758|   0.0094  112-[+9]-14-[-10]-23-[+1]-4
+caenorhabditis_elegans_prjna13758|   0.0097  51-[+2]-31-[-10]-49-[-7]-31
+caenorhabditis_elegans_prjna13758|   0.0098  16-[+2]-83-[-8]-16-[+1]-34
+caenorhabditis_elegans_prjna13758|    0.012  47-[+1]-3-[+1]-7-[+8]-30-[+11]-6-[+11]-27
+caenorhabditis_elegans_prjna13758|    0.013  52-[+11]-[-7]-48-[-7]-6-[+11]-20-[-9]-5
+caenorhabditis_elegans_prjna13758|    0.025  8-[+11]-24-[-8]-21-[+8]-37-[+10]-8-[+1]-36
+caenorhabditis_elegans_prjna13758|    0.028  38-[-2]-53-[+11]-76
+caenorhabditis_elegans_prjna13758|    0.035  93-[+8]-[+1]-17-[+2]-39
+caenorhabditis_elegans_prjna13758|    0.044  89-[+1]-6-[+1]-27-[+1]-18
+caenorhabditis_elegans_prjna13758|    0.045  6-[-1]-12-[-11]-1-[-1]-127
+caenorhabditis_elegans_prjna13758|    0.046  4-[+11]-25-[-11]-19-[+1]-21-[+1]-63
+caenorhabditis_elegans_prjna13758|    0.046  32-[-9]-54-[+1]-28-[-7]-4-[+11]-[-8]-6
+caenorhabditis_elegans_prjna13758|    0.051  39-[-7]-27-[-8]-31-[+1]-13-[-7]-12-[+13]-11
+caenorhabditis_elegans_prjna13758|    0.054  15-[-7]-25-[+1]-63-[+2]-47
+caenorhabditis_elegans_prjna13758|    0.057  82-[+2]-73-[+1]-6
+caenorhabditis_elegans_prjna13758|     0.08  32-[+10]-113-[+2]-28
+caenorhabditis_elegans_prjna13758|    0.098  125-[-11]-20-[-2]-22
+caenorhabditis_elegans_prjna13758|      0.1  3-[+10]-71-[+2]-52-[+1]-27
+caenorhabditis_elegans_prjna13758|     0.11  8-[+7]-99-[+7]-2-[-11]-37-[-11]-4
+caenorhabditis_elegans_prjna13758|     0.17  136-[-8]-52
+caenorhabditis_elegans_prjna13758|     0.18  73-[-1]-18-[+1]-8-[+1]-23-[+11]-4
+caenorhabditis_elegans_prjna13758|     0.19  30-[+7]-42-[+1]-11-[+1]-15-[-13]-38
+caenorhabditis_elegans_prjna13758|     0.23  105-[+1]-26-[-8]-20-[-11]-3
+caenorhabditis_elegans_prjna13758|     0.33  4-[+7]-7-[+9]-35-[+11]-41-[+11]-38-[+11]-3
+caenorhabditis_elegans_prjna13758|     0.38  2-[-11]-122-[+1]-11-[-8]-3-[+11]-2
+caenorhabditis_elegans_prjna13758|     0.38  4-[+2]-63-[+1]-14-[-1]-60
+caenorhabditis_elegans_prjna13758|     0.41  34-[+1]-15-[-8]-54-[+11]-3-[-11]-20-[-8]-2
+caenorhabditis_elegans_prjna13758|     0.46  82-[+14]-101
+caenorhabditis_elegans_prjna13758|     0.48  21-[-11]-24-[-8]-14-[+1]-9-[+8]-74
+caenorhabditis_elegans_prjna13758|      0.5  18-[-11]-16-[-1]-8-[+11]-5-[+11]-91
+caenorhabditis_elegans_prjna13758|     0.51  11-[+1]-26-[-8]-22-[+1]-70-[+11]-5
+caenorhabditis_elegans_prjna13758|     0.53  63-[+1]-40-[+7]-[+1]-25-[+8]-9
+caenorhabditis_elegans_prjna13758|     0.54  80-[+7]-48-[+1]-4-[+1]-1-[-11]-2
+caenorhabditis_elegans_prjna13758|      0.6  117-[+12]-35-[+8]-2-[+1]-7
+caenorhabditis_elegans_prjna13758|     0.61  67-[+7]-2-[-7]-2-[-8]-95
+caenorhabditis_elegans_prjna13758|     0.68  71-[-7]-18-[+14]-83
+caenorhabditis_elegans_prjna13758|     0.73  27-[+2]-4-[+1]-4-[-7]-16-[+1]-14-[-11]-51
+caenorhabditis_elegans_prjna13758|     0.74  42-[-13]-54-[-7]-63-[-7]-6
+caenorhabditis_elegans_prjna13758|     0.79  169-[-8]-19
+caenorhabditis_elegans_prjna13758|      0.8  4-[+10]-18-[-1]-10-[-1]-88-[+2]-13
+caenorhabditis_elegans_prjna13758|     0.84  19-[-2]-50-[+1]-92
+caenorhabditis_elegans_prjna13758|     0.85  54-[+10]-6-[+11]-16-[-7]-3-[+1]-16-[+7]-41
+caenorhabditis_elegans_prjna13758|     0.95  29-[+1]-112-[-12]-12-[-11]-6
+caenorhabditis_elegans_prjna13758|      1.1  2-[-2]-5-[+1]-96-[+1]-38
+caenorhabditis_elegans_prjna13758|      1.2  118-[+1]-62
+caenorhabditis_elegans_prjna13758|      1.4  10-[+11]-16-[+1]-43-[-11]-61-[+8]-10
+caenorhabditis_elegans_prjna13758|      1.4  1-[+1]-13-[-10]-13-[+11]-131
+caenorhabditis_elegans_prjna13758|      1.5  108-[+11]-5-[-12]-3-[+1]-28-[-8]-3
+caenorhabditis_elegans_prjna13758|      1.5  23-[+2]-110-[+1]-28
+caenorhabditis_elegans_prjna13758|      1.6  4-[+1]-22-[-11]-2-[+1]-18-[-13]-51-[-7]-25
+caenorhabditis_elegans_prjna13758|      1.7  7-[+11]-16-[-11]-45-[-11]-16-[+1]-8-[-8]-12-[+1]-2
+caenorhabditis_elegans_prjna13758|      1.8  5-[+1]-56-[+8]-107
+caenorhabditis_elegans_prjna13758|      1.8  83-[+1]-22-[+1]-31-[+1]-4
+caenorhabditis_elegans_prjna13758|      1.9  30-[+11]-116-[-1]-20
+caenorhabditis_elegans_prjna13758|      1.9  27-[+1]-139-[-8]-2
+caenorhabditis_elegans_prjna13758|      1.9  4-[-10]-4-[+1]-82-[+7]-20-[+1]-31
+caenorhabditis_elegans_prjna13758|        2  7-[-11]-19-[-1]-31-[-1]-10-[-7]-11-[-8]-45
+caenorhabditis_elegans_prjna13758|      2.1  200
+caenorhabditis_elegans_prjna13758|      2.1  80-[-8]-36-[+11]-35-[+7]-12
+caenorhabditis_elegans_prjna13758|      2.1  81-[+11]-105
+caenorhabditis_elegans_prjna13758|      2.2  114-[-12]-23-[+1]-2-[-8]-22
+caenorhabditis_elegans_prjna13758|      2.2  63-[+1]-13-[+1]-13-[+11]-57
+caenorhabditis_elegans_prjna13758|      2.3  50-[+11]-10-[+1]-88-[+11]-4
+caenorhabditis_elegans_prjna13758|      2.5  54-[+8]-15-[-1]-23-[-1]-24-[-1]-12
+caenorhabditis_elegans_prjna13758|      2.6  4-[-14]-91-[-10]-10-[+7]-34-[+11]-11
+caenorhabditis_elegans_prjna13758|      2.6  24-[-11]-75-[+1]-10-[+1]-37
+caenorhabditis_elegans_prjna13758|      2.7  155-[-2]-26
+caenorhabditis_elegans_prjna13758|      2.8  41-[+1]-89-[+7]-24-[-7]-4
+caenorhabditis_elegans_prjna13758|      2.9  [-10]-13-[+1]-1-[-11]-9-[+10]-4-[-8]-30-[+10]-25-[-11]-34
+caenorhabditis_elegans_prjna13758|      3.1  10-[+1]-60-[+8]-27-[+1]-29-[+1]-2
+caenorhabditis_elegans_prjna13758|      3.1  11-[+7]-82-[-10]-34-[+1]-34
+caenorhabditis_elegans_prjna13758|      3.2  185-[-8]-3
+caenorhabditis_elegans_prjna13758|      3.3  45-[-7]-28-[-11]-102
+caenorhabditis_elegans_prjna13758|      3.4  13-[+13]-53-[-11]-107
+caenorhabditis_elegans_prjna13758|      3.4  58-[+10]-51-[-2]-15-[+1]-29
+caenorhabditis_elegans_prjna13758|      3.6  28-[+1]-54-[-7]-2-[+1]-25-[+1]-20
+caenorhabditis_elegans_prjna13758|      3.6  175-[+1]-5
+caenorhabditis_elegans_prjna13758|      3.7  89-[-11]-97
+caenorhabditis_elegans_prjna13758|      3.8  6-[+11]-21-[-8]-12-[-13]-48-[-11]-3-[+1]-37
+caenorhabditis_elegans_prjna13758|      3.8  107-[+3]-86
+caenorhabditis_elegans_prjna13758|      3.9  74-[-11]-61-[-14]-34
+caenorhabditis_elegans_prjna13758|      4.1  58-[-8]-70-[+1]-40
+caenorhabditis_elegans_prjna13758|      4.1  116-[+1]-46-[+11]-4
+caenorhabditis_elegans_prjna13758|      4.1  46-[-2]-8-[-10]-23-[-2]-77
+caenorhabditis_elegans_prjna13758|      4.4  59-[-11]-40-[+1]-67
+caenorhabditis_elegans_prjna13758|      4.5  33-[+1]-43-[-11]-24-[+1]-46
+caenorhabditis_elegans_prjna13758|      4.6  200
+caenorhabditis_elegans_prjna13758|      4.6  104-[+1]-26-[+1]-15-[+11]-1
+caenorhabditis_elegans_prjna13758|        5  83-[+1]-97
+caenorhabditis_elegans_prjna13758|      5.1  [-10]-12-[+7]-10-[-11]-40-[+11]-91
+caenorhabditis_elegans_prjna13758|      5.4  13-[+1]-58-[+1]-10-[-7]-68
+caenorhabditis_elegans_prjna13758|      5.4  38-[+1]-14-[+1]-21-[-12]-80
+caenorhabditis_elegans_prjna13758|      5.7  40-[-11]-19-[+11]-10-[+7]-12-[+1]-2-[-11]-44
+caenorhabditis_elegans_prjna13758|      6.2  14-[+11]-37-[-11]-64-[+1]-37
+caenorhabditis_elegans_prjna13758|      6.2  11-[+2]-15-[+1]-111-[-1]-4
+caenorhabditis_elegans_prjna13758|      6.2  53-[+12]-80-[+7]-27-[+1]-2
+caenorhabditis_elegans_prjna13758|      6.4  39-[-9]-41-[+1]-38-[+1]-23
+caenorhabditis_elegans_prjna13758|      6.8  14-[+11]-112-[+2]-15-[+1]-6
+caenorhabditis_elegans_prjna13758|      7.3  132-[+1]-9-[+1]-19
+caenorhabditis_elegans_prjna13758|      7.3  44-[-2]-107-[+1]-10
+caenorhabditis_elegans_prjna13758|      7.4  16-[+1]-5-[+7]-42-[-11]-53-[+7]-28
+caenorhabditis_elegans_prjna13758|      7.4  8-[-11]-16-[+1]-118-[+1]-4
+caenorhabditis_elegans_prjna13758|      7.5  103-[+1]-77
+caenorhabditis_elegans_prjna13758|      7.7  17-[+7]-88-[+11]-18-[+1]-32
+caenorhabditis_elegans_prjna13758|      7.7  200
+caenorhabditis_elegans_prjna13758|      7.9  17-[+11]-169
+caenorhabditis_elegans_prjna13758|      8.2  155-[-7]-34
+caenorhabditis_elegans_prjna13758|      8.8  60-[+9]-45-[-8]-64
+caenorhabditis_elegans_prjna13758|        9  19-[+2]-162
+caenorhabditis_elegans_prjna13758|      9.1  62-[-1]-118
+caenorhabditis_elegans_prjna13758|      9.1  30-[-12]-21-[+1]-12-[-11]-96
+caenorhabditis_elegans_prjna13758|      9.4  39-[+1]-4-[-8]-79-[+1]-26
+caenorhabditis_elegans_prjna13758|      9.4  96-[-2]-85
+caenorhabditis_elegans_prjna13758|      9.5  30-[-10]-32-[+11]-63-[-11]-23-[+11]-2
+caenorhabditis_elegans_prjna13758|      9.6  87-[+11]-3-[+7]-18-[+1]-47
+caenorhabditis_elegans_prjna13758|      9.6  11-[+1]-8-[-11]-110-[+1]-17
+caenorhabditis_elegans_prjna13758|      9.7  31-[-8]-23-[-7]-99-[-13]-11
+caenorhabditis_elegans_prjna13758|      9.8  2-[+1]-91-[+8]-31-[+1]-24
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION III: ANNOTATED SEQUENCES
+********************************************************************************
+	- The positions and p-values of the non-overlapping motif occurrences
+	  are shown above the actual sequence for each of the high-scoring
+	  sequences from Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001 as 
+	  defined in Section II.
+	- For each sequence, the first line specifies the name of the sequence.
+	- The second (and possibly more) lines give a description of the 
+	  sequence.
+	- Following the description line(s) is a line giving the length, 
+	  combined p-value, and E-value of the sequence as defined in Section I.
+	- The next line reproduces the motif diagram from Section II.
+	- The entire sequence is printed on the following lines.
+	- Motif occurrences are indicated directly above their positions in the
+	  sequence on lines showing
+	   o the motif number of the occurrence (a minus sign indicates that
+	  the occurrence is on the reverse complement strand),
+	   o the position p-value of the occurrence,
+	   o the best possible match to the motif (or its reverse complement), and
+	   o columns whose match to the motif has a positive score (indicated 
+	     by a plus sign).
+********************************************************************************
+
+
+caenorhabditis_elegans_prjna13758|WBGene00006439
+  LENGTH = 200  COMBINED P-VALUE = 9.60e-09  E-VALUE =  3.6e-06
+  DIAGRAM: 19-[-1]-81-[+2]-6-[-14]-12-[+2]-7
+
+                        [-1]
+                        5.9e-09
+                        GAAAAGAAAATGGAGGAAAA
+                        +++++++++++   ++++++
+1    GAAGGAACGAACACGTTTAGAAAAGAAAAATACGAAAAATCGATAACAAAACTGATATTTAGGCTCAAAATATGC
+
+                                                  [+2]                     [-14]
+                                                  1.5e-05                  1.3e-
+                                                  GCGGGCGGGCCGCGCAGCG      CGACC
+                                                  ++ ++++ ++  +++++++      +++++
+76   AAAAAATCCCAAAACTGGGCGGTCAGAGAAAACTAGTGTTTGAATCGCCGCGCCTGACGCACCGTACTTGCGAGC
+
+                             [+2]
+     05                      2.0e-05
+     GAGACGACAGCT            GCGGGCGGGCCGCGCAGCG
+     + + +++++ ++             +++++ +  +++++++++
+151  GTGGCGAGACCTGCAAAGTGCCTCACGGGCTGTGCGCGCACCCCGTTTCG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00021350
+  LENGTH = 200  COMBINED P-VALUE = 4.48e-07  E-VALUE =  0.00017
+  DIAGRAM: 67-[-11]-46-[+1]-11-[+9]-5-[-11]-4
+
+                                                                        [-11]
+                                                                        4.2e-05
+                                                                        AAATTGCT
+                                                                        +++ + +
+1    ATGGTTTTTCGCTAGGTTTTAATGAAAAAAGTGTGTGATCTGGTCGATTTTAATTATCTTTAAAGACAAAATTTG
+
+                                                         [+1]
+                                                         8.2e-08
+     GATTTT                                              TTTTCCTCCATTTTCTTTTC
+      +++++                                              +++++++  ++++++++ ++
+76   TATTTTTGTAGTAATTTTATCCGAGAATATCGGGAACCTTTCATTGAATATTTTTCTCTGATTTTTCTTCTCCAT
+
+             [+9]                    [-11]
+             5.2e-08                 6.2e-06
+             GCAATGGGCCGCGGTTGCA     AAATTGCTGATTTT
+             +++++ ++++++ ++++++     ++++++++ + +++
+151  TTTCGATCGAAATTTGCCGCTTTTACACATTCAAATTGTTTACTTTACAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004357
+  LENGTH = 200  COMBINED P-VALUE = 8.97e-07  E-VALUE =  0.00034
+
+      [-2]                                                           [-11]
+      6.5e-06                                                        3.0e-07
+      CGCTGCGCGGCCCGCCCGC                                            AAATTGCTGAT
+      +++ +++++++++  + +                                             ++++++++ ++
+1    TCGCGGCGAGACCCATCTGAATTAGTCCCTGCGCCTTTAAGGAGGCATGTGTCGAATACTCATGAAATTGCTCAT
+
+                                                [+1]
+                                                5.3e-07
+     TTT                                        TTTTCCTCCATTTTCTTTTC
+     +++                                        ++ ++++ ++++++++++++
+76   TTTCAAGCGATTTTTCCCGATAAAAGCCCATTTTTCTCGCATTTTCTCCTGTTTTTTCTCTTTTAAATATTTGTT
+
+                          [+1]                 [-10]
+                          1.0e-05              3.9e-05
+                          TTTTCCTCCATTTTCTTTTC TTTTTCAG
+                          +++++++  ++++++ ++++ ++++++++
+151  AATCTCAATTTTCCAATCTAATTTTTTCTAATTTTCCCTTTTTTTTGCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00002196
+  LENGTH = 200  COMBINED P-VALUE = 1.13e-06  E-VALUE =  0.00043
+  DIAGRAM: 11-[-11]-60-[-9]-26-[+1]-50
+
+                [-11]
+                5.8e-06
+                AAATTGCTGATTTT
+                ++ +++++++ +++
+1    TTTTCCACACAAACTCGTTGAATTTCGAGGCCAACCTACCTTCTTTTCGAGTTTTCCCCAGAGATCGATAGTGAC
+
+               [-9]                                         [+1]
+               1.8e-11                                      1.6e-05
+               TGCAACCGCGGCCCATTGC                          TTTTCCTCCATTTTCTTTTC
+               +++++++++++++++++++                          +  +++++++++++++ +++
+76   CTATGTGCTATGCAACCGTGCCCCATTGCACGTCCACAAGGCCTCGTCAGCTCCCTCGTCCTCTTTTTTCTGTTT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004499
+  LENGTH = 200  COMBINED P-VALUE = 1.74e-06  E-VALUE =  0.00066
+  DIAGRAM: 21-[+1]-17-[-7]-34-[-8]-43-[+7]-3-[-8]-16
+
+                          [+1]                                 [-7]
+                          9.1e-08                              9.2e-05
+                          TTTTCCTCCATTTTCTTTTC                 TTCGAAAAATT
+                           ++++++  +++++++++++                 ++ +++++ ++
+1    CGCCCTCCTCGGTTTTGGTCGCTTTTCCGATTTTTCTTTTCGGGTTTTTCACGATTTTTTTGAAAATTTGTAGAT
+
+                                 [-8]
+                                 3.1e-06
+                                 AATTATTTTTTG
+                                 ++++++++ +++
+76   ATTGCGCGATATTGGCTGATAAAAATGAAATTATTTGTTGATTCTGTACATTTTCTTCGATATTCGCATATTTAA
+
+             [+7]          [-8]
+             2.6e-05       8.5e-06
+             AATTTTTCGAA   AATTATTTTTTG
+             +++++ +++++   +++++++++++
+151  AACCCTTAAATTTGTCGAAATTATTGATTTTTTCTTAAAATTTTTTTTAC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00012376
+  LENGTH = 200  COMBINED P-VALUE = 2.06e-06  E-VALUE =  0.00078
+  DIAGRAM: 36-[+1]-4-[-8]-47-[-14]-37-[+7]-16
+
+                                         [+1]                    [-8]
+                                         4.9e-05                 9.0e-05
+                                         TTTTCCTCCATTTTCTTTTC    AATTATTTTTTG
+                                         + ++++   +  ++++++++     +++++++++++
+1    CCTTAATATTCATTAAAATTATTCTATATCCGCCTCTCTCTCATGAACTTCTTTCCATTCGTCTATTTTTTGGCG
+
+                                                 [-14]
+                                                 1.5e-08
+                                                 CGACCGAGACGACAGCT
+                                                 ++++  +++++++++ +
+76   TCGACATGGGCGGCTCGAAGGGCGCCGCGTCTTTTCCTCTCTTACCACATCGACGAGAGATCACACAGCGCTTGG
+
+                            [+7]
+                            8.4e-06
+                            AATTTTTCGAA
+                            ++ +++++++
+151  AGAGCGCCAGACACTTCAGACGGAAATTATCGATCGAAGCGGGCCGCCGG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00010419
+  LENGTH = 200  COMBINED P-VALUE = 7.45e-06  E-VALUE =   0.0028
+  DIAGRAM: 18-[-10]-43-[-11]-1-[-1]-96
+
+                       [-10]                                              [-11]
+                       3.9e-05                                            5.6e-0
+                       TTTTTCAG                                           AAATTG
+                       ++++++++                                           + +  +
+1    TTGGGACAAACCTGAAGTTTTTGCAGTTAAATCAAAGGAAATTTTATTTTAAAAATGATGAAATAAGAAATAAAA
+
+              [-1]
+     5        4.0e-06
+     CTGATTTT GAAAAGAAAATGGAGGAAAA
+     ++ + +++  ++++++++ +++ ++++++
+76   TTTAATTTTCAAGAAAAACAAGCGAAAAATTGAGAAAATCGATTTTAAAAAAAAATGTTCACTAAAAACGAGAGT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00000552
+  LENGTH = 200  COMBINED P-VALUE = 1.07e-05  E-VALUE =   0.0041
+  DIAGRAM: 36-[+1]-11-[+1]-47-[+3]-19-[+13]-[-13]-14
+
+                                         [+1]                           [+1]
+                                         4.5e-07                        7.0e-06
+                                         TTTTCCTCCATTTTCTTTTC           TTTTCCTC
+                                          +++++++++++++++++++           ++ +++++
+1    GCTTATCAGTCAGTAAATTCTCTCTAGTTCTTCTCTATTTTCTCTCTTTTCTCTCTTTTTTCGATTATTCTCTCC
+
+                                                                [+3]
+                                                                3.6e-05
+     CATTTTCTTTTC                                               CGCTCGC
+      +++++++++++                                               +++++++
+76   GATTTTTTCTCTCTCGTCACCGTTTCACCCACCGGTATTCATCATTGTTTACGTCGTTCCGCTCGCTTTCAAACA
+
+               [+13]        [-13]
+               1.4e-05      2.1e-06
+               AGGATAATTAAGTACTTAATTATCCT
+               +   +++++++ ++ +++++++++++
+151  ATTTATATTGATTTTAATTAATTAATTAATTATCCTTTTTCATTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00006728
+  LENGTH = 200  COMBINED P-VALUE = 1.25e-05  E-VALUE =   0.0048
+  DIAGRAM: 5-[-8]-80-[+11]-52-[+1]-[+11]-3
+
+          [-8]
+          2.8e-05
+          AATTATTTTTTG
+          ++ ++++ +++
+1    ACGCAAAATATTCTTTCCTCTTTGTTCTAAATGGGTAGTTACACACATTATGCGGTCTATAACGTCTTTTGTCAC
+
+                           [+11]
+                           6.8e-08
+                           AAAATCAGCAATTT
+                           ++++++++++++++
+76   CTTTGAAACTAGTCTCTAAAGAAAAATCAATAATTTTTGCCCCTACGCTCTCCTCCAAATGTTTCGCTCTCGCCG
+
+                  [+1]                [+11]
+                  5.7e-06             1.9e-05
+                  TTTTCCTCCATTTTCTTTTCAAAATCAGCAATTT
+                   ++++ + +  ++++++++++++ +  +++++++
+151  TCATTTTCTGACAATTTTACTCGGTTTCTTTTCAAATTATATAATTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00000503
+  LENGTH = 200  COMBINED P-VALUE = 1.43e-05  E-VALUE =   0.0054
+
+                                                         [-2]
+                                                         5.3e-05
+                                                         CGCTGCGCGGCCCGCCCGC
+                                                         +++  + ++ +++++  ++
+1    GAAAATGAGCACACTGTACGAAGTGCATTGTGAGCCGAGGTGCTCAAACAACCGCCACCAGTCCGGCTACCTATG
+
+        [+1]                   [-11]                                        [-7]
+        1.5e-05                7.4e-06                                      1.3e
+        TTTTCCTCCATTTTCTTTTC   AAATTGCTGATTTT                               TTCG
+         ++++   +++++++ ++++   ++++++++  ++++                               ++++
+76   TACATTTTGGTCATTTTTGTTCCTTTAAATTGCTTGTTTTTCCGCAATAGCCCTTTCACCCATTCTTCTCATTCG
+
+                                               [-10]
+     -06                                       3.9e-05
+     AAAAATT                                   TTTTTCAG
+     ++++ ++                                   ++++++++
+151  AAAATTTGGTGAACGTATTTCTGAATAAATATATTTTTGTATTTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00002363
+  LENGTH = 200  COMBINED P-VALUE = 1.61e-05  E-VALUE =   0.0061
+  DIAGRAM: 18-[-9]-65-[-11]-57-[-1]-7
+
+                       [-9]
+                       4.5e-08
+                       TGCAACCGCGGCCCATTGC
+                       +++++++ +++++++ +++
+1    CGAGAGGCGGAGTCACAATGCAACCCTGGCACGGTTCCCCAAAAAACCGTGCGGCAGCAGTGTCGTCGAGCCTTT
+
+                                [-11]
+                                4.9e-05
+                                AAATTGCTGATTTT
+                                 ++ +++  +++++
+76   TCGCGGTTTTTTTACGCTTTTCAAAATTAAACGTGCATTTTTTTTCTTATTTTACCATCATTTCTAATTAAATTT
+
+                            [-1]
+                            6.1e-06
+                            GAAAAGAAAATGGAGGAAAA
+                            +++++++++ +   +++++
+151  TAATGCTGATATGAAAGCTTTCAAAAAAGAAATTTCCAAAAATCGACTTA
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004703
+  LENGTH = 200  COMBINED P-VALUE = 1.93e-05  E-VALUE =   0.0073
+
+                        [+1]                                      [-8]
+                        4.7e-05                                   2.7e-07
+                        TTTTCCTCCATTTTCTTTTC                      AATTATTTTTTG
+                        + ++   ++++ + + ++++                      ++++++++++++
+76   ATCATTTCGCGCGCGTTGCTCTCGAGCTATCTCCGTTTCACACTTATTTTTGTTTCTCAATAATTATTTTTTGAA
+
+         [+9]                                  [-10]
+         5.2e-05                               3.9e-05
+         GCAATGGGCCGCGGTTGCA                   TTTTTCAG
+          ++++ + +  + ++++++                   ++++++++
+151  TATTCAAACTTCGTTCTTTTGCAACTTCATAAATTAATTTGATTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00009119
+  LENGTH = 200  COMBINED P-VALUE = 2.24e-05  E-VALUE =   0.0085
+  DIAGRAM: 119-[-9]-28-[+2]-15
+
+                                                 [-9]
+                                                 3.0e-08
+                                                 TGCAACCGCGGCCCATTGC
+                                                  ++++++++++ +++++++
+76   AAGGTTCAATTGGTGTCCAAAAAAATTGGTCGAAAACAGTGGTCAGTAAAGGCGCTCCATTGCAATTCTGGCACA
+
+                     [+2]
+                     7.4e-07
+                     GCGGGCGGGCCGCGCAGCG
+                     + ++ ++++++++++  ++
+151  AAGCCAAGAATGCTGCGAGGTCGGGTCTCGCCACGTGCTGAAGTACGGTT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00014204
+  LENGTH = 200  COMBINED P-VALUE = 2.48e-05  E-VALUE =   0.0094
+  DIAGRAM: 112-[+9]-14-[-10]-23-[+1]-4
+
+                                          [+9]                             [-10]
+                                          9.1e-06                          3.9e-
+                                          GCAATGGGCCGCGGTTGCA              TTTTT
+                                          ++++  +++++  +++++               +++++
+76   GTGTGCGGCGACTTTGCAAACACTGCGCGCGCAGCTTGCAAGTGGGCGGAGTTACTGAATACCGATTACTTTTTG
+
+                               [+1]
+     05                        4.9e-05
+     CAG                       TTTTCCTCCATTTTCTTTTC
+     +++                       +++ +++  ++++++ ++++
+151  CAGTTCGTAAATATTTTGCTGCTCAATTTGCTCTGATTTTTATTTTTTTT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00012768
+  LENGTH = 200  COMBINED P-VALUE = 2.56e-05  E-VALUE =   0.0097
+  DIAGRAM: 51-[+2]-31-[-10]-49-[-7]-31
+
+                                                        [+2]
+                                                        1.2e-08
+                                                        GCGGGCGGGCCGCGCAGCG
+                                                        ++++  +++++++++ +++
+1    CAAATTTTGAACTTCCCTCCATTAAACTTTAAAGGCGCATGGAGATTCACAGCGCATGGGTCTCGCCGCGCCGTG
+
+                               [-10]
+                               3.9e-05
+                               TTTTTCAG
+                               ++++++++
+76   TTGCATGTGAAGAAATTTTGGGTAATTTTTGCAGTTTTCTAGTATTTCTAGCGCTGTTGTTCGGTTTTTTATTTG
+
+             [-7]
+             7.1e-05
+             TTCGAAAAATT
+              +++ ++++++
+151  TTTTGACGCTCGGAAAATTTATTTATAACTTTATTTAATGTGCCAGCATA
+
+
+caenorhabditis_elegans_prjna13758|WBGene00003159
+  LENGTH = 200  COMBINED P-VALUE = 2.59e-05  E-VALUE =   0.0098
+  DIAGRAM: 16-[+2]-83-[-8]-16-[+1]-34
+
+                     [+2]
+                     2.9e-06
+                     GCGGGCGGGCCGCGCAGCG
+                      + ++ ++++++++++ ++
+1    GCATAGACTTTCGCACTCTGGTGGGTCTCGCAACGACATGAAGGAGGCAAACGCGCGAAATTCGAACGGACGACG
+
+                                                [-8]                        [+1]
+                                                2.1e-05                     2.5e
+                                                AATTATTTTTTG                TTTT
+                                                ++++ ++++ ++                ++++
+76   CTGCCATCTGCCGCACATTCCTTCACTCTCTCGCTCATTTATTATCGGTTTTGTGCTACAAGAGCAGCTTTTTTC
+
+     
+     -05
+     CCTCCATTTTCTTTTC
+      +  +++++++  +++
+151  GCGATTTTTTCAGTTTTTCCAATTAAAAAATAAAATTTCCATCATTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00003955
+  LENGTH = 200  COMBINED P-VALUE = 3.18e-05  E-VALUE =    0.012
+  DIAGRAM: 47-[+1]-3-[+1]-7-[+8]-30-[+11]-6-[+11]-27
+
+                                                    [+1]                   [+1]
+                                                    2.6e-05                1.2e-
+                                                    TTTTCCTCCATTTTCTTTTC   TTTTC
+                                                    ++++ ++++++++++++ +    ++++
+1    ATTCGAAAACGCGCGCGAAACTTCATTCATCGCACTTTCTCCGTTCATTTCGTCCTATTTTTTTGTGGTTTTTCG
+
+                           [+8]                                      [+11]
+     05                    5.4e-06                                   5.1e-05
+     CTCCATTTTCTTTTC       CAAAAAATAATT                              AAAATCAGCAA
+     +  +++++++ ++++        +++++++++++                              ++++ + ++
+76   CGATTTTTTCGCTTTTCTGAGTGAAAAAATAATTTTCCTTCGTTTTTTCAATGAAAATCCGCGGAAAACCCATTT
+
+              [+11]
+              7.7e-07
+     TTT      AAAATCAGCAATTT
+     +++      ++++++ +++ +++
+151  TTTCCCGTGAAAATCCGCATTTTTCGCTGTATTTCATAATTTTTATTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004489
+  LENGTH = 200  COMBINED P-VALUE = 3.43e-05  E-VALUE =    0.013
+  DIAGRAM: 52-[+11]-[-7]-48-[-7]-6-[+11]-20-[-9]-5
+
+                                                         [+11]         [-7]
+                                                         9.3e-05       4.5e-07
+                                                         AAAATCAGCAATTTTTCGAAAAA
+                                                         +++ ++++ ++++ +++++++++
+1    CTTTGGGTGCTTCCGTGCTCTGGAGGATCTGATGAACGTCGCCAATCATCTGAAATTCAAAAATTATTCGAAAAA
+
+                                                       [-7]             [+11]
+                                                       4.7e-05          3.8e-05
+     TT                                                TTCGAAAAATT      AAAATCAG
+     ++                                                +++ +++++++      +++ + ++
+76   TTCCCCGAAAATTCAAAATTAATTTTAAATTCCATTGAAAAATATTAAAATTCCAAAAATTGCCTGCAAATTAAA
+
+                               [-9]
+                               9.6e-09
+     CAATTT                    TGCAACCGCGGCCCATTGC
+       ++++                    ++++++ +++++++++++
+151  ATATTTTTTAAAAAATAATGGTGGTATGCAAATGCGCCCCATTGGACATT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00020683
+  LENGTH = 200  COMBINED P-VALUE = 4.51e-05  E-VALUE =    0.017
+
+              [-8]
+              2.4e-06
+              AATTATTTTTTG
+              +++++++++ ++
+1    TTGCTGCTAAATGATTTTGTGACAAAATAAAGTTACTCTGTGCTGAGATTGTAATAATAGATAATTTTTTAACAC
+
+                             [+14]
+                             3.8e-09
+                             AGCTGTCGTCTCGGTCG
+                             ++ ++++++++ +++++
+76   GAGCTGATTAATTAAATTCCAAATAGATGTCGTCTTGCTCGATCAGTCGAATTTCATTCTTGAAACGTTTTAATA
+
+                                               [-10]
+                                               7.9e-05
+                                               TTTTTCAG
+                                               ++++ +++
+151  TGACATTTTTGGGTTTTCTGCATTTTTGATTGTATATCTAATTTTTCCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00002077
+  LENGTH = 200  COMBINED P-VALUE = 6.71e-05  E-VALUE =    0.025
+  DIAGRAM: 8-[+11]-24-[-8]-21-[+8]-37-[+10]-8-[+1]-36
+
+             [+11]                                 [-8]
+             2.0e-05                               9.7e-06
+             AAAATCAGCAATTT                        AATTATTTTTTG
+             +++ ++++++ ++                         ++ + +++++++
+1    TTGTCCCAAAATTCAATATTTGTTGGCCTATTTTTCACATTTTCCGATAGGTTTTTTGTTGAAAATGCCAATTTT
+
+         [+8]                                             [+10]           [+1]
+         9.9e-05                                          3.9e-05         1.0e-0
+         CAAAAAATAATT                                     CTGAAAAA        TTTTCC
+         + +++++++ ++                                     ++++++++         ++++
+76   TATACTAAAAATCTATTTTCCTCAGCGATTCCGCGTATTCCCCAGGCGTTTATCTGCAAAACCGACTCGCTTTCA
+
+     
+     6
+     TCCATTTTCTTTTC
+     +++++++ +++ ++
+151  TCTTTTTCCTTCTCAATTTTGAAATTTTTAGCACATATTCTGATTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00000868
+  LENGTH = 200  COMBINED P-VALUE = 7.48e-05  E-VALUE =    0.028
+  DIAGRAM: 38-[-2]-53-[+11]-76
+
+                                           [-2]
+                                           2.3e-06
+                                           CGCTGCGCGGCCCGCCCGC
+                                           + + +++++++++ ++  +
+1    ATGTGCGCTCCACCGAACGGGGGGCAATTTCAAATACACCCCGCGAGACCCACCAAGAGGGCGGCAATTTCCAGT
+
+                                        [+11]
+                                        5.8e-06
+                                        AAAATCAGCAATTT
+                                        +++++++ ++ +++
+76   GTTCACCATCGTTTGCCATTTGCTCTCTGCTCCCAAAAATCATCATTTTTTTGGTTTCATCGCTTCGCAGTTTCC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00001999
+  LENGTH = 200  COMBINED P-VALUE = 9.23e-05  E-VALUE =    0.035
+  DIAGRAM: 93-[+8]-[+1]-17-[+2]-39
+
+                       [+8]        [+1]                                 [+2]
+                       7.4e-05     1.4e-06                              6.6e-07
+                       CAAAAAATAATTTTTTCCTCCATTTTCTTTTC                 GCGGGCGG
+                       +++++++++++ +++++++++++++++++++                  ++ + +++
+76   TAAAAATTTAACTAAATTCAAAAAATAAAGTTTCCCTCCTTTTTTTCTTAAAGGCACACACATTTATCGACTCGG
+
+     
+     
+     GCCGCGCAGCG
+     +++++++ +++
+151  GTCTCGCCGCGAACAGACGCGACGCGACGCGGTTAGGAATGCGGCGCGTC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00011128
+  LENGTH = 200  COMBINED P-VALUE = 1.15e-04  E-VALUE =    0.044
+  DIAGRAM: 89-[+1]-6-[+1]-27-[+1]-18
+
+                   [+1]                      [+1]
+                   1.9e-05                   3.9e-05
+                   TTTTCCTCCATTTTCTTTTC      TTTTCCTCCATTTTCTTTTC
+                   ++++++ + ++ +++ +++       ++ ++ + + +++++++++
+76   AGCACGAAAACGGTTTTTTCGCACTCTTTCTTTGCCAATCTTCTTATTTGTTTTCTCTTATGTCTATTTACTCGT
+
+                 [+1]
+                 1.8e-08
+                 TTTTCCTCCATTTTCTTTTC
+                 ++++++++ ++++++ ++++
+151  TCAAAACTCGCCTTTTTCTCACTTTTCATTTTCTAATTGTCTATCTGCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004491
+  LENGTH = 200  COMBINED P-VALUE = 1.17e-04  E-VALUE =    0.045
+  DIAGRAM: 6-[-1]-12-[-11]-1-[-1]-127
+
+           [-1]                            [-11]          [-1]
+           2.6e-07                         5.0e-05        5.3e-06
+           GAAAAGAAAATGGAGGAAAA            AAATTGCTGATTTT GAAAAGAAAATGGAGGAAAA
+           ++++++++++++ ++++++             +++  ++  +++++ ++++ +++++++ +  ++++
+1    AAAGTTGAAAAAAAAAAGAAAAAAAGCCGGAAATTGCGAAAAAACGAATTTTTAAAACAAAAAAAAACCAAAATC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004203
+  LENGTH = 200  COMBINED P-VALUE = 1.21e-04  E-VALUE =    0.046
+  DIAGRAM: 4-[+11]-25-[-11]-19-[+1]-21-[+1]-63
+
+         [+11]                                  [-11]
+         1.9e-05                                3.1e-06
+         AAAATCAGCAATTT                         AAATTGCTGATTTT
+         +++++  + +++++                         +++++ ++++++++
+1    CAAGAAAATACGAGATTTTTGCAGTTTCCACAGTTTTCTGTTAAAATTCTTGATTTTACAGACATTTTTCCTAGA
+
+      [+1]                                     [+1]
+      4.0e-06                                  1.1e-06
+      TTTTCCTCCATTTTCTTTTC                     TTTTCCTCCATTTTCTTTTC
+       ++++ ++ +++++++  ++                     ++++++ + +++++++  ++
+76   AATTTTGCCGTTTTTCTGCTCACTTCAGTGAAAAAAATCGATTTTTTCGCAATTTTCTGCCCATAAATATGCTTT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00000235
+  LENGTH = 200  COMBINED P-VALUE = 1.22e-04  E-VALUE =    0.046
+  DIAGRAM: 32-[-9]-54-[+1]-28-[-7]-4-[+11]-[-8]-6
+
+                                     [-9]
+                                     3.0e-05
+                                     TGCAACCGCGGCCCATTGC
+                                     +++++++++++ +++ ++
+1    AAGAGTGCGCAAATCGAGAGACGCAGACAGAATGCAAACGCGCTCCGCTGAACTGTGGCCGCCAAGCGTTTCGTT
+
+                                   [+1]
+                                   3.3e-05
+                                   TTTTCCTCCATTTTCTTTTC
+                                    +++++ +++ ++++ ++++
+76   TAAAAGGGAGCGTTGTCTATTTTCCTATCTATTCTTGCCAGTTTTATTTTATTTCGCAACTATCTTTTTACTACG
+
+        [-7]           [+11]         [-8]
+        6.1e-05        9.3e-05       2.4e-06
+        TTCGAAAAATT    AAAATCAGCAATTTAATTATTTTTTG
+        ++++++++  +    +++ ++++ +++ ++++++++++ ++
+151  ATTTTCGAAAATATTTTCAAATTCAAGAATGTAATTATTTTGTGTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004498
+  LENGTH = 200  COMBINED P-VALUE = 1.34e-04  E-VALUE =    0.051
+  DIAGRAM: 39-[-7]-27-[-8]-31-[+1]-13-[-7]-12-[+13]-11
+
+                                            [-7]
+                                            2.3e-05
+                                            TTCGAAAAATT
+                                              +++++  ++
+1    AGTTTTGTAACTAGTTCTTCTGGAAAGATTTCGAAAAATAACGAAATTTTACGGAAAATGCTGTTGTTGCTTTAA
+
+       [-8]                                       [+1]
+       1.4e-06                                    1.1e-05
+       AATTATTTTTTG                               TTTTCCTCCATTTTCTTTTC
+       ++++++++++++                               + ++++++ ++++++++ ++
+76   TTATCGATTTTTTGACGCATTTCGCTTTTTTTCTCACCGTCTTCTTGTTTTCCGCTTTTTTCCTCCGTTTACAGC
+
+        [-7]                   [+13]
+        3.3e-05                9.9e-05
+        TTCGAAAAATT            AGGATAATTAAGT
+        +++++++ +++            + + +++++  ++
+151  TTTTTCGAAACATTTTGCATTCTGAGATGTTAATTTTGTTTCCATTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00015168
+  LENGTH = 200  COMBINED P-VALUE = 1.42e-04  E-VALUE =    0.054
+  DIAGRAM: 15-[-7]-25-[+1]-63-[+2]-47
+
+                    [-7]                                [+1]
+                    8.9e-07                             1.2e-05
+                    TTCGAAAAATT                         TTTTCCTCCATTTTCTTTTC
+                    +++++++++++                         +++++ +  + +++++++++
+1    AATGTTTTCAGTTATTTCGATAAATTAATAGATTCTGTTAAAAAAACATTTTTTTTATTAAATTTTTCTTTTTAA
+
+                                                                [+2]
+                                                                9.1e-05
+                                                                GCGGGCGGGCCGCGCA
+                                                                + + +++++   ++
+76   AACGTCTTCCCTAACCCTCATAGTTTTCTCATTGCATTTCGCAACTCTCCATTTAATGCCTGTGCCGGGGCCGTG
+
+     
+     
+     GCG
+     +++
+151  GCGAGAACTATTTGCGCAAAGCGCTCTACTGTACGACACGTTGACCAATC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00022235
+  LENGTH = 200  COMBINED P-VALUE = 1.50e-04  E-VALUE =    0.057
+  DIAGRAM: 82-[+2]-73-[+1]-6
+
+            [+2]
+            1.7e-08
+            GCGGGCGGGCCGCGCAGCG
+             +++ ++++++++++++++
+76   GCACGCAACGCTCGGGTCTCGCAGCGACCTGCTGACGCCGCATTTACCGTAGCGTCTGCAGTTCAAATTCGAGAC
+
+                             [+1]
+                             2.2e-06
+                             TTTTCCTCCATTTTCTTTTC
+                             +++++  ++++++++++ ++
+151  GTTATCCAAAGGGGCGGTTGCACGTTTTTGGCCTTTTTTTTGTCAAATTT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00022170
+  LENGTH = 200  COMBINED P-VALUE = 2.09e-04  E-VALUE =     0.08
+  DIAGRAM: 32-[+10]-113-[+2]-28
+
+                                     [+10]
+                                     7.9e-05
+                                     CTGAAAAA
+                                     +++ ++++
+1    CCGGCGGTTTATACGAGTTTTCAGCCATTTTTCTGGAAAAAAATCTATTTGTTTTGATTTCTAGAACTTTGTTAT
+
+        [+2]
+        9.2e-08
+        GCGGGCGGGCCGCGCAGCG
+        + + + +++++++++++++
+151  GGAGTGTGTGGCTCGCGCAGCGTCTTTAGTGAAAAATTTTTATTGATTTT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004478
+  LENGTH = 200  COMBINED P-VALUE = 2.45e-04  E-VALUE =    0.093
+
+                           [+1]                   [-11]
+                           2.3e-05                8.1e-08
+                           TTTTCCTCCATTTTCTTTTC   AAATTGCTGATTTT
+                           ++++++++++++ ++++++    ++++++++++ +++
+1    AGGCCGAACCTGACAATTTTTCTTTTTTTCTATTATTTTTTGGGAAAATCGCTGAATTTTTGAATGAAATTGTCA
+
+                [-11]
+                3.8e-05
+                AAATTGCTGATTTT
+                +++  + +++ +++
+76   GAAAATTAATTAAAAAAATGAATTTTCATTACATTATTGTTATTTTTATCGTTAATTTGTAATTTGCTTCCCTCT
+
+                                               [-10]
+                                               3.9e-05
+                                               TTTTTCAG
+                                               ++++++++
+151  GTTTTCGTTGTTGCTGCCTCAAACTTCAATTTTCTATTTATTTTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004419
+  LENGTH = 200  COMBINED P-VALUE = 2.59e-04  E-VALUE =    0.098
+  DIAGRAM: 125-[-11]-20-[-2]-22
+
+                                                       [-11]
+                                                       2.3e-06
+                                                       AAATTGCTGATTTT
+                                                       +++  +++ + +++
+76   TCTGAGTTGAAAACTCGAAAATGTTGTTTCGTTTTCGCGAATTTTAAGACAAAAAACTCAATTTCAAACAGCGCG
+
+              [-2]
+              3.9e-05
+              CGCTGCGCGGCCCGCCCGC
+              +++ ++  + ++++++ ++
+151  CGCAAAAGGCGCAGCATGTGCGCCCTGCCGCACACATTTCGCTACTGACT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004430
+  LENGTH = 200  COMBINED P-VALUE = 2.63e-04  E-VALUE =      0.1
+  DIAGRAM: 3-[+10]-71-[+2]-52-[+1]-27
+
+        [+10]
+        3.9e-05
+        CTGAAAAA
+        ++++++++
+1    ACACTGAAAAATTGCCGAAATTCTGTCGAAAAATGTGTGAAATTGTAAAACATAAACAGGGCGCGCAACGACACT
+
+            [+2]
+            1.1e-05
+            GCGGGCGGGCCGCGCAGCG
+               + +++++++++++ ++
+76   CCGCTCCAATCACGGGTCTCGCAACGAAAAAGTGTGCGCCTTTGAATGAATTGAGGGAATATTTCTACTAGCCTA
+
+        [+1]
+        9.8e-05
+        TTTTCCTCCATTTTCTTTTC
+        ++++++++ + ++++++ ++
+151  AAATTTTTTTCACGTTTTTTACCGTAAAGTAGCGTGTTTTTGCCGGTTTT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00013766
+  LENGTH = 200  COMBINED P-VALUE = 2.83e-04  E-VALUE =     0.11
+
+        [+1]                                           [-8]
+        4.3e-06                                        7.6e-07
+        TTTTCCTCCATTTTCTTTTC                           AATTATTTTTTG
+        ++++++  +++++++ +++                            ++++++++++++
+1    TTTTTTTTCGTCTTTTTCACTCGAATTTCATGATTTTCAGTTGATTTTCAATTGATTTTTTGGTTTTTTTTGCTG
+
+           [-8]                              [+11]
+           2.7e-07                           3.0e-05
+           AATTATTTTTTG                      AAAATCAGCAATTT
+           ++++++++++++                      +++++  ++++ ++
+76   AAAATTAATTATTTTTTGATTAAAAAGCTTTTCGAACAAGAAAATACATGAATTTTGGCCCTAAAAGTGGATTTC
+
+                                               [-10]
+                                               7.9e-05
+                                               TTTTTCAG
+                                               ++++ +++
+151  AGAGCATGTGGATCTCACATTAATTAATTTAATAATTAACCTTTTTCCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004487
+  LENGTH = 200  COMBINED P-VALUE = 2.85e-04  E-VALUE =     0.11
+  DIAGRAM: 8-[+7]-99-[+7]-2-[-11]-37-[-11]-4
+
+             [+7]
+             1.8e-06
+             AATTTTTCGAA
+             ++ ++++++++
+1    ATATTTGAAAATTATCGAATTTACTAGTTTTGTGAATATTGTATCATTTTTTAGGCATTTACAGGTCAATTTTAA
+
+                                                [+7]         [-11]
+                                                6.7e-05      7.4e-06
+                                                AATTTTTCGAA  AAATTGCTGATTTT
+                                                +++++++++    +++++ ++ +++++
+76   CTTATTATTCAGCTGAAAGTGCTTAATAATAATGTTTTTTGGTAATTTTTCGTCGCAAATTTTTTATTTTTTTTG
+
+                                     [-11]
+                                     7.4e-06
+                                     AAATTGCTGATTTT
+                                     +++++ ++ +++++
+151  AATATCCGCGCTTTTCACTCGTGCATCTCACTAAATTTTTTATTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004425
+  LENGTH = 200  COMBINED P-VALUE = 2.99e-04  E-VALUE =     0.11
+
+             [+1]                             [-11]
+             4.1e-07                          7.4e-06
+             TTTTCCTCCATTTTCTTTTC             AAATTGCTGATTTT
+             +++++++  +++++++++++             ++  ++++++++++
+1    CCATAGAATTTTTCTGAATTTTTTCTTTTCTTTTTTGATTCAATATGCTGATTTTTTAAATTTTCTCCCGGAAAT
+
+                               [+1]
+                               7.2e-05
+                               TTTTCCTCCATTTTCTTTTC
+                               ++++++ + +++++   ++
+76   TGTTTTAAAAATATCTATTTAAGCTTTTTTTCGCAATTTTGCGTTGTTATTGAGTTATTTTCTGTATTTCTATCG
+
+                                               [-10]
+                                               3.9e-05
+                                               TTTTTCAG
+                                               ++++++++
+151  CAATTTTCATTAGTTTGAACTAAAATCGCAATTTTACTTCTTTTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00001679
+  LENGTH = 200  COMBINED P-VALUE = 4.49e-04  E-VALUE =     0.17
+  DIAGRAM: 136-[-8]-52
+
+                                                                  [-8]
+                                                                  7.6e-07
+                                                                  AATTATTTTTTG
+                                                                  ++++++++++++
+76   TCAAGGTTTGGTTTCTTTCTCGTACAGTGTTCCGCTCTCACGCCAGTTTCTGAATCGATCTATTGATTTTTTGAA
+
+
+caenorhabditis_elegans_prjna13758|WBGene00001980
+  LENGTH = 200  COMBINED P-VALUE = 4.73e-04  E-VALUE =     0.18
+  DIAGRAM: 73-[-1]-18-[+1]-8-[+1]-23-[+11]-4
+
+                                                                              [-
+                                                                              1.
+                                                                              GA
+                                                                              ++
+1    CTTTTGTAGTTTGTAGTATGTCAGAATTAATTGGAATTTGAAATTTTAAAGTTTTGGAAGTTTTTAAAATTTTGA
+
+     1]                                  [+1]                        [+1]
+     5e-07                               8.6e-06                     5.0e-06
+     AAAGAAAATGGAGGAAAA                  TTTTCCTCCATTTTCTTTTC        TTTTCCTCCAT
+     +++++++++   ++++++                  +++++++  + +++++++++         ++++++  ++
+76   AAAAAAAAATCCAAAAAAAAAAATTTCCAAAAAAATTTTTTCCGAAATTTTTTTCTACCCTCCAATTTCCTTAAT
+
+                                     [+11]
+                                     3.5e-05
+     TTTCTTTTC                       AAAATCAGCAATTT
+     ++++++++                        +++ ++ + + +++
+151  TTTCTTTCAAATTATCTAATTTTTTTCCTAAAAAATTCCAAATTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00012896
+  LENGTH = 200  COMBINED P-VALUE = 4.83e-04  E-VALUE =     0.18
+
+               [+1]                                        [+10]           [+1]
+               2.8e-06                                     7.9e-05         6.6e-
+               TTTTCCTCCATTTTCTTTTC                        CTGAAAAA        TTTTC
+               +++++++ ++ +++++++++                        +++ ++++         ++++
+1    CTGTAATTTTTTTCCCCGTAATTTTTTTTTTCGCAAATTCCCGATGTACTTACTCTGTAAAATAATATTTATTTT
+
+                                                                     [+1]
+     06                                                              6.0e-08
+     CTCCATTTTCTTTTC                                                 TTTTCCTCCAT
+      + ++++++ +++++                                                 ++++++++ ++
+76   GTTTATTTTATTTTCCATTTATTATTCAATTCGAATTGGTTTTCAGCCAGCCGATTTTATCTATTTTCTCTCAAT
+
+                                               [-10]
+                                               3.9e-05
+     TTTCTTTTC                                 TTTTTCAG
+     ++++ ++++                                 ++++++++
+151  TTTTATTTCTTGTTTTGATTTTTTTAACCTTAATCCCACGATTTTTGCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00003157
+  LENGTH = 200  COMBINED P-VALUE = 5.00e-04  E-VALUE =     0.19
+  DIAGRAM: 30-[+7]-42-[+1]-11-[+1]-15-[-13]-38
+
+                                   [+7]
+                                   9.2e-05
+                                   AATTTTTCGAA
+                                   ++ +++++ ++
+1    TGTTTGCGGAATGTGAGGCGCGGGCGCCAAAAATTTTCAAATTTGAATCGCATCGTTTTACCGCATTCTGTTTTA
+
+             [+1]                           [+1]                               [
+             3.8e-06                        4.0e-06                            2
+             TTTTCCTCCATTTTCTTTTC           TTTTCCTCCATTTTCTTTTC               A
+             +++++ ++++++++++ ++            +++++++ ++ +++++++++               +
+76   TTTCCATATTTTCATCCTTTTTCTATTGTTTTTTCTTGTTTTCTTCATAATTTTTTTTCATTTTGAAGAAGAAAA
+
+     -13]
+     .8e-05
+     CTTAATTATCCT
+     ++++ ++ ++++
+151  CTGAGTTTTCCTTCTCAAAACATAATACTGATTGTCATATCCTTGTTTCA
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004481
+  LENGTH = 200  COMBINED P-VALUE = 6.16e-04  E-VALUE =     0.23
+  DIAGRAM: 105-[+1]-26-[-8]-20-[-11]-3
+
+                                   [+1]
+                                   8.2e-08
+                                   TTTTCCTCCATTTTCTTTTC
+                                   ++++++  ++++++++++++
+76   ACATTTCATGCTTCCCTCTTTTCCGTTGATTTTCCCAATTTTTTCTTTTCTTTTTTTCTTTTTCTCAAATCTTGA
+
+      [-8]                            [-11]
+      8.7e-06                         6.6e-05
+      AATTATTTTTTG                    AAATTGCTGATTTT
+      ++ ++++++ ++                    +++++ ++ +++++
+151  AATATATTTTGTGAAAACAATATTAACGAGTCGAAATTTCTAATTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00000879
+  LENGTH = 200  COMBINED P-VALUE = 6.52e-04  E-VALUE =     0.25
+
+              [+1]                                          [-11]
+              1.6e-05                                       7.9e-05
+              TTTTCCTCCATTTTCTTTTC                          AAATTGCTGATTTT
+              + +++ ++ ++ + + ++++                          ++ ++++++ ++++
+76   ATCGAAATTTCTCTGCCGCTCTCCATTTCGGTCCCATTTTTTGAATTTTCATGCGAATTCACTGTTTTTTATTCA
+
+                           [-11]               [-10]
+                           1.6e-06             3.9e-05
+                           AAATTGCTGATTTT      TTTTTCAG
+                           +++++++  + +++      ++++++++
+151  GATTTTTTATCGATTTTCGTTTAAATTATGTAATTTTTATGATTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00007625
+  LENGTH = 200  COMBINED P-VALUE = 8.21e-04  E-VALUE =     0.31
+
+                                         [+1]
+                                         2.1e-06
+                                         TTTTCCTCCATTTTCTTTTC
+                                         +++ ++++++++++++++++
+76   CTCCGCCCACAAACATTCGAATGCAAATTTTGGCGTTTTGCTTCTTTTTTCTCTTTTTTCTGTATAACCAAACAA
+
+                                               [-10]
+                                               3.9e-05
+                                               TTTTTCAG
+                                               ++++++++
+151  ATATATTTTATATTATCCCTTTTTAGAGCAAATTTATCTTTTTTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00012907
+  LENGTH = 200  COMBINED P-VALUE = 8.68e-04  E-VALUE =     0.33
+  DIAGRAM: 4-[+7]-7-[+9]-35-[+11]-41-[+11]-38-[+11]-3
+
+         [+7]              [+9]
+         6.7e-05           2.9e-07
+         AATTTTTCGAA       GCAATGGGCCGCGGTTGCA
+         ++++++ ++ +       +++++ + +++++++++ +
+1    ATTCAATTTTGCGTATAATAGAGCAATATACCACCTTTAAATAAATTTTATGGCTATAAAAAGGCATTTATTCAT
+
+      [+11]                                                  [+11]
+      2.1e-05                                                2.3e-05
+      AAAATCAGCAATTT                                         AAAATCAGCAATTT
+      +++ +++++  +++                                         +++ ++ ++++ ++
+76   GAAAGTCAGCTTTTTTAGCTTCTTAAAAGGTAGGAAAACTATATTGAAAATGGCAAAAATTCCATAAATTTACCC
+
+                                      [+11]
+                                      6.7e-07
+                                      AAAATCAGCAATTT
+                                      +++ + ++++++++
+151  CGTTTTCATCATATTCCGTTGAAAATTTAAAAAAAATTAAATAATTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00006579
+  LENGTH = 200  COMBINED P-VALUE = 9.97e-04  E-VALUE =     0.38
+  DIAGRAM: 2-[-11]-122-[+1]-11-[-8]-3-[+11]-2
+
+       [-11]
+       5.6e-05
+       AAATTGCTGATTTT
+       +++  ++  + +++
+1    TTAAAAAATATAATTTTTTTGAGCCGCTCCTCTCGCAGCTGTGTCGCGGCAGAGGTTCACACCCCACTTGCAGAA
+
+                                                                    [+1]
+                                                                    5.3e-06
+                                                                    TTTTCCTCCATT
+                                                                    +++++ +++++
+76   AGTCTATCATTTCAAAATATATGAAACTGTGAAAGTCCATCTGTTTGCACAATCTTTGTTTCTTTTTTGTCCTTC
+
+                        [-8]           [+11]
+                        7.7e-05        1.7e-06
+     TTCTTTTC           AATTATTTTTTG   AAAATCAGCAATTT
+     +++ + ++           +++++++++++    +++ +++++  +++
+151  TTCCTCTCAAAATTGTTTAAATGATTTTTTTAACAAATTCAATTTTTTTC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00017166
+  LENGTH = 200  COMBINED P-VALUE = 1.00e-03  E-VALUE =     0.38
+  DIAGRAM: 4-[+2]-63-[+1]-14-[-1]-60
+
+         [+2]
+         2.1e-06
+         GCGGGCGGGCCGCGCAGCG
+         ++    +++++++++++++
+1    TTTCGCAAATGGGTCTCGCAGCGCAAGCCAACGACTAACAACGACAATACCGCACATTTAAATTCAATTTTAGGA
+
+                [+1]                              [-1]
+                4.9e-05                           5.8e-05
+                TTTTCCTCCATTTTCTTTTC              GAAAAGAAAATGGAGGAAAA
+                 +++++   ++++++  +++               +   +++++   +++++++
+76   TTCATTTTTTCATTTCCAAATTTTTCGGTTTTTTCTATAAGAAAACAGCCGAAAACTTAAGAAAATAATTCCTGC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004408
+  LENGTH = 200  COMBINED P-VALUE = 1.09e-03  E-VALUE =     0.41
+  DIAGRAM: 34-[+1]-15-[-8]-54-[+11]-3-[-11]-20-[-8]-2
+
+                                       [+1]                               [-8]
+                                       2.4e-06                            1.2e-0
+                                       TTTTCCTCCATTTTCTTTTC               AATTAT
+                                       ++++ ++ +++++ ++++++               ++++++
+1    TTGAGAGGCGAAACATTCAGTGTTCCTAAAATTTTTTCACTGTTTTTCCTTTTCCTTGTTGAAAATGTGATCGAT
+
+                                                                 [+11]
+     5                                                           6.4e-05
+     TTTTTG                                                      AAAATCAGCAATTT
+     +++++                                                       ++++ ++ ++++++
+76   TTTTTCAAAATTTGATTAATTTATATTCAAAAATGTGAATCCGTTCAATTCTGTTGCACTAAAACCACCGATTTT
+
+       [-11]                             [-8]
+       1.2e-05                           8.5e-06
+       AAATTGCTGATTTT                    AATTATTTTTTG
+       +++++++  +++++                    +++++++++++
+151  CAAAATTGTACATTTTCAGACCTCAGTTTTAATATAATTTATTTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00010478
+  LENGTH = 200  COMBINED P-VALUE = 1.17e-03  E-VALUE =     0.45
+
+                                                 [+8]
+                                                 1.4e-06
+                                                 CAAAAAATAATT
+                                                 ++++++++++++
+1    TTTCGTCTGGCACACTGCCAATGGGGGTTTCTTCTCTCGTTTTTCAAAAAATCGATAGTTTTCTGGCAGGTTTTC
+
+                          [-9]
+                          6.1e-05
+                          TGCAACCGCGGCCCATTGC
+                           ++  + + ++++ ++++
+76   TGCTTCTTGACACTTTCCACGAGCTTATGAGGCATATTTGGAGTTCATTAGAACCTTATTAATCTTTAAACTCTT
+
+                                               [-10]
+                                               3.9e-05
+                                               TTTTTCAG
+                                               ++++++++
+151  GTTAATCGCTTCAGAACTGTTGGATTTTGTCAATAATGTTATTTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00011480
+  LENGTH = 200  COMBINED P-VALUE = 1.20e-03  E-VALUE =     0.46
+  DIAGRAM: 82-[+14]-101
+
+            [+14]
+            3.2e-11
+            AGCTGTCGTCTCGGTCG
+            +++++++++++++++++
+76   TGTTCTGAGCTGTCGTCTCGGTCGTTGATTGGCTGATTCCGCCTCTGTTTGCAACTAGTAACGCGCCGCAGTTTG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00000229
+  LENGTH = 200  COMBINED P-VALUE = 1.25e-03  E-VALUE =     0.48
+  DIAGRAM: 21-[-11]-24-[-8]-14-[+1]-9-[+8]-74
+
+                          [-11]                                 [-8]
+                          7.1e-05                               1.0e-06
+                          AAATTGCTGATTTT                        AATTATTTTTTG
+                          ++ ++ ++++++++                        ++ +++++++++
+1    TGCAAGTAAGCTAACCAAGCGAATTTTTTGATTTTCTCAGGCATTTTAGGTGTTCTTTTAAATATTTTTTGCAGA
+
+               [+1]                         [+8]
+               2.6e-06                      7.4e-05
+               TTTTCCTCCATTTTCTTTTC         CAAAAAATAATT
+               ++++  + ++++++++++++         ++   ++ ++++
+76   AAGTCGTAGTTTTTAATGTTTTTTCTTTTTTATAATAAGCACCGAACAATTTTGTTGCTCGTTGTTACGGCTTTT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004798
+  LENGTH = 200  COMBINED P-VALUE = 1.32e-03  E-VALUE =      0.5
+  DIAGRAM: 18-[-11]-16-[-1]-8-[+11]-5-[+11]-91
+
+                       [-11]                         [-1]
+                       5.6e-05                       9.8e-06
+                       AAATTGCTGATTTT                GAAAAGAAAATGGAGGAAAA
+                        ++  +++ + +++                ++ +++++++++ + ++++
+1    TTTAAAACAGAATTGTGTGAAAAATTTAATTTTCAGAGAAAGATTTTAGAGAAAAAAAAATGCAAAATTCTGATA
+
+      [+11]              [+11]
+      3.5e-07            7.7e-07
+      AAAATCAGCAATTT     AAAATCAGCAATTT
+      +++++ ++++++++     +++++  +++++++
+76   AAAAATAAATAATTTTTATTAAAATACGCAATTTCTCGTAAAATATAATGTTTGACCTACATTTTGATCTCTCAC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00002000
+  LENGTH = 200  COMBINED P-VALUE = 1.33e-03  E-VALUE =      0.5
+
+                                                            [+8]
+                                                            3.8e-05
+                                                            CAAAAAATAATT
+                                                            ++  ++++  ++
+76   TTGTGAAAATAGGCTTGAAAATTAAATTGATTTGAATCTTTAAAATCTGCTGGAACATCAAATTTTTCACAGTTT
+
+                      [+7]                     [-10]
+                      3.0e-06                  3.9e-05
+                      AATTTTTCGAA              TTTTTCAG
+                      +++++++++ +              ++++++++
+151  TTTGCTATTTTCAGAGCAATTTATCGTATTTAGATTATCGATTTTTGCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00017925
+  LENGTH = 200  COMBINED P-VALUE = 1.35e-03  E-VALUE =     0.51
+  DIAGRAM: 11-[+1]-26-[-8]-22-[+1]-70-[+11]-5
+
+                [+1]                                          [-8]
+                3.7e-05                                       1.4e-06
+                TTTTCCTCCATTTTCTTTTC                          AATTATTTTTTG
+                +++++ +  ++++++   ++                          +++ ++++++++
+1    TTTTAAGCAGATTTTTACTATTTTTCAGCTTTCAAGCTTCATCCATTAGCAAAATCAAATAATTTTTTGATTCAT
+
+                     [+1]
+                     1.1e-05
+                     TTTTCCTCCATTTTCTTTTC
+                     +++++ + ++ +++++ +++
+76   TGTGTAGAATTAACGATTTTCGTATAGTTTCTGTTTTTATAACCGCCTGAATCGTATTCTCTGTTTCGTTTTCTA
+
+                                    [+11]
+                                    1.7e-05
+                                    AAAATCAGCAATTT
+                                    ++  + ++++++++
+151  TGGATTATCATGCTTGCTCAATTACTCTGTAAATTTAAACGATTTATTGC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00019900
+  LENGTH = 200  COMBINED P-VALUE = 1.39e-03  E-VALUE =     0.53
+  DIAGRAM: 63-[+1]-40-[+7]-[+1]-25-[+8]-9
+
+                                                                    [+1]
+                                                                    1.7e-05
+                                                                    TTTTCCTCCATT
+                                                                    + +++++ ++++
+1    TGGCGATGTTGTGTTTTCTGGCGCATTGTTTATCGACTTCCTACTGCTGCCATTGAGTTGGTTTATCTCTTTCTT
+
+                                                     [+7]       [+1]
+                                                     3.8e-05    2.6e-05
+     TTCTTTTC                                        AATTTTTCGAATTTTCCTCCATTTTCT
+     + + ++++                                         ++++++++++  +++++  ++++ ++
+76   TCCGTTTTTCTCGTATGCACTGCTCAATGCAAACATTTTCAAAGCCTTCATTTTTCGAAAATTTCCTATTTTCCT
+
+                                  [+8]
+                                  1.0e-06
+     TTTC                         CAAAAAATAATT
+     + ++                         +++++++++ ++
+151  TCTCTCGTGTAACTCTAGAATGCATGTTTCAAAAAATATTTTGTGTTTAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00000995
+  LENGTH = 200  COMBINED P-VALUE = 1.42e-03  E-VALUE =     0.54
+  DIAGRAM: 80-[+7]-48-[+1]-4-[+1]-1-[-11]-2
+
+          [+7]                                                       [+1]
+          3.0e-06                                                    8.2e-08
+          AATTTTTCGAA                                                TTTTCCTCCAT
+          ++++++ ++++                                                 +++ ++++++
+76   TTTTGAATTTTCCGAATTTTTTACCCCACAAACTTCATTCTTCATTGGCTCCAATTCAATTTTAATTTGCTCCAT
+
+                  [+1]                 [-11]
+                  9.8e-05              2.7e-05
+     TTTCTTTTC    TTTTCCTCCATTTTCTTTTC AAATTGCTGATTTT
+     ++++++ ++    +++++++ ++ ++ ++ +++ ++++  ++ +++++
+151  TTTCTTCTCAATGTTTTCTTTCCCTTCTTGTTCAAAATATTTTATTTTAC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00000182
+  LENGTH = 200  COMBINED P-VALUE = 1.57e-03  E-VALUE =      0.6
+  DIAGRAM: 117-[+12]-35-[+8]-2-[+1]-7
+
+                                               [+12]
+                                               5.3e-05
+                                               GCGGAAA
+                                               +++++++
+76   AGTAAAAAACGAGTTAATTTTCAATAAAACACAGGTATTTTTGCGGAAACCGGTGTGTTTTCGTCGTATTTAGCC
+
+              [+8]          [+1]
+              6.5e-05       2.3e-05
+              CAAAAAATAATT  TTTTCCTCCATTTTCTTTTC
+              ++ +++++++++  ++++  + ++++++++++++
+151  GTGAATTGCCAGAAAATAAATGATTTTAATTTTTTTTTTCTTTGTTCTTT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00003406
+  LENGTH = 200  COMBINED P-VALUE = 1.62e-03  E-VALUE =     0.61
+  DIAGRAM: 67-[+7]-2-[-7]-2-[-8]-95
+
+                                                                        [+7]
+                                                                        8.9e-07
+                                                                        AATTTTTC
+                                                                        ++++++++
+1    AGGGGGGTTTGAATTGCGAAAATGCCGTTGAGCTTTGAGAAAAGCTTTTTTTTTGTTTTTATCGATAAATTTATC
+
+          [-7]         [-8]
+          1.2e-05      1.4e-06
+     GAA  TTCGAAAAATT  AATTATTTTTTG
+     +++  +++++++  ++  ++++++++++++
+76   GAATTTTCGATATTTTTAATCTATTTTTTGATTAAAAATCGTTCAAATATACATCATTGGCTAGAATTGCTGCTA
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004446
+  LENGTH = 200  COMBINED P-VALUE = 1.79e-03  E-VALUE =     0.68
+  DIAGRAM: 71-[-7]-18-[+14]-83
+
+                                                                            [-7]
+                                                                            3.0e
+                                                                            TTCG
+                                                                            ++++
+1    AACTCATTAATTCTGCTGAAACTCCCTCAAATTTTTCAATTCGATCAATAGTAGGACAAGATAATTATTTTTTCG
+
+                              [+14]
+     -06                      8.2e-05
+     AAAAATT                  AGCTGTCGTCTCGGTCG
+      ++++++                  + + ++ +++++ ++ +
+76   GAAAATTTATATTCACTGCAAATTTATCGCTAGTCTCTCTAGTATTCACAATGTTTGGTTCTCACATATTGATTT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00000931
+  LENGTH = 200  COMBINED P-VALUE = 1.93e-03  E-VALUE =     0.73
+  DIAGRAM: 27-[+2]-4-[+1]-4-[-7]-16-[+1]-14-[-11]-51
+
+                                [+2]                   [+1]                    [
+                                6.7e-05                7.2e-05                 6
+                                GCGGGCGGGCCGCGCAGCG    TTTTCCTCCATTTTCTTTTC    T
+                                   ++ +++++ +++  ++    ++ +++ + + +++++++++    +
+1    TTTCTTAAAGGCGCGCGTGGTTTGTCGAATGGTGGGTCCCGCCACGATTGTTATCTGCAACTTTTTTTTCGTAGT
+
+     -7]                       [+1]                              [-11]
+     .1e-05                    9.8e-05                           7.3e-05
+     TCGAAAAATT                TTTTCCTCCATTTTCTTTTC              AAATTGCTGATTTT
+     ++++++  ++                 ++++ ++ ++ +++++ ++              +++++++ + ++++
+76   TCGATAGTTTTAAAGCCATTTTTTCTATTTTATCAATCTTTTTATCGATTTTTTAGAGAAAAATTGTAGTTTTTA
+
+
+caenorhabditis_elegans_prjna13758|WBGene00021468
+  LENGTH = 200  COMBINED P-VALUE = 1.96e-03  E-VALUE =     0.74
+  DIAGRAM: 42-[-13]-54-[-7]-63-[-7]-6
+
+                                               [-13]
+                                               9.9e-05
+                                               ACTTAATTATCCT
+                                               ++++++++++
+1    TTCAATTCTCAGTCATTAGCTACTACCACACAATGCCTAACAACTGAATTATATATTCTACCTGATCGCCGTTTT
+
+                                       [-7]
+                                       6.1e-05
+                                       TTCGAAAAATT
+                                       ++++++ + ++
+76   CCTCTCACAGCCTCGCAAGCTTTCTTTCTCCTTCTTCGAATATTTTTTATGGTGACCTTGTCATTCGTCTCACTA
+
+                                      [-7]
+                                      2.1e-05
+                                      TTCGAAAAATT
+                                       ++++++  ++
+151  TTAATTTTTGTGTGTGTAACACATCTCTCAATAATCGATATTTTTTGCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00003036
+  LENGTH = 200  COMBINED P-VALUE = 2.09e-03  E-VALUE =     0.79
+  DIAGRAM: 169-[-8]-19
+
+                        [-8]
+                        3.1e-06
+                        AATTATTTTTTG
+                        +++++++ ++++
+151  ACTACACTGTTTGAACGATAATTATTCTTTGCAAAAATTGAAAATTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004336
+  LENGTH = 200  COMBINED P-VALUE = 2.11e-03  E-VALUE =      0.8
+  DIAGRAM: 4-[+10]-18-[-1]-10-[-1]-88-[+2]-13
+
+         [+10]                     [-1]                          [-1]
+         3.9e-05                   1.2e-05                       9.5e-07
+         CTGAAAAA                  GAAAAGAAAATGGAGGAAAA          GAAAAGAAAATGGAG
+         ++++++++                  ++ +++++ + ++++++ ++          +++++ +++++++ +
+1    TGAGCTGAAAAAGAGATGAATGAGATGAAAGAGAAGAAGACAGAGGGCAACAACAAAAAGAAAAACAAAATAGCA
+
+     
+     
+     GAAAA
+      ++++
+76   CAAAAGAGCGAGATGATCGAAAACCCCGAGAGAAAGCAAAAATGCTCATCACCTGCGGTGAGACGGCAGCTGTCC
+
+                       [+2]
+                       4.2e-05
+                       GCGGGCGGGCCGCGCAGCG
+                       ++ + ++++   +++++ +
+151  CCGCAGAAATATCATGTACCTGTGCGGAGACGCAGGGTATACAATCACAT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004042
+  LENGTH = 200  COMBINED P-VALUE = 2.22e-03  E-VALUE =     0.84
+  DIAGRAM: 19-[-2]-50-[+1]-92
+
+                        [-2]
+                        3.6e-05
+                        CGCTGCGCGGCCCGCCCGC
+                        ++++++++++++ ++++++
+1    CGTAAATCGACACACGGTTCGCTGCGAGACCTGCGCCCGCCAAGCATCAACATTCGAATTTGCCGTCCGCCATTT
+
+                  [+1]
+                  9.3e-05
+                  TTTTCCTCCATTTTCTTTTC
+                    ++++ ++  ++ ++++++
+76   TCGTCCTAAAATGACTTTTACCGATTCTTTTTCAAGTTTCCAGCTCGCCTCTTGTCATTTTTAGAAATAAAAACG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004477
+  LENGTH = 200  COMBINED P-VALUE = 2.23e-03  E-VALUE =     0.85
+  DIAGRAM: 54-[+10]-6-[+11]-16-[-7]-3-[+1]-16-[+7]-41
+
+                                                           [+10]         [+11]
+                                                           3.9e-05       3.5e-07
+                                                           CTGAAAAA      AAAATCA
+                                                           ++++++++      +++++++
+1    TTCTATTTTTTCTTCAATGTTTCTGCTTTTTGTTAAATTTTCTCGAAAAAATCACTGAAAAATAGAAGAAAATCA
+
+                            [-7]          [+1]                                [+
+                            4.7e-05       4.7e-05                             8.
+     GCAATTT                TTCGAAAAATT   TTTTCCTCCATTTTCTTTTC                AA
+     +++ +++                ++ ++++++++   + +++   +++++++ ++++                 +
+76   ATGTTTTAATCACTTTATTGTGTTTTGAAAAATTTAATGTTCGAATATTTTTGTTTCGAGAAGGAAACTCTTTCA
+
+     7]
+     4e-05
+     TTTTTCGAA
+     +++++++ +
+151  TTTATCGTATTATGTATTTTTAATTCATTTTTGTTAAATGTGAAACGTTT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004418
+  LENGTH = 200  COMBINED P-VALUE = 2.34e-03  E-VALUE =     0.89
+
+                                       [+7]
+                                       9.2e-05
+                                       AATTTTTCGAA
+                                       ++ ++++ +++
+1    TTTTTCATTGATTTTCTTAAATTTTCATCAGAATAAATTTTAGAACTAATTTCCCGTAATTCTGATACGCGTTTT
+
+                                   [-7]          [-11]
+                                   3.8e-05       2.8e-05
+                                   TTCGAAAAATT   AAATTGCTGATTTT
+                                   ++++++++++    ++++ +++ + +++
+76   TTATAGTTTTCGTGAAGAAAATGCTGAACATTCGAAAAATACTGAAATAATTTAGTTTTGAAAACTTGCTCCTCT
+
+            [+1]                               [-10]
+            2.1e-06                            7.9e-05
+            TTTTCCTCCATTTTCTTTTC               TTTTTCAG
+            + ++++   +++++++++++               ++++ +++
+151  GTTTCAATATCTTATAATTTTCTTTTCTGATTAATATTTTGATTTTCCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004413
+  LENGTH = 200  COMBINED P-VALUE = 2.49e-03  E-VALUE =     0.95
+  DIAGRAM: 29-[+1]-112-[-12]-12-[-11]-6
+
+                                  [+1]
+                                  1.6e-05
+                                  TTTTCCTCCATTTTCTTTTC
+                                  +++++++  ++++++ + +
+1    CGTCGTCTCTTTCTCTCTCAAAATCTCGATTTTTTCGGCTTTTTATCTGAAAAATATTATTTTCCGTCTAAATAC
+
+                [-12]              [-11]
+                5.3e-05            7.4e-06
+                TTTCCGC            AAATTGCTGATTTT
+                +++++++             +++++++++ +++
+151  TGTTTACCTCTTTTCCGCAGATTTCAGTCATAATTATTGAATTTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004448
+  LENGTH = 200  COMBINED P-VALUE = 2.79e-03  E-VALUE =      1.1
+
+                         [+11]                                [-8]
+                         1.4e-05                              2.8e-05
+                         AAAATCAGCAATTT                       AATTATTTTTTG
+                         +++ ++ +++ +++                       ++ ++++ +++
+76   TGCTAAATTAATTCCAGTTGAAATTCGGCGTTTTAGCATGCATATAATGATAATTTCAAATATTCTTTCTCTAAT
+
+          [+1]                                 [-10]
+          2.5e-05                              3.9e-05
+          TTTTCCTCCATTTTCTTTTC                 TTTTTCAG
+          + +++ + +++++++ ++++                 ++++++++
+151  TTTCGTATCTGTATTTTTTTGTTTCGAAATAATACTTGCATATTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00021469
+  LENGTH = 200  COMBINED P-VALUE = 2.82e-03  E-VALUE =      1.1
+  DIAGRAM: 2-[-2]-5-[+1]-96-[+1]-38
+
+       [-2]                    [+1]
+       6.2e-05                 3.1e-05
+       CGCTGCGCGGCCCGCCCGC     TTTTCCTCCATTTTCTTTTC
+       +  ++++ ++ +++++ ++     + +++ ++ ++++ + +++
+1    CACCTTCCGTGGACCCCCGCCACACTTCTCTATCGATTTCTATTTGGGTGTCTGCGTATTCGTGTGCGTACGCAC
+
+                                                                        [+1]
+                                                                        2.0e-07
+                                                                        TTTTCCTC
+                                                                        +++++++
+76   GTGACTCTTATGCTTCTTCTTGCCCCTTACTTGCCTATTTCTCTTTTCTTCTCAACTTTTTTTTTCTTTTTTCCT
+
+     
+     
+     CATTTTCTTTTC
+     +++++ ++++++
+151  TTTTTCCTTTTTCCCAAGCTTCCATCATTTACGAACTTCCCCTATTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00000472
+  LENGTH = 200  COMBINED P-VALUE = 2.89e-03  E-VALUE =      1.1
+
+                                                                            [-11
+                                                                            3.5e
+                                                                            AAAT
+                                                                            +++
+1    ATAATTATTTAAAACTTTCCACCCCCGTTTTATGATTTCTCGACCAAAAATGTCCCTGTGCTACACCGGATAAAA
+
+     ]                  [-12]                    [+1]
+     -05                5.3e-05                  8.1e-07
+     TGCTGATTTT         TTTCCGC                  TTTTCCTCCATTTTCTTTTC
+     +++  + +++         +++++++                   ++++++ ++++++++++++
+76   CGTATAATTTTTGTTTTTTTTTCCGCTATTCCCTATGATTATCAATTTCTTTTCTTTTTTCTTCCAATTTGAGCT
+
+                                               [-10]
+                                               3.9e-05
+                                               TTTTTCAG
+                                               ++++++++
+151  TCTTGACCCCACACAAATTTCAACTCTTCATAATTTTCATATTTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004445
+  LENGTH = 200  COMBINED P-VALUE = 2.95e-03  E-VALUE =      1.1
+
+                                [+1]                            [-8]
+                                2.6e-06                         1.0e-05
+                                TTTTCCTCCATTTTCTTTTC            AATTATTTTTTG
+                                +++++ +  ++++++ ++++            ++ ++++++++
+1    ACGCTTTTCCAATGGAAATTTGTGATTTTTTCGTAAATTTTTATTTTTTTTCATTTAAAAAATATTTTTTCAATG
+
+                                               [-10]
+                                               3.9e-05
+                                               TTTTTCAG
+                                               ++++++++
+151  ATTCTTGTGTTCTCAGTTTCTAGTTTAATTTTAAAATTAAGATTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00007836
+  LENGTH = 200  COMBINED P-VALUE = 3.03e-03  E-VALUE =      1.2
+  DIAGRAM: 118-[+1]-62
+
+                                                [+1]
+                                                1.0e-06
+                                                TTTTCCTCCATTTTCTTTTC
+                                                +++++++ ++ +++++++++
+76   ATTAGAGGGTATATAAGAACAATTATTTTGCGTTTTTTAAAGATTTTTCTTTTATTTTTTTTTAGTTTAAAACTG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004919
+  LENGTH = 200  COMBINED P-VALUE = 3.65e-03  E-VALUE =      1.4
+  DIAGRAM: 10-[+11]-16-[+1]-43-[-11]-61-[+8]-10
+
+               [+11]                         [+1]
+               9.7e-05                       2.1e-06
+               AAAATCAGCAATTT                TTTTCCTCCATTTTCTTTTC
+               +++++   ++++++                ++++++  +++++++++++
+1    TTTTGTCGAGAAAATAGCCGATTTCTGCTCAAATTTGAAGTTTTTTGGCATTTTTTTTCGTTGAAATTTATGTAA
+
+                                 [-11]
+                                 7.3e-05
+                                 AAATTGCTGATTTT
+                                 +++++++ + ++++
+76   AATGTGAAAAATTATGTTTTAAAGCCATAAATTGTAGTTTTTGAGCTTAAATAGCTGCTAAAATCGAGTTTTCTT
+
+                                 [+8]
+                                 1.7e-06
+                                 CAAAAAATAATT
+                                 +++++++++ ++
+151  GATATTTATCTTAAAAATTTGTGTCTTTCAAAAAATATATTGATTTTTAC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004470
+  LENGTH = 200  COMBINED P-VALUE = 3.75e-03  E-VALUE =      1.4
+  DIAGRAM: 1-[+1]-13-[-10]-13-[+11]-131
+
+      [+1]                             [-10]                [+11]
+      5.3e-06                          3.9e-05              3.3e-05
+      TTTTCCTCCATTTTCTTTTC             TTTTTCAG             AAAATCAGCAATTT
+      +++++ + ++++ +++++++             ++++++++             +++++++++  ++
+1    TTTTCCGTGCCTTCTTTTTCCGTTTCCCTCCTATTTTTTCAGCAATTTTTGAAAAAAAATCAATTTTTCAAACAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00022122
+  LENGTH = 200  COMBINED P-VALUE = 3.85e-03  E-VALUE =      1.5
+  DIAGRAM: 108-[+11]-5-[-12]-3-[+1]-28-[-8]-3
+
+                                      [+11]              [-12]     [+1]
+                                      6.6e-05            5.3e-05   2.1e-06
+                                      AAAATCAGCAATTT     TTTCCGC   TTTTCCTCCATTT
+                                      +++++ ++++ +++     +++++++    ++++++++++++
+76   TGTCACTGTCATTCTCAGTGGCACAATTGATATAAAATTAGCACTTTATAAGTTTCCGCTAACTTTTTTCTCTTT
+
+                                        [-8]
+                                        1.3e-05
+     TCTTTTC                            AATTATTTTTTG
+     ++ ++++                            ++ ++++++++
+151  TTATTCCGAAAAAAAAGTATTATATCGAGTAAAAAATATATTTTTTCCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00003920
+  LENGTH = 200  COMBINED P-VALUE = 3.94e-03  E-VALUE =      1.5
+  DIAGRAM: 23-[+2]-110-[+1]-28
+
+                            [+2]
+                            4.2e-05
+                            GCGGGCGGGCCGCGCAGCG
+                              +++ ++++ ++++  ++
+1    CGTTGCCCACTTTAGTTGTTGTCATGCGACGGCGGCGGCACGCGCTCTCTCATCGGCCGGCACTGCTGTCCATCG
+
+       [+1]
+       4.3e-06
+       TTTTCCTCCATTTTCTTTTC
+       + +++++++++++++ ++++
+151  TATGTTCTTCTCTTTTCGTTCTCAATATTTCATTATAAATTTTGTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00006924
+  LENGTH = 200  COMBINED P-VALUE = 4.15e-03  E-VALUE =      1.6
+  DIAGRAM: 4-[+1]-22-[-11]-2-[+1]-18-[-13]-51-[-7]-25
+
+         [+1]                                      [-11]           [+1]
+         1.4e-05                                   6.6e-05         6.6e-06
+         TTTTCCTCCATTTTCTTTTC                      AAATTGCTGATTTT  TTTTCCTCCATTT
+         ++++  + +  +++++++++                      + +  ++  + +++  +++++++ +++++
+1    TGACTTTTGATTCGATTTCTTTCTGGAACATTCAAAAATTCCCTTAAGAAAATGCAATTTGCTTTTTTTATTTTT
+
+                              [-13]
+                              1.4e-05
+     TCTTTTC                  ACTTAATTATCCT
+     +  ++++                  +++++ +++   +
+76   TGATTTTAGTTGTGAAAAGTGCTTAACTGATTTAAAATATCGCAACGGTGTCTGGCTAATTATACTCTTTTCTTA
+
+                   [-7]
+                   9.2e-05
+                   TTCGAAAAATT
+                   ++ +++++ ++
+151  AATATCGATTTTTGTTTGAAAATTTGAAATCTAAACTAACGTTCTTGCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00010896
+  LENGTH = 200  COMBINED P-VALUE = 4.54e-03  E-VALUE =      1.7
+  DIAGRAM: 7-[+11]-16-[-11]-45-[-11]-16-[+1]-8-[-8]-12-[+1]-2
+
+            [+11]                         [-11]
+            2.0e-05                       5.8e-05
+            AAAATCAGCAATTT                AAATTGCTGATTTT
+            +++ + +++++ ++                ++   ++ ++ +++
+1    TCTTCGGAAATTAAATAAGTTGGTACAATAAATTAAAAATAAATGGAATTTTGATTATCTATTACTTTCAGATAT
+
+                          [-11]                         [+1]
+                          3.8e-05                       1.1e-05
+                          AAATTGCTGATTTT                TTTTCCTCCATTTTCTTTTC
+                          +++   ++++ +++                ++++ ++ +++++++++++
+76   GTTACTAGTGCAAATCATCGTAAAAATTTGAATTTACAGCTTTGAAATCGTTTTTATTATTTTTTCTCTTGAATC
+
+         [-8]                    [+1]
+         3.2e-05                 2.2e-06
+         AATTATTTTTTG            TTTTCCTCCATTTTCTTTTC
+         +++ +++ +++             +++++  ++++ +++ ++++
+151  GATAAATAATTCTTTCGCATTGTAGCAATTTTCAACCATCTTTATTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004410
+  LENGTH = 200  COMBINED P-VALUE = 4.60e-03  E-VALUE =      1.7
+
+                                          [+1]
+                                          4.7e-05
+                                          TTTTCCTCCATTTTCTTTTC
+                                           +++++ + ++++++++  +
+1    TCTTTTTTTGCGATTTTTCCTATGATTTTTCTCATCGATTTCCGCGTTTTTCTTCACAAAATTATCTTGAATCGA
+
+                                                         [-11]
+                                                         4.2e-05
+                                                         AAATTGCTGATTTT
+                                                          ++ ++++ + +++
+76   TTCAGAAAAAATTTGCGCTTCACTTGACATATCATGATGCTGAAACTATCTGCAAATACTCAATTTTCGATTTTT
+
+                                               [-10]
+                                               3.9e-05
+                                               TTTTTCAG
+                                               ++++++++
+151  ATCGCCAGATTTTCCTGGAAATATTTAAAATTAAAGTTATGGTTTTGCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00016457
+  LENGTH = 200  COMBINED P-VALUE = 4.65e-03  E-VALUE =      1.8
+  DIAGRAM: 5-[+1]-56-[+8]-107
+
+          [+1]
+          2.8e-05
+          TTTTCCTCCATTTTCTTTTC
+            ++++++++++++  ++++
+1    TCGACCCTTCCCCTTTTTTAGTTTCTTGGCTCGTATTACAAATATCAAAAATATTAAATTACCACATTTTAGGAA
+
+           [+8]
+           1.0e-06
+           CAAAAAATAATT
+           +++++++++ ++
+76   AATAAACAAAAAATATTTCATTAGTTGACAATTTTTGCCAAGAAAACCGAGATATACGCTGTCAAAGTTGAACAA
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004736
+  LENGTH = 200  COMBINED P-VALUE = 4.81e-03  E-VALUE =      1.8
+  DIAGRAM: 83-[+1]-22-[+1]-31-[+1]-4
+
+             [+1]                                      [+1]
+             3.5e-06                                   3.5e-05
+             TTTTCCTCCATTTTCTTTTC                      TTTTCCTCCATTTTCTTTTC
+             ++ ++++ +++ ++++++++                       +++ +++++ ++ ++++++
+76   GCCTCATCTTCTTCTTCTTCTTCTCTCCTGCTCTCGCTTATCACTTCTTCATTCATTCTTATTCCTTTTCATCAT
+
+                               [+1]
+                               9.8e-06
+                               TTTTCCTCCATTTTCTTTTC
+                               ++++++++ ++++++  +++
+151  CAAACTAGCATTTCTTACTTTATTTATTTTTTTCAATTTTCAATTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00015514
+  LENGTH = 200  COMBINED P-VALUE = 4.99e-03  E-VALUE =      1.9
+  DIAGRAM: 30-[+11]-116-[-1]-20
+
+                                   [+11]
+                                   8.1e-08
+                                   AAAATCAGCAATTT
+                                   +++ ++++++++++
+1    ACGGCTTCTTTATTGTGTTGAAAAAGTTTCAAATTCAGCGATTTTCCATCGGAAAACTGGTCAACTTCAGCGAAC
+
+               [-1]
+               3.7e-05
+               GAAAAGAAAATGGAGGAAAA
+               ++ + + + +++++++++ +
+151  GAGAGAGATAGAGATAGAGAGGGAGAGAGAAATGACTATGAGCGTCGATT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004433
+  LENGTH = 200  COMBINED P-VALUE = 5.08e-03  E-VALUE =      1.9
+
+             [+8]                                                 [+1]
+             1.4e-06                                              7.6e-05
+             CAAAAAATAATT                                         TTTTCCTCCATTTT
+             ++++++++++++                                         ++ ++++ ++++++
+76   AATATGTTCAAAAAATCGATTTTTCGTTCATGTGCTTTTTTTGTAAATGTTTCTCGGCAAATTGTTTTACATTTT
+
+                                               [-10]
+                                               3.9e-05
+     CTTTTC                                    TTTTTCAG
+     + ++++                                    ++++++++
+151  TGTTCCTCGTAGTTCTCTATATTGACACCTCTATCAAAAATTTTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004440
+  LENGTH = 200  COMBINED P-VALUE = 5.11e-03  E-VALUE =      1.9
+  DIAGRAM: 27-[+1]-139-[-8]-2
+
+                                [+1]
+                                9.3e-05
+                                TTTTCCTCCATTTTCTTTTC
+                                ++ ++    ++++++ ++++
+1    TCACTGGCCTAAATTTTTTTAGGAATTTTGTCGGTATTTTTTATTTTCAAGCATGTAATTGTCTCTAACATTAAT
+
+                                         [-8]
+                                         8.5e-06
+                                         AATTATTTTTTG
+                                         +++++++++++
+151  TACCACCGTAATTTTATTATTGTTACATAATATAATATTTATTTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004426
+  LENGTH = 200  COMBINED P-VALUE = 5.12e-03  E-VALUE =      1.9
+  DIAGRAM: 4-[-10]-4-[+1]-82-[+7]-20-[+1]-31
+
+         [-10]       [+1]
+         3.9e-05     3.1e-05
+         TTTTTCAG    TTTTCCTCCATTTTCTTTTC
+         ++++++++    +++++    ++++++  ++
+1    CTTCTTTTTCAGCAAATTTTTGATATTTTTCGGTTGTTTCTGTGATAAAAACGATATAAGAAAAATTCAGAACCA
+
+                                                [+7]                           [
+                                                2.2e-05                        1
+                                                AATTTTTCGAA                    T
+                                                +++ +++++                      +
+76   GTTTGTCTATCGATTAATACTAAAATCATAAGTTTTTGCTCAAAATATATCGTTTTAGCTGGTGAAGTCAATTTT
+
+     +1]
+     .2e-05
+     TTTCCTCCATTTTCTTTTC
+     +++  + +++ +++ ++++
+151  TTCGGTGTTTCTTCACTTCTCAATGTACGCGTTATAATTTTGATTTATTA
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004492
+  LENGTH = 200  COMBINED P-VALUE = 5.18e-03  E-VALUE =        2
+  DIAGRAM: 7-[-11]-19-[-1]-31-[-1]-10-[-7]-11-[-8]-45
+
+            [-11]                            [-1]
+            2.0e-05                          1.0e-05
+            AAATTGCTGATTTT                   GAAAAGAAAATGGAGGAAAA
+            +++ ++++++ + +                    +++ ++++++  +++++ +
+1    CATTCTGAAAATATTGAATATTTATTTTTCTTTTAAAGATCAAATAAAAATCAAAGGAGAAAAAAGAAGGTTTTC
+
+                     [-1]                          [-7]                  [-8]
+                     2.2e-05                       1.8e-06               1.4e-05
+                     GAAAAGAAAATGGAGGAAAA          TTCGAAAAATT           AATTATT
+                     ++++++++++++ ++ +++           ++++++++ ++           +++ +++
+76   TATCAGTTTTTAATTAAAAAAAAAAAAACAATAAATTTATTATTAATTCGATAATTTTTTTTATTAATAACAATT
+
+     
+     
+     TTTTG
+     ++ ++
+151  TTATGAAATTAATTCAAAAACTCTACTCTGCAAACAATTTTGCAAAAAAC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00009926
+  LENGTH = 200  COMBINED P-VALUE = 5.48e-03  E-VALUE =      2.1
+  DIAGRAM: 200
+
+
+caenorhabditis_elegans_prjna13758|WBGene00002344
+  LENGTH = 200  COMBINED P-VALUE = 5.51e-03  E-VALUE =      2.1
+  DIAGRAM: 80-[-8]-36-[+11]-35-[+7]-12
+
+          [-8]                                            [+11]
+          9.0e-05                                         9.7e-05
+          AATTATTTTTTG                                    AAAATCAGCAATTT
+          ++++++++++ +                                    ++++++  ++ +++
+76   TAAATATCGATTTTTCGCCGCGCCGCGCCGTACTCTTTATGTTATTTCATGCGAAAATCCTCACTTTCAATTTTT
+
+                                [+7]
+                                4.1e-05
+                                AATTTTTCGAA
+                                 ++++++++++
+151  CCCTATAGCAGAAGCTCAATTTCACCGTATTTATCGAAATTTATTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00001037
+  LENGTH = 200  COMBINED P-VALUE = 5.51e-03  E-VALUE =      2.1
+  DIAGRAM: 81-[+11]-105
+
+           [+11]
+           7.4e-06
+           AAAATCAGCAATTT
+            ++ ++++++++++
+76   AAAAAATAATTCAATAATTTACATTATTGAATTATTAAAAGTTGTATTTTTCAAACATCTCGCGCATTCTCCGTC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004449
+  LENGTH = 200  COMBINED P-VALUE = 5.76e-03  E-VALUE =      2.2
+  DIAGRAM: 114-[-12]-23-[+1]-2-[-8]-22
+
+                                            [-12]                         [+1]
+                                            5.3e-05                       2.2e-0
+                                            TTTCCGC                       TTTTCC
+                                            +++++++                       ++++++
+76   TAACGATCAAAATTCTATTTAACAAGTCTGTCGAAAATATTTCCGCTCTAATATATTTCAAAATAGATTTTTTCC
+
+                     [-8]
+     6               9.0e-05
+     TCCATTTTCTTTTC  AATTATTTTTTG
+       +++ ++ +++++  +++  +++++++
+151  ATTCTCTTGTTTTCTTAATATTTTTTTGCAAATAATTTATAATTTTTAAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00006725
+  LENGTH = 200  COMBINED P-VALUE = 5.87e-03  E-VALUE =      2.2
+  DIAGRAM: 63-[+1]-13-[+1]-13-[+11]-57
+
+                                                                    [+1]
+                                                                    2.8e-05
+                                                                    TTTTCCTCCATT
+                                                                      ++++++ +++
+1    ACTTAGAAGTGCAGGTTATACGGTAGGCGGGGGATTTTAGGACGACTTTCTCTATTTTTCAACACTTTTTCGATT
+
+                          [+1]                             [+11]
+                          2.8e-05                          1.6e-05
+     TTCTTTTC             TTTTCCTCCATTTTCTTTTC             AAAATCAGCAATTT
+     ++ ++ ++               +++++  ++++++++++              +++ + + ++++++
+76   TTATTCTCGCGTTTTGGCCTAAATTTTCTGATTTTTTTTTGGTTTTTGCTGTTAAAATTGATCGATTTTCCTATC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00017317
+  LENGTH = 200  COMBINED P-VALUE = 5.93e-03  E-VALUE =      2.3
+
+                      [+11]           [+8]
+                      1.5e-05         3.0e-05
+                      AAAATCAGCAATTT  CAAAAAATAATT
+                      +++++++++ +++   ++  ++++ +++
+1    CACTAATATTGTCGTAGAAAATCAATTATTCAGCATCAAATTATTAAGGTTTGTTGAGTACATACAGTATGATCG
+
+                          [+1]
+                          9.5e-07
+                          TTTTCCTCCATTTTCTTTTC
+                          ++ +++ +  ++++++++++
+76   CTTTGAAATTGCATGCAAATATTATCCACAGTTTTCTTTTCGAATCGTACCTACATTTTTCCTTATTTTAACGAT
+
+                                               [-10]
+                                               3.9e-05
+                                               TTTTTCAG
+                                               ++++++++
+151  TATTATCTCTTTTCGTGTTATGCTTTTTTGCTCACATCATCATTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00019537
+  LENGTH = 200  COMBINED P-VALUE = 6.08e-03  E-VALUE =      2.3
+  DIAGRAM: 50-[+11]-10-[+1]-88-[+11]-4
+
+                                                       [+11]                   [
+                                                       1.4e-05                 7
+                                                       AAAATCAGCAATTT          T
+                                                       ++ +++ +++++++
+1    TTATAACTAGTTTTCCATGTATTTATTAGTTTTTGTCATGTTAGTCACTGAATATCCATGATTTCTCGCCCTCAC
+
+     +1]
+     .2e-05
+     TTTCCTCCATTTTCTTTTC
+     + ++++  ++++++ ++++
+76   TGTCTTGGATTTTTGTTTCTCTGAATTTTCGCCATTTTTGATTGAAATTGTGACATTCAACCGTTTATTTTTTTG
+
+                                     [+11]
+                                     4.8e-07
+                                     AAAATCAGCAATTT
+                                     +++++++++ ++++
+151  TAATTCCTCGCAACTGATAATTTCTTTTTTCTAAAATCAATTATTTGCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00007225
+  LENGTH = 200  COMBINED P-VALUE = 6.58e-03  E-VALUE =      2.5
+
+                               [-8]
+                               9.0e-05
+                               AATTATTTTTTG
+                               +++  +++++++
+1    TCAACAAACTTTATATTCTAGACTTAAATACTTTTTTGACCTACCTCCACAAACTCGGCGGGATTTTTATCCAAT
+
+                             [+1]
+                             4.4e-05
+                             TTTTCCTCCATTTTCTTTTC
+                               ++++++++++  + ++++
+76   TTATAGTTTTCATTCCTCAATCTTACTTCTTCTTTTCCCATTTTTTAGTCATTCCATCATTGGTTTTTGAAAGTT
+
+                       [+1]                 [+7]
+                       1.8e-05              4.3e-06
+                       TTTTCCTCCATTTTCTTTTC AATTTTTCGAA
+                        ++++++ ++ ++++ ++++ ++++++++++
+151  TTCTGGAATCTAACTCAACTTTCCTTTCGTTTCACTTTCAATTTATCGAT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00013311
+  LENGTH = 200  COMBINED P-VALUE = 6.66e-03  E-VALUE =      2.5
+  DIAGRAM: 54-[+8]-15-[-1]-23-[-1]-24-[-1]-12
+
+                                                           [+8]
+                                                           6.1e-05
+                                                           CAAAAAATAATT
+                                                            + ++++ ++++
+1    CGGCATGTTTTCAGCGAATTTGTCGAGTAACAAAGCTTTGAATGTTTAAAAATCGATAAAACAAATTATCCTGAA
+
+           [-1]                                       [-1]
+           3.5e-05                                    3.7e-05
+           GAAAAGAAAATGGAGGAAAA                       GAAAAGAAAATGGAGGAAAA
+           +++++ +++ +  +++++++                        ++  +++++++  ++++++
+76   TTTTTCAAAAACAAATTTTGAAGAAAAATCGCGAAAATTGGTAAAGTTTCAACGGAAAAAGCCAAAAAAATTTAG
+
+                       [-1]
+                       6.5e-05
+                       GAAAAGAAAATGGAGGAAAA
+                       +++++++ + ++ ++++ +
+151  GGAAAAGAAATAAATTCCGAAGAGAGACGAAAGGAGAGAGGACGAGCGGT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00001076
+  LENGTH = 200  COMBINED P-VALUE = 6.80e-03  E-VALUE =      2.6
+
+                                          [-14]                                [
+                                          9.5e-05                              2
+                                          CGACCGAGACGACAGCT                    T
+                                          ++ + ++++ ++++  +                    +
+1    GTCCTTGTGCGAGGGAGTTTATGAGTATAAAAGGGTCCCTGAGAGAGGAGAAATGGACACTTTTATCAAAACATT
+
+     +1]                                        [+1]
+     .2e-05                                     1.7e-05
+     TTTCCTCCATTTTCTTTTC                        TTTTCCTCCATTTTCTTTTC
+     ++++ +++++ +++ ++++                         +++++ + ++++++ + ++
+76   TTCCATCTTTGTTTATTTTGACGATATTTATTCGCTGATACGAATTTTTGCAATTTTTATCCCGGATACCGTATT
+
+                                               [-10]
+                                               7.9e-05
+                                               TTTTTCAG
+                                               ++++ +++
+151  TCTTGGCAATTCAGATTACGCGCAAATTCTAGAATAAACATGTTTTCCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00017075
+  LENGTH = 200  COMBINED P-VALUE = 6.83e-03  E-VALUE =      2.6
+  DIAGRAM: 4-[-14]-91-[-10]-10-[+7]-34-[+11]-11
+
+         [-14]
+         6.6e-05
+         CGACCGAGACGACAGCT
+          ++++++++ ++++  +
+1    GGTCTCACCGCGAAGAGACATTTTATGGAGGAGGAGCGAAGTGGTTGTTTGGAAAATATATTTTCAACTCTCGTC
+
+                                          [-10]             [+7]
+                                          7.9e-05           6.1e-05
+                                          TTTTTCAG          AATTTTTCGAA
+                                          ++++ +++           + ++++++++
+76   CTATGATTTTAGACAGCACTGCTTCGTTTCACAATAATTTTACAGATTTTTTCTCGAATTTTCGAAAATCATCGT
+
+                              [+11]
+                              8.2e-06
+                              AAAATCAGCAATTT
+                              +++++++ + ++++
+151  ATTTTTTTGCTTGAAAGAGTATGCCAAAATCATCTATTTATGCTTTGTAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00001558
+  LENGTH = 200  COMBINED P-VALUE = 6.95e-03  E-VALUE =      2.6
+  DIAGRAM: 24-[-11]-75-[+1]-10-[+1]-37
+
+                             [-11]
+                             8.2e-06
+                             AAATTGCTGATTTT
+                             ++++  ++++++++
+1    ACAATTGGGTTTGATCTACCCGCAAAATATCTGATTTTCAACAACTTTATTCTCTGCGTCTCTCCCTCCCTCCCT
+
+                                           [+1]                          [+1]
+                                           7.2e-05                       9.5e-07
+                                           TTTTCCTCCATTTTCTTTTC          TTTTCCT
+                                             ++++   ++++ ++++++          +++++++
+76   CTCACTCTCTTTCTTCAGTTTTTATAATTATTTTCTTGAATTCTAAAATTTCCTTTTTGAAATTCAACTTTTCTT
+
+     
+     
+     CCATTTTCTTTTC
+      ++ +++++++++
+151  TCAGTTTCTCTTTCCCCGCAATTTTCCAAATCACAATCCGATCAATTTTC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004917
+  LENGTH = 200  COMBINED P-VALUE = 7.03e-03  E-VALUE =      2.7
+  DIAGRAM: 155-[-2]-26
+
+          [-2]
+          1.5e-05
+          CGCTGCGCGGCCCGCCCGC
+          +++ +++ + +++  ++++
+151  GAATGCGGCGCGTGTGCGTTGCGGTCGTCTTTTTCGAATTGCAATCGCTC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00008505
+  LENGTH = 200  COMBINED P-VALUE = 7.44e-03  E-VALUE =      2.8
+  DIAGRAM: 41-[+1]-89-[+7]-24-[-7]-4
+
+                                              [+1]
+                                              8.0e-05
+                                              TTTTCCTCCATTTTCTTTTC
+                                               ++++++  +++++   +++
+1    TTTGCAGGCCCGCCAGTGATAAATTATCAGTTATTCTACGAATTTCTTGAATTTTGAGTTTTATTGTAGATTTTT
+
+     [+7]                               [-7]
+     6.7e-05                            5.9e-06
+     AATTTTTCGAA                        TTCGAAAAATT
+     +++++++++                          ++++ +++ ++
+151  AATTTTTCGTGTGAATATAAATGTTTGGCAATAATTTCGGTAATTTCCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00012553
+  LENGTH = 200  COMBINED P-VALUE = 7.61e-03  E-VALUE =      2.9
+  DIAGRAM: [-10]-13-[+1]-1-[-11]-9-[+10]-4-[-8]-30-[+10]-25-[-11]-34
+
+     [-10]                [+1]                 [-11]                  [+10]
+     3.9e-05              2.3e-05              8.7e-05                3.9e-05
+     TTTTTCAG             TTTTCCTCCATTTTCTTTTC AAATTGCTGATTTT         CTGAAAAA
+     ++++++++             ++++++  ++++++++ +++ ++++++ +++  ++         ++++++++
+1    TTTTTCAGGGAGCATGTTGATTTTTTTGATATTTTTTGTCTTAAATTGATGAAATTTCAATTAAGCTGCAAAATG
+
+       [-8]                                      [+10]
+       7.7e-05                                   3.9e-05
+       AATTATTTTTTG                              CTGAAAAA
+       + + ++++++++                              ++++++++
+76   AAACTAATTTTTTGAGATTCTGACGAGATTTCGATTTTTTAGAGCTGAAAAATGCTTTTTCATGGTTTTGTTGAT
+
+       [-11]
+       1.4e-05
+       AAATTGCTGATTTT
+       ++++++++  ++++
+151  TTAAATTGTTCCTTTTGCGATTTTCTCATCTTAAAGCTCATTGTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00020181
+  LENGTH = 200  COMBINED P-VALUE = 8.03e-03  E-VALUE =      3.1
+  DIAGRAM: 10-[+1]-60-[+8]-27-[+1]-29-[+1]-2
+
+               [+1]
+               2.5e-05
+               TTTTCCTCCATTTTCTTTTC
+               ++++ ++  +++++++  ++
+1    AATTGTGCATTTTTGCCTAATTTTTTGCTTGTTATAAGTGACTTTATGTAAAAAATCTCAAGAAAATCATTTAAA
+
+                    [+8]                                   [+1]
+                    9.0e-05                                1.8e-05
+                    CAAAAAATAATT                           TTTTCCTCCATTTTCTTTTC
+                    + ++++++++++                           + +++++ ++ +++++++++
+76   ATCCGAGAAATTGAGCTAAAAATCGATATTTCCCGAAAAACATGTGAAAACTTGTATTTTTTCAGTTTTTCTTCA
+
+                                 [+1]
+                                 3.4e-07
+                                 TTTTCCTCCATTTTCTTTTC
+                                 + ++++  ++++++++++++
+151  GCTTTTCCCCAGAATTCCCCACTAATTTTCTTTTATTTTTTTCTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004391
+  LENGTH = 200  COMBINED P-VALUE = 8.23e-03  E-VALUE =      3.1
+  DIAGRAM: 11-[+7]-82-[-10]-34-[+1]-34
+
+                [+7]
+                1.1e-05
+                AATTTTTCGAA
+                ++ +++ ++ +
+1    TTTTCTTTAAAAAATTACCGTACTCTTTCAAAGGCGCACGCATAAAGTTTTTAAATACAATATTTCGTGTCGAGA
+
+                                  [-10]                                     [+1]
+                                  7.9e-05                                   3.7e
+                                  TTTTTCAG                                  TTTT
+                                  ++++ +++                                  ++++
+76   CCATTACAGTAACCCGCGGCAAAATTGTGTTTTACAGCTTTTATTTTCGGGGTTTCTTCTGATCTTATGCATTTT
+
+     
+     -05
+     CCTCCATTTTCTTTTC
+     + + +  ++++ ++++
+151  TATGTGGTTTTATTTTGAATTTTACGTTTTTTTTTAAATTTCAGAGCAAT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00002005
+  LENGTH = 200  COMBINED P-VALUE = 8.36e-03  E-VALUE =      3.2
+  DIAGRAM: 185-[-8]-3
+
+                                        [-8]
+                                        7.7e-05
+                                        AATTATTTTTTG
+                                        +++++++++++
+151  TTATCTCCATTTGAGTGACTATTTCTTGATTTTTAAATTATTTTTTACAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00015232
+  LENGTH = 200  COMBINED P-VALUE = 8.70e-03  E-VALUE =      3.3
+
+                                    [+1]                                       [
+                                    5.2e-05                                    6
+                                    TTTTCCTCCATTTTCTTTTC                       T
+                                    +++++ ++++++ ++ +++                        +
+76   GTTGACATTTGATTTTTATTTTACAACTTCTTTTTCACCTTTTCTCGCTTAATTCCTTTGTGATTTGCTTCCGAT
+
+     +1]                                       [-10]
+     .1e-05                                    3.9e-05
+     TTTCCTCCATTTTCTTTTC                       TTTTTCAG
+     + ++ + +++++++ ++++                       ++++++++
+151  TATCGTGTCTTTTCCCTTCTGGTTGCTCATAAAATTTGTTAATTTTGCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004450
+  LENGTH = 200  COMBINED P-VALUE = 8.72e-03  E-VALUE =      3.3
+  DIAGRAM: 45-[-7]-28-[-11]-102
+
+                                                  [-7]
+                                                  8.9e-07
+                                                  TTCGAAAAATT
+                                                  +++++++++++
+1    ATTGATTTTTGAGAGATCTTCTTTCAAGGCCAAATTGGGCATCAATTCGATAAATTTCCAAAGTTTTTTACCTAT
+
+              [-11]
+              6.1e-05
+              AAATTGCTGATTTT
+              +++++  +++++++
+76   ATATGCGGCAAATTTGTGATTTTTTATTTAATTTGTACCAATAGGATATATGTTCGCTAGTTTATTTCTCGTAAC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00011015
+  LENGTH = 200  COMBINED P-VALUE = 8.89e-03  E-VALUE =      3.4
+  DIAGRAM: 13-[+13]-53-[-11]-107
+
+                  [+13]
+                  3.1e-05
+                  AGGATAATTAAGT
+                  ++ ++++ +++++
+1    TTTGATTCTTGACAGAATAAGTAAGTAGTCAAAAGAAGAAATGCAATGTAAAATACTTTTGCAAACATTTTTGAA
+
+         [-11]
+         3.3e-05
+         AAATTGCTGATTTT
+         ++++ +++  ++++
+76   CGCAAAATAATTTTTTTTTGAAAAAAAAATCTAACTGCCAAACGACACTCCGAAATAACGCAGGTCTCGCTTCGA
+
+
+caenorhabditis_elegans_prjna13758|WBGene00006706
+  LENGTH = 200  COMBINED P-VALUE = 8.91e-03  E-VALUE =      3.4
+
+                                   [+1]
+                                   9.8e-06
+                                   TTTTCCTCCATTTTCTTTTC
+                                   +++++    + +++++++++
+1    TTTTTTGGCGCGATATCCTATTTTTGAACTTTTTCGAGAAATTTCTCTTTCTTATCGATCGGATTTCTGTTTGAA
+
+                                                     [+1]
+                                                     3.8e-06
+                                                     TTTTCCTCCATTTTCTTTTC
+                                                     +++ +++++++ ++++++++
+76   AAATCTAAAATAGTTCTGACAAGTGTCACGAACACGCTGTTTCGTTTGTTTACCTCTCTCTTCTTTTCTCGTTGT
+
+                                               [-10]
+                                               3.9e-05
+                                               TTTTTCAG
+                                               ++++++++
+151  GCCTAAAACTTCACTGTCCACTTCTCTTTTACAAATTTGATATTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00000122
+  LENGTH = 200  COMBINED P-VALUE = 8.92e-03  E-VALUE =      3.4
+  DIAGRAM: 58-[+10]-51-[-2]-15-[+1]-29
+
+                                                               [+10]
+                                                               3.9e-05
+                                                               CTGAAAAA
+                                                               ++++++++
+1    ACGTTAAAATTTCTCTACACTGATTTTAAGCTGTCAATTTGTTTGTTTCCCTAATTCTCTGCAAAAAAATGTGTT
+
+                                               [-2]
+                                               1.0e-05
+                                               CGCTGCGCGGCCCGCCCGC
+                                               ++ ++++   +++ +++++
+76   GAGAATTTTATTCAAATAAGAGGTAACGTATGCTGTTGACCGCGTTGCGTACGCGTCGCGGTCACCAAACGCAGC
+
+      [+1]
+      4.4e-05
+      TTTTCCTCCATTTTCTTTTC
+      ++++++++  +++ +++ ++
+151  GTTTTTCTCAGTTTCCTCATTTGCTCATTCCTATCTTTTCATTCATTATT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004497
+  LENGTH = 200  COMBINED P-VALUE = 9.49e-03  E-VALUE =      3.6
+  DIAGRAM: 28-[+1]-54-[-7]-2-[+1]-25-[+1]-20
+
+                                 [+1]
+                                 8.4e-05
+                                 TTTTCCTCCATTTTCTTTTC
+                                 +++ ++ + ++++++++ ++
+1    ATTTCTTGAAAATTTGGTTTTTATCAGTTTTGCTACATTTTTCTTGTTCCTAACCCCTTTCTACGTTAATTTTGA
+
+                                [-7]         [+1]
+                                4.3e-06      6.1e-06
+                                TTCGAAAAATT  TTTTCCTCCATTTTCTTTTC
+                                 ++++++++++  ++ ++++++++++++ +++
+76   TTAAATTTGCGCATCAAAATCTCACAAATCGATAAATTGATTCCTCTCCTTTTTCGTTTACTTTCGAATTTTAAT
+
+               [+1]
+               7.2e-05
+               TTTTCCTCCATTTTCTTTTC
+               ++ + ++   ++++ +++++
+151  TTCTCGCTTCTTCCGCTTAGTTTTGTCTTTATAATTTCAATTTCTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00000411
+  LENGTH = 200  COMBINED P-VALUE = 9.55e-03  E-VALUE =      3.6
+  DIAGRAM: 175-[+1]-5
+
+                              [+1]
+                              7.2e-05
+                              TTTTCCTCCATTTTCTTTTC
+                              +++++++  +++ ++ ++++
+151  TTTTTTTTGGTTATCTTGAAGCTCTTTTTTCTAATTTATCATTTTTCCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00008920
+  LENGTH = 200  COMBINED P-VALUE = 9.71e-03  E-VALUE =      3.7
+  DIAGRAM: 89-[-11]-97
+
+                   [-11]
+                   3.5e-07
+                   AAATTGCTGATTTT
+                   ++++++++ +++++
+76   TGGAATTACGAGTGAAATTATTTATTTTCATCAAAAATAAATAAAATGCGAGCAAATTTTAAACCTGATTCTTGG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004447
+  LENGTH = 200  COMBINED P-VALUE = 9.99e-03  E-VALUE =      3.8
+  DIAGRAM: 6-[+11]-21-[-8]-12-[-13]-48-[-11]-3-[+1]-37
+
+           [+11]                              [-8]                    [-13]
+           4.9e-05                            9.0e-05                 3.1e-05
+           AAAATCAGCAATTT                     AATTATTTTTTG            ACTTAATTAT
+           ++++ + ++  +++                      +++++++++++            +++++ ++++
+1    TTTACGAAAAACCACTTTTTGATTTTAGGACTTCGTTAAATCTCGATTTTTTGTAAAAAGTTTCAACTTACTTAT
+
+                                                        [-11]            [+1]
+                                                        3.0e-05          8.0e-06
+     CCT                                                AAATTGCTGATTTT   TTTTCCT
+      ++                                                +++ ++++ ++++    ++++ ++
+76   TCTTCGCAATTATTCTCCAGTCTCATAAAAATTGTTAAAACAGTTATCTGAAAAATGTTCATTTGTTATTTCGTC
+
+     
+     
+     CCATTTTCTTTTC
+      ++ ++++ ++++
+151  GCTATTTCGTTTCTCCGTCCACTTTAAACTTCTTCACTAAATTAATTTTC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00017121
+  LENGTH = 200  COMBINED P-VALUE = 1.01e-02  E-VALUE =      3.8
+  DIAGRAM: 107-[+3]-86
+
+                                     [+3]
+                                     3.6e-05
+                                     CGCTCGC
+                                     +++++++
+76   ACCAAGAGAAAGAACCTCAGCGTCTTCACAACCGCTCGCCAAAACACCCACTTCGCCTAAGTTGCGGATTATTGT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00003901
+  LENGTH = 200  COMBINED P-VALUE = 1.02e-02  E-VALUE =      3.9
+  DIAGRAM: 74-[-11]-61-[-14]-34
+
+                                                                               [
+                                                                               4
+                                                                               A
+                                                                               +
+1    GTTTAAATATCAGAAAAAAACTGGCTGTTCACTAATCACGTGATGCCTGTGTTTTCATCCTCCCTTCTACACTGA
+
+     -11]                                                                      [
+     .5e-05                                                                    2
+     AATTGCTGATTTT                                                             C
+     ++ ++++   +++                                                             +
+76   AAATATTCTATTTTAAGGACATTTTCAGTCATTTTCCGGCGCTGTTCCCTCTGTCGTCGCCACGTCCAGTACACC
+
+     -14]
+     .8e-05
+     GACCGAGACGACAGCT
+     ++   ++++++++  +
+151  GAAACCGACGACAAATCGATGAGAGCTCTACGACCGCAGGCGCGATGGAT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00019693
+  LENGTH = 200  COMBINED P-VALUE = 1.08e-02  E-VALUE =      4.1
+  DIAGRAM: 58-[-8]-70-[+1]-40
+
+                                                               [-8]
+                                                               2.0e-05
+                                                               AATTATTTTTTG
+                                                               ++ + ++++ ++
+1    AATTCAGATCATTCCCGGGAATACCCGTACTCTTCTCCCGAAAACTGCGCGTGAAATCAAATGTTTTGTGTGCAC
+
+                                                                      [+1]
+                                                                      1.5e-05
+                                                                      TTTTCCTCCA
+                                                                      ++++  +  +
+76   CATTGCGTGGCAAAAGTATGTTGTCCGCAAACACCAGAAGGGCAGTTCGACGTGGTTTATAAAAATTTTGGCGAA
+
+     
+     
+     TTTTCTTTTC
+     +++++ ++++
+151  TTTTCCTTTTATTTATCGTTGTTTGTTGTTTTTGAATCTTAATATTCTCT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00015547
+  LENGTH = 200  COMBINED P-VALUE = 1.08e-02  E-VALUE =      4.1
+  DIAGRAM: 116-[+1]-46-[+11]-4
+
+                                              [+1]
+                                              1.4e-05
+                                              TTTTCCTCCATTTTCTTTTC
+                                              +++++++ ++++ ++++ ++
+76   CCCATGTCGAAATCAAATAGTGTTATCAATCAGTCTATCAGTTTCTTTGTTTTCTCTTGTCATCTATCATTTACC
+
+                                     [+11]
+                                     5.8e-05
+                                     AAAATCAGCAATTT
+                                     + + ++ ++  +++
+151  ATCACGCTCTCGCCAAAACTCATCAATCAATAATATTCCATTTTTTACAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00000066
+  LENGTH = 200  COMBINED P-VALUE = 1.09e-02  E-VALUE =      4.1
+  DIAGRAM: 46-[-2]-8-[-10]-23-[-2]-77
+
+                                                   [-2]                       [-
+                                                   9.1e-05                    7.
+                                                   CGCTGCGCGGCCCGCCCGC        TT
+                                                    ++ ++++ ++ + +++++        ++
+1    TTTTCTCACGTTGCGCTCTGCCGAACGCCTCATCTTCGAGGCGGGAAGGCGCGACGCGGTCCCCCAATTCAAATT
+
+     10]                          [-2]
+     9e-05                        5.3e-06
+     TTTCAG                       CGCTGCGCGGCCCGCCCGC
+     ++ +++                       + +++++ + +++++++
+76   TTCCAGGACACCACCACCACACTGTTTTTCCCTCCGTGTCCCGCCCTTCCGAGGACCGTCTGTCGGATGGCCGCT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00019831
+  LENGTH = 200  COMBINED P-VALUE = 1.15e-02  E-VALUE =      4.4
+  DIAGRAM: 59-[-11]-40-[+1]-67
+
+                                                                [-11]
+                                                                1.6e-06
+                                                                AAATTGCTGATTTT
+                                                                +++ ++++ + +++
+1    TCGTGTTCGGAATACCCACAAGTGCAATGAGCCACCAGTTATTTTTCATTCACATCCAAAAAATGTTCAATTTTA
+
+                                           [+1]
+                                           3.8e-06
+                                           TTTTCCTCCATTTTCTTTTC
+                                            +++++ ++++++++++++
+76   TATGTCTAATCTTGTTCCGTTTCGCCCTTTATTTCCCTATTTTCACCCTTTTTTTTCGGGGCACGAGAGTGCCAT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004951
+  LENGTH = 200  COMBINED P-VALUE = 1.16e-02  E-VALUE =      4.4
+
+                             [-12]
+                             5.3e-05
+                             TTTCCGC
+                             +++++++
+1    ATTTTTTGTCTCCCAGGTGATTCTTTTCCGCACTTCGTCATTATTTGTTCCCACGTTGTATTTATCCTCTAAAGC
+
+     [+1]
+     4.7e-05
+     TTTTCCTCCATTTTCTTTTC
+     + +++++  ++++++++ ++
+76   TCTCTCTGATTTTTTTTGTTACATTCTTCTCATTTATTTGCTCATTTGTTTCTGTTACGGTCTCTTCATAATCAA
+
+     [+1]                                      [-10]
+     1.8e-07                                   3.9e-05
+     TTTTCCTCCATTTTCTTTTC                      TTTTTCAG
+      ++++++ +++++++ ++++                      ++++++++
+151  CTTTCTTTCATTTTCATTTCTATGGAGGTTTTAAAACAATTGTTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00000376
+  LENGTH = 200  COMBINED P-VALUE = 1.17e-02  E-VALUE =      4.5
+  DIAGRAM: 33-[+1]-43-[-11]-24-[+1]-46
+
+                                      [+1]
+                                      7.2e-05
+                                      TTTTCCTCCATTTTCTTTTC
+                                      ++ ++++ ++++++  ++++
+1    GTCTCGCGCTCTTTCTCTTTGCCTCGCTGGAAATTCTTTTTCATTTTGCCTTCTTCTCTCGCCACACATTGGCGT
+
+                          [-11]                                 [+1]
+                          2.7e-05                               7.0e-06
+                          AAATTGCTGATTTT                        TTTTCCTCCATTTTCT
+                           ++ +++ ++++++                        +++++++ ++++ +++
+76   CGTCGGTTTCTGCTTCATTGTGAAACGTGGATTTTGCGCTGAAATCAATAAAATCACTGTTTTCTCGCTTTCTCT
+
+     
+     
+     TTTC
+     +++
+151  TTTACTCTTCACTCTCACTCTCAATTTCCACGTAATCCTTGAAATAATTC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00001167
+  LENGTH = 200  COMBINED P-VALUE = 1.21e-02  E-VALUE =      4.6
+  DIAGRAM: 200
+
+
+caenorhabditis_elegans_prjna13758|WBGene00001051
+  LENGTH = 200  COMBINED P-VALUE = 1.21e-02  E-VALUE =      4.6
+  DIAGRAM: 104-[+1]-26-[+1]-15-[+11]-1
+
+                                  [+1]
+                                  9.1e-06
+                                  TTTTCCTCCATTTTCTTTTC
+                                   +++++  ++++ +++++++
+76   GTGTTCCTCACCATTCTCACTCTTGTCTCATTCCCATTCTTCTCTTTTTTTTCAATATTTTTTATTCTTTCCTTA
+
+     [+1]                               [+11]
+     1.2e-06                            1.4e-06
+     TTTTCCTCCATTTTCTTTTC               AAAATCAGCAATTT
+     +++++ +++ +++ + ++++               +++++ +++ ++++
+151  TTTTTGTCCGTTTCTATTTCCCGATGCTTGTTAATAAAATGAATTATTTC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004920
+  LENGTH = 200  COMBINED P-VALUE = 1.23e-02  E-VALUE =      4.7
+
+                                        [-7]
+                                        4.7e-05
+                                        TTCGAAAAATT
+                                        ++ ++++++++
+1    TCATCCAATTTTCCTGATAATTATCATGTTTATTCTTTGAAAAATTAGTTAAAAAATGTTATAATTAATGTATTA
+
+                                [+11]                                          [
+                                4.9e-05                                        4
+                                AAAATCAGCAATTT                                 T
+                                +++++ +++  + +
+76   TCTGAATTTTCGATAGGTGGAAGTTGAAAAATGAGCTTTATTTTCTATTTTAAGTAAAATCTGTTTCTTTGATGA
+
+     +1]                                       [-10]
+     .0e-06                                    3.9e-05
+     TTTCCTCCATTTTCTTTTC                       TTTTTCAG
+     +++++++ ++ +++ ++++                       ++++++++
+151  TTTTTCCATTCTTCATTTTCATTTCCCCCTGCAAATTCTCAATTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00000123
+  LENGTH = 200  COMBINED P-VALUE = 1.33e-02  E-VALUE =        5
+  DIAGRAM: 83-[+1]-97
+
+             [+1]
+             3.1e-05
+             TTTTCCTCCATTTTCTTTTC
+              ++++ ++ + ++++ +++
+76   TTCGCAAGATTTCGTCGCGTTTTGTTTGATTACCTCCGTCTCCGCGTGCTGATAGCATGGAAAAACCGCTAAAAA
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004700
+  LENGTH = 200  COMBINED P-VALUE = 1.35e-02  E-VALUE =      5.1
+  DIAGRAM: [-10]-12-[+7]-10-[-11]-40-[+11]-91
+
+     [-10]               [+7]                 [-11]
+     3.9e-05             3.8e-05              3.3e-05
+     TTTTTCAG            AATTTTTCGAA          AAATTGCTGATTTT
+     ++++++++            + +++++++++          + + ++++ +++++
+1    TTTTTCAGACAATTTTTATTATTTTTTCGAAGAAATGCTTGAGAATATTCATTTTTCTAAATTTTACTCGATTCT
+
+                         [+11]
+                         5.8e-06
+                         AAAATCAGCAATTT
+                         +++  +++++++++
+76   GGGTTTCTTTTCAGTCAAGTAAATGCAGTAATTTGAAGGATTTTAGGCCCAGTATTTTTTTTATTATCAATAATC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004471
+  LENGTH = 200  COMBINED P-VALUE = 1.36e-02  E-VALUE =      5.2
+
+       [+1]
+       1.3e-05
+       TTTTCCTCCATTTTCTTTTC
+        +++++++++++++++ ++
+1    AAATTTTCCCCTTTTTTTGTCGTTTTGAAGGAAAATTCACGCAATTGTTTAAAAAACTTATCAGGAATATTTAAA
+
+          [-11]
+          7.1e-05
+          AAATTGCTGATTTT
+          +++++++++ + ++
+76   ATATAAAATTGCTGTTATTTGAATCTAGAATTCTGTTTTTACAATGTTTAAACAATTAATTTTCGGTCAAATACT
+
+      [+1]                         [+7]        [-10]
+      1.3e-05                      4.3e-05     3.9e-05
+      TTTTCCTCCATTTTCTTTTC         AATTTTTCGAA TTTTTCAG
+      +++++++ ++++ ++ ++++         +++++ +++ + ++++++++
+151  TTTTTTTTGTTTTCTTGCTTCAACTATCTGAATTTCTCGTAATTTTGCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00002083
+  LENGTH = 200  COMBINED P-VALUE = 1.42e-02  E-VALUE =      5.4
+  DIAGRAM: 13-[+1]-58-[+1]-10-[-7]-68
+
+                  [+1]
+                  4.7e-05
+                  TTTTCCTCCATTTTCTTTTC
+                  ++++++   ++++++ + ++
+1    GCTTTTTTAAACGTTTTTTATGCTTTTCGTGTTAAGAATATATTTATTTCAAATGCTTTTTCTCAAAAAAACAAA
+
+                     [+1]                          [-7]
+                     2.4e-06                       1.3e-06
+                     TTTTCCTCCATTTTCTTTTC          TTCGAAAAATT
+                      ++++++ ++ ++++++++           ++++++++ ++
+76   GGTTTTTAGGTCGAAACTTTTCTTTCATTTCTTTTGGATGGGTTTATTCGAAAATTTTAGGATTGAGATACTGTA
+
+
+caenorhabditis_elegans_prjna13758|WBGene00003963
+  LENGTH = 200  COMBINED P-VALUE = 1.42e-02  E-VALUE =      5.4
+  DIAGRAM: 38-[+1]-14-[+1]-21-[-12]-80
+
+                                           [+1]                              [+1
+                                           4.7e-05                           1.7
+                                           TTTTCCTCCATTTTCTTTTC              TTT
+                                           + +++++++++++++ + ++
+1    TTATGTCCAATGCATTATTCTCTCTGTAGGTGACCCAGTGTCCTTCCTTTTTTCTCTCTCAAGATGTGAGACCCC
+
+     ]                                     [-12]
+     e-05                                  5.3e-05
+     TCCTCCATTTTCTTTTC                     TTTCCGC
+     ++++++++++++++ ++                     +++++++
+76   CCCCCCCTTTTCTCCTCAACGGCGAGGGGCTACGTGAGTTTCCGCTGTGTGCGACGCGTCCTTGCCCGCTCTTCC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00010337
+  LENGTH = 200  COMBINED P-VALUE = 1.47e-02  E-VALUE =      5.6
+
+                                                      [+1]
+                                                      4.9e-05
+                                                      TTTTCCTCCATTTTCTTTTC
+                                                         ++  +++++++++++++
+1    TCGGCCTACATTCATTCGTAATTCCTCGCCCTTCTCCGCACATTTGGGTCACTCAGCTCTTTTCTCTTTTTCCCT
+
+                        [+11]               [+1]                             [+1
+                        4.8e-06             6.8e-05                          1.4
+                        AAAATCAGCAATTT      TTTTCCTCCATTTTCTTTTC             TTT
+                        + + ++++++++++        +++++ ++++++ +++++             ++
+76   ATCTGTTCGCCCTCTCTTGATATTCAGCAATTTGTTATTCATTCTTTTATTTTGTTTCTCAAACCGAACTAATTA
+
+     ]                                         [-10]
+     e-05                                      3.9e-05
+     TCCTCCATTTTCTTTTC                         TTTTTCAG
+     ++ ++ ++++++++++                          ++++++++
+151  CTATCGTTTTTTTTTTGATAGTTCCAATTAAAAATATATCAATTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004476
+  LENGTH = 200  COMBINED P-VALUE = 1.51e-02  E-VALUE =      5.7
+  DIAGRAM: 40-[-11]-19-[+11]-10-[+7]-12-[+1]-2-[-11]-44
+
+                                             [-11]                            [+
+                                             7.1e-05                          7.
+                                             AAATTGCTGATTTT                   AA
+                                             ++ ++ ++++++++                   ++
+1    GCCTACGACGATTTTTTCTTTTTTTCACGAAAAATAGGGAAATTTTTTGATTTTCACTGTAAAGCCCCAATAAAA
+
+     11]                   [+7]                   [+1]                  [-11]
+     4e-06                 1.3e-05                1.9e-05               3.2e-05
+     AATCAGCAATTT          AATTTTTCGAA            TTTTCCTCCATTTTCTTTTC  AAATTGCT
+     +++ + ++++++          ++ ++++++              +++ ++ +++++++++++++   ++++++
+76   AATAATTAATTTTAAGATATTCAAATTTTCGTTTCACAATGCAAATTTATCGCTATTTTTTCTTCATGAATTACG
+
+     
+     
+     GATTTT
+      +++++
+151  CATTTTAAACTTGATGATTTCACCTTGAAAAACAATTTTTCAATTTGCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00001427
+  LENGTH = 200  COMBINED P-VALUE = 1.63e-02  E-VALUE =      6.2
+  DIAGRAM: 14-[+11]-37-[-11]-64-[+1]-37
+
+                   [+11]                                              [-11]
+                   7.9e-05                                            8.1e-05
+                   AAAATCAGCAATTT                                     AAATTGCTGA
+                   +++++++++++ +                                       ++++++ ++
+1    AGTTTTCTATCAAGAAAATCAGTAAATCAACTGAAAATCAGAAAAGCAACCTTATTTTCGAGGCAGAATTATCGA
+
+                                                                         [+1]
+                                                                         4.5e-07
+     TTTT                                                                TTTTCCT
+     ++++                                                                ++ +++
+76   TTTTTGAAAAATAATTGTTATTTTGGCCTAAAAACAACTTGAACTCGCCCTTGAACAATTTCTTCCTTTTCTTTG
+
+     
+     
+     CCATTTTCTTTTC
+     +++++++++++++
+151  CCATTTTCTCTTTATTTCTGAGTTATAAATCTTAATATTTCCTCTTTTAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00200061
+  LENGTH = 200  COMBINED P-VALUE = 1.64e-02  E-VALUE =      6.2
+  DIAGRAM: 11-[+2]-15-[+1]-111-[-1]-4
+
+                [+2]                              [+1]
+                2.3e-05                           9.3e-05
+                GCGGGCGGGCCGCGCAGCG               TTTTCCTCCATTTTCTTTTC
+                +  ++++ ++ ++++ +++               +++++++++++ ++  +++
+1    AAGAAGGCGGACATGGCGCGCTTCGGGGCGTTCGGGTCCTTGGCCTTTCCTCCCTTCTTGACTCGCTTCACTGGG
+
+                               [-1]
+                               1.6e-05
+                               GAAAAGAAAATGGAGGAAAA
+                               ++++ + ++++++ +++ ++
+151  ATATAAGTATGTAGAAGAAATAAGAAGAAGTAGAAAAGGCAAAGAAGAAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00021420
+  LENGTH = 200  COMBINED P-VALUE = 1.64e-02  E-VALUE =      6.2
+  DIAGRAM: 53-[+12]-80-[+7]-27-[+1]-2
+
+                                                          [+12]
+                                                          5.3e-05
+                                                          GCGGAAA
+                                                          +++++++
+1    GAGAGTGGCGGGGTTTTCGTCTCAATTTATATTTATTTTTGACGATTTTTTCGGCGGAAATGTTAATAAATATTA
+
+                                                                      [+7]
+                                                                      2.7e-05
+                                                                      AATTTTTCGA
+                                                                      ++  ++ ++
+76   ATTTTGTTTGAATTTTCATTGATAATTAGGCATTTTCTTCCTAAAATAGTGGAAAAATACCCCCGAAAATACCGT
+
+                                 [+1]
+                                 5.8e-05
+     A                           TTTTCCTCCATTTTCTTTTC
+                                 ++++    +++++++ ++++
+151  TTTACTTCCCACTAAACATTTAAATGCATTTTAAAGCATTTTCCTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00009915
+  LENGTH = 200  COMBINED P-VALUE = 1.69e-02  E-VALUE =      6.4
+  DIAGRAM: 39-[-9]-41-[+1]-38-[+1]-23
+
+                                            [-9]
+                                            3.4e-07
+                                            TGCAACCGCGGCCCATTGC
+                                            +++ ++++ + +  +++++
+1    TAAACTCTGCTTTTTTCCGTTATTCAATCTTACTCTATCTGCTACCGAGACTAGTTGCAGTAATCCGATTCAATT
+
+                             [+1]
+                             1.6e-05
+                             TTTTCCTCCATTTTCTTTTC
+                              +++++++++ + ++ ++++
+76   CCATTTCCATCTACTCATCATTTTCTTCTTTCCCATCTCATTTCTCCCTTGCTTCGATTTATTTTCTATCATTTG
+
+            [+1]
+            5.3e-06
+            TTTTCCTCCATTTTCTTTTC
+            ++++++  ++ +++++++++
+151  AAAACTATTTCTTATTCGTTTCTTTTTTTTGAACATTTTTGCAATTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00020894
+  LENGTH = 200  COMBINED P-VALUE = 1.73e-02  E-VALUE =      6.6
+
+                                                                  [-8]
+                                                                  1.5e-05
+                                                                  AATTATTTTTTG
+                                                                  ++  +++++++
+1    AGGAAAAAGTTTTCTAGAACATCGTTTGTGTTTTTGAAACGACAACACATCTAAATTAAAAAAAAATTTTTTCCT
+
+                                                [+11]
+                                                7.3e-05
+                                                AAAATCAGCAATTT
+                                                +++ ++++++++ +
+76   CAGTAGCAGATTTTTAATACAATAACTCGATATTTTTTTCTCAAAACTCAATGATATTTTCAAATGTTTCTTCTA
+
+                               [-13]           [-10]
+                               9.9e-05         7.9e-05
+                               ACTTAATTATCCT   TTTTTCAG
+                               +++  ++++ + +   ++++ +++
+151  TTTCTCATTCAGATTTATTCACCAGCACTACATTAACATTTGTTTTACAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00010260
+  LENGTH = 200  COMBINED P-VALUE = 1.78e-02  E-VALUE =      6.8
+  DIAGRAM: 14-[+11]-112-[+2]-15-[+1]-6
+
+                   [+11]
+                   2.7e-05
+                   AAAATCAGCAATTT
+                   +++ + +++++++
+1    TTTAGAACGAGAAAAAATTGAATAATTCAATTTCAAGATTTTTGAAATCAATATCAGCTGATTCGCTAGAAAACG
+
+                                                                      [+2]
+                                                                      1.7e-05
+                                                                      GCGGGCGGGC
+                                                                       + ++ ++++
+76   TGACGCTTTCAGTATTTCGTGACGTCACTGCGTACAGCTGGATTAAAGGCGCATGACATTAAACGTGCGGTGGGT
+
+                             [+1]
+                             5.5e-05
+     CGCGCAGCG               TTTTCCTCCATTTTCTTTTC
+     +++ +++++               +  +++++++  +++++++
+151  CTCACAGCGAAACCGCTTTGCACCTCCTTCTCCCGCTTTTTTTGATTTTC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004302
+  LENGTH = 200  COMBINED P-VALUE = 1.91e-02  E-VALUE =      7.3
+  DIAGRAM: 132-[+1]-9-[+1]-19
+
+                                                              [+1]
+                                                              2.1e-05
+                                                              TTTTCCTCCATTTTCTTT
+                                                              ++++ + ++++++++ +
+76   TTCAACTGAAGCTTCGGTAATACGTAGAATTTCGCAATAATTCGCATTTTCGAAAAGTTTCGTGCTATTTTCCTC
+
+                [+1]
+                1.4e-05
+     TC         TTTTCCTCCATTTTCTTTTC
+     ++         ++++++++ + ++++ ++++
+151  TTGACAATCTTTTTCCTTCGTATTTTATTCTCCTCATCTCCTCATTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00022114
+  LENGTH = 200  COMBINED P-VALUE = 1.93e-02  E-VALUE =      7.3
+  DIAGRAM: 44-[-2]-107-[+1]-10
+
+                                                 [-2]
+                                                 8.4e-07
+                                                 CGCTGCGCGGCCCGCCCGC
+                                                 ++++ +++++++++  +++
+1    TAGGTTATCGCTCTCCGAAACGCGCGTCTCAGTGCCACCCTGGCCGCTACGCGACCGCAACGCGTGCCAACCAGC
+
+                         [+1]
+                         3.5e-05
+                         TTTTCCTCCATTTTCTTTTC
+                          ++++++ +++ +++ ++++
+151  TCTTGACATTTCGATGTGTCCTTTCTCGTTTCTTTACTTCAAATTTCCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00015075
+  LENGTH = 200  COMBINED P-VALUE = 1.94e-02  E-VALUE =      7.4
+  DIAGRAM: 16-[+1]-5-[+7]-42-[-11]-53-[+7]-28
+
+                     [+1]                     [+7]
+                     2.3e-05                  5.2e-05
+                     TTTTCCTCCATTTTCTTTTC     AATTTTTCGAA
+                      ++++   +++ +++ ++++     ++ ++++++ +
+1    TGGTGACTGACTGTTTCTTTTGGTTTTCTTCGTTTTCTTCAAAATTATCGCATAAATATTATATTAACCTTAAGT
+
+                        [-11]
+                        3.8e-05
+                        AAATTGCTGATTTT
+                         ++ +++ ++ +++
+76   TTCTGGTAAAAAGTACTTTTAAACACGGAATTTATCATAAATCAAGTGTATTTTGCATTTTTAAAACTTAATAAC
+
+                [+7]
+                4.3e-06
+                AATTTTTCGAA
+                ++++++++++
+151  TGTGGATTATGAATTTATCGATTTTTTTTTGCCTACGTTACAATTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00009454
+  LENGTH = 200  COMBINED P-VALUE = 1.95e-02  E-VALUE =      7.4
+  DIAGRAM: 8-[-11]-16-[+1]-118-[+1]-4
+
+             [-11]                         [+1]
+             4.9e-05                       1.9e-05
+             AAATTGCTGATTTT                TTTTCCTCCATTTTCTTTTC
+             ++++ +++   +++                + +++++  + ++++++ ++
+1    TTTTGCCGAAATAATTCTATTTTCAATGTTTTTATCATTATTTCTGATATTTCTTCTTTAACTCCTGTTAATAAT
+
+                               [+1]
+                               1.3e-05
+                               TTTTCCTCCATTTTCTTTTC
+                               ++++++  +++ +++ ++++
+151  TTAACATTTTCTCATGTTTCCCGGTATTTTTTGGCATCTTCCTTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00000040
+  LENGTH = 200  COMBINED P-VALUE = 1.96e-02  E-VALUE =      7.5
+  DIAGRAM: 103-[+1]-77
+
+                                 [+1]
+                                 1.0e-06
+                                 TTTTCCTCCATTTTCTTTTC
+                                 +++++++ ++++ +++++++
+76   TACACCGATTCGGCACGCCTCCATTAGTTTTCCTCGCATTCTCTTTTTCATTACAATGCACTTTTGTCGTTCTTT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004914
+  LENGTH = 200  COMBINED P-VALUE = 2.02e-02  E-VALUE =      7.7
+  DIAGRAM: 17-[+7]-88-[+11]-18-[+1]-32
+
+                      [+7]
+                      3.0e-06
+                      AATTTTTCGAA
+                      ++++++ ++++
+1    ACGCGTGCAAATTCTAGAATTTTCCGAAAAAACTTCATTTTCGGGGTTTTATTCCTTTTTTGTCTATTATGCTCA
+
+                                              [+11]                           [+
+                                              6.2e-05                         3.
+                                              AAAATCAGCAATTT                  TT
+                                              ++++++ + +++++                  ++
+76   GCATATTTCAAATGAGAACAAACTTTACCGTGAAAAGTGTGAAAATCTGAAATTTTAGGCGATTCTACTTCTTTT
+
+     1]
+     0e-05
+     TTCCTCCATTTTCTTTTC
+     ++++  + +++++++ ++
+151  TTCTAACGTTTTCTCCCTTCAAGCCGAATCTACAGAATCAAAATTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00001423
+  LENGTH = 200  COMBINED P-VALUE = 2.04e-02  E-VALUE =      7.7
+  DIAGRAM: 200
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004424
+  LENGTH = 200  COMBINED P-VALUE = 2.09e-02  E-VALUE =      7.9
+  DIAGRAM: 17-[+11]-169
+
+                      [+11]
+                      4.3e-06
+                      AAAATCAGCAATTT
+                      +++++++++++++
+1    TAGTAACTTATTTCTTGAAAATCAATAATTCAATAAGATTTAATATTAATAAATTTAAAAAACACCCAAAAAAAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00012471
+  LENGTH = 200  COMBINED P-VALUE = 2.15e-02  E-VALUE =      8.2
+  DIAGRAM: 155-[-7]-34
+
+          [-7]
+          2.7e-05
+          TTCGAAAAATT
+          ++++++++ ++
+151  ACATTTTCGAAAAGTTTCGTATAATCGTGTTTCGAAACAATCGCCTCGCC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004488
+  LENGTH = 200  COMBINED P-VALUE = 2.30e-02  E-VALUE =      8.8
+  DIAGRAM: 60-[+9]-45-[-8]-64
+
+                                                                 [+9]
+                                                                 2.6e-07
+                                                                 GCAATGGGCCGCGGT
+                                                                 +++++ ++  +++++
+1    TTTTTCAATTTTTTGACGCGATTTTCACGGTTTTTCGAGTTTCTATGTATTGATTGGGAGGAAATATGTTACGTT
+
+                                                      [-8]
+                                                      9.9e-05
+     TGCA                                             AATTATTTTTTG
+     ++++                                             ++ + +++++++
+76   TACAGTTTTCTTAAATAATATCCACTTTCTGAAGCGCTTGTTGTTAAGAATAGTTTTTTTGGCAGTGGGTTTTCT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00011038
+  LENGTH = 200  COMBINED P-VALUE = 2.31e-02  E-VALUE =      8.8
+
+                                                        [+1]
+                                                        1.2e-05
+                                                        TTTTCCTCCATTTTCTTTTC
+                                                        ++++ +++ + ++++++ +
+76   GAAAACTCTTCGAATTTTATTGCAGAATTTATAGCTTATAGTTAACCTTCATTTTGTTCGCATTTCTTCCGCCGG
+
+                                               [-10]
+                                               3.9e-05
+                                               TTTTTCAG
+                                               ++++++++
+151  TGCCATTTTACCATTTCAATTTATGAATACTTCTAGCTTTTATTTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00000833
+  LENGTH = 200  COMBINED P-VALUE = 2.36e-02  E-VALUE =        9
+  DIAGRAM: 19-[+2]-162
+
+                        [+2]
+                        4.2e-05
+                        GCGGGCGGGCCGCGCAGCG
+                        + + + +++++++++ + +
+1    CCCGTCCTCATTTTTGAACGAGTGTGGGTCGCGGTCGCAAATTGTTTCACCTTCACAGCGTAGTTAAAATGTTTC
+
+
+caenorhabditis_elegans_prjna13758|WBGene00006529
+  LENGTH = 200  COMBINED P-VALUE = 2.38e-02  E-VALUE =      9.1
+  DIAGRAM: 62-[-1]-118
+
+                                                                   [-1]
+                                                                   7.6e-05
+                                                                   GAAAAGAAAATGG
+                                                                    ++++++ +++++
+1    CCAGATCTGAATTGAAAACTTTCTGCGAAAAACTAATTTCCACCTGAATTCTTCTCAAAAGTCAAGAGAGAAGAG
+
+     
+     
+     AGGAAAA
+       ++++
+76   TCAAAACTCACAAGAAAAAAATAATCCGATTTGAATTGCCGCGCAGAGAGTTAGATGTGCAGGTCATATAGCAAA
+
+
+caenorhabditis_elegans_prjna13758|WBGene00012351
+  LENGTH = 200  COMBINED P-VALUE = 2.40e-02  E-VALUE =      9.1
+  DIAGRAM: 30-[-12]-21-[+1]-12-[-11]-96
+
+                                   [-12]                       [+1]
+                                   5.3e-05                     6.1e-05
+                                   TTTCCGC                     TTTTCCTCCATTTTCTT
+                                   +++++++                     +++++    ++++++ +
+1    AATTTATTTCTCTCACGGGATTTCGTGATTTTTCCGCTTTTTCGTTGAAATAAATCGATTTTTAATGATTTTTCT
+
+                    [-11]
+                    3.8e-05
+     TTC            AAATTGCTGATTTT
+     ++              ++ ++++ + +++
+76   TTGTTAAAAATTAGATAAATATTTAATTTAATTAATTCTCAAGGCGTTTCCCACTTTGTTTCGCAGGAAATGTGT
+
+
+caenorhabditis_elegans_prjna13758|WBGene00010556
+  LENGTH = 200  COMBINED P-VALUE = 2.46e-02  E-VALUE =      9.4
+  DIAGRAM: 39-[+1]-4-[-8]-79-[+1]-26
+
+                                            [+1]                    [-8]
+                                            1.0e-05                 5.4e-06
+                                            TTTTCCTCCATTTTCTTTTC    AATTATTTTTTG
+                                            ++++++   +++++++ ++     +++++++++++
+1    TGGCTAGTTTGACGCGAATTTTTAGGACGATTTTTCCTTTTTTCTGTATTTTTCTGTTAAAGCAATGATTTTTTC
+
+         [+1]
+         7.5e-06
+         TTTTCCTCCATTTTCTTTTC
+         ++ +++   ++++++ ++++
+151  TCTATTCTCCAAAATTTTCATTTTTTTATATGGAACATTTTTATTTTTAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00019947
+  LENGTH = 200  COMBINED P-VALUE = 2.47e-02  E-VALUE =      9.4
+  DIAGRAM: 96-[-2]-85
+
+                          [-2]
+                          2.1e-06
+                          CGCTGCGCGGCCCGCCCGC
+                          ++ ++++++++++  +++
+76   ACACCCGACCGTACCCCACCTCGTTGCGAGACCCTTGCGTATCTAACTAGCTGGCAGCGTGCCAAAAAGGAGGAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00003372
+  LENGTH = 200  COMBINED P-VALUE = 2.49e-02  E-VALUE =      9.5
+
+                                                                [-8]
+                                                                7.4e-05
+                                                                AATTATTTTTTG
+                                                                ++++++++++ +
+1    AAAAGGTCTCGACACGACAAATTTTCATTAAATTCAAAGTACTGTATTCCCGAATTTTCATTGATTTTTCGAGAA
+
+                            [-11]              [-10]
+                            7.1e-05            3.9e-05
+                            AAATTGCTGATTTT     TTTTTCAG
+                            +++++++  +++++     ++++++++
+151  TCGAGACCTTATTTTTTCCTCAAAAATCGCAAATTTTCAAATTTTTGCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00002162
+  LENGTH = 200  COMBINED P-VALUE = 2.49e-02  E-VALUE =      9.5
+  DIAGRAM: 30-[-10]-32-[+11]-63-[-11]-23-[+11]-2
+
+                                   [-10]                                   [+11]
+                                   3.9e-05                                 4.4e-
+                                   TTTTTCAG                                AAAAT
+                                   ++++++++                                +++ +
+1    CGCCCGTTGAGTTTGTCCCAATTTTAGCCTTTTTTCAGCTTTTAATTCTTTAAAATTCCAAATTTCGGCAAAATT
+
+                                                                             [-1
+     06                                                                      1.7
+     CAGCAATTT                                                               AAA
+     ++ ++++++                                                               +++
+76   CATCAATTTGAAAACGTTTTATTCAGTTGTTCATTGCCTTGATCTGTTAATTTAGCCGTTCTCATATTTTAAAAA
+
+     1]                                [+11]
+     e-05                              2.0e-05
+     TTGCTGATTTT                       AAAATCAGCAATTT
+     +++++   +++                       +++++ + ++ +++
+151  TTGTTTTATTTTTTTCAAAAACTTAAAAATATTTAAAATAATTATTTTAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004496
+  LENGTH = 200  COMBINED P-VALUE = 2.51e-02  E-VALUE =      9.6
+  DIAGRAM: 87-[+11]-3-[+7]-18-[+1]-47
+
+                 [+11]            [+7]                         [+1]
+                 9.3e-05          2.2e-06                      2.8e-05
+                 AAAATCAGCAATTT   AATTTTTCGAA                  TTTTCCTCCATTTTCTT
+                 +++++ +  +++++   +++++++++ +                  +++++ + +++ +  ++
+76   AATGTTATTAAAAAAATAATAAATTTCGAAATTTTTCGTAATGTTCCGCAATCGTGTTTTTCCGTTTATCTCGTC
+
+     
+     
+     TTC
+     +++
+151  TTCCCTTCTTTCAAATATACTATTTATTTTCTCAATTCACATATTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00004473
+  LENGTH = 200  COMBINED P-VALUE = 2.53e-02  E-VALUE =      9.6
+  DIAGRAM: 11-[+1]-8-[-11]-110-[+1]-17
+
+                [+1]                        [-11]
+                3.8e-06                     1.5e-05
+                TTTTCCTCCATTTTCTTTTC        AAATTGCTGATTTT
+                +++++++ +++ + ++ +++        +++++ ++ + +++
+1    TTTAGAGAGATTTTTCCTATTTCTCCTGTTCTCAACGCAAAATTTTTTAATTTTTTCATATTTTAATGAAATAAC
+
+                  [+1]
+                  4.0e-06
+                  TTTTCCTCCATTTTCTTTTC
+                  +++++ +  +++ ++ ++++
+151  TTTTATCATTACATTTTCGTGATTTCTCATTTTAAAGTTCAAAATTCCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00002124
+  LENGTH = 200  COMBINED P-VALUE = 2.55e-02  E-VALUE =      9.7
+  DIAGRAM: 31-[-8]-23-[-7]-99-[-13]-11
+
+                                    [-8]                               [-7]
+                                    5.9e-05                            7.6e-05
+                                    AATTATTTTTTG                       TTCGAAAAA
+                                    +++++ ++++++                       ++++ ++ +
+1    TTTATCAGCCTCATCAAAGCAACTTGCTAGTAATTAATTTTTGCGAGGCTAATAAACATCTAGATATTCGGAACA
+
+     
+     
+     TT
+     ++
+76   TTTGTGTATTTCATATCATCATGCAACTTGTTTTTGTACTCCAATGTTTTTCGATTTTGAATCAGTTAACCGTAG
+
+                               [-13]
+                               2.9e-07
+                               ACTTAATTATCCT
+                               +++++++++ + +
+151  TTTCTTACGTTTCAAACTACATATTTACTTAATTAACATAACATTTTCAG
+
+
+caenorhabditis_elegans_prjna13758|WBGene00001834
+  LENGTH = 200  COMBINED P-VALUE = 2.57e-02  E-VALUE =      9.8
+  DIAGRAM: 2-[+1]-91-[+8]-31-[+1]-24
+
+       [+1]
+       3.5e-05
+       TTTTCCTCCATTTTCTTTTC
+       ++ ++ + +++++ + ++++
+1    AATTCTTATATTTTTCCGCTTCAATGATCTTGCCGAATTCAGTTTATTGATCAAAATGTGTTATAGTAATGAGCG
+
+                                           [+8]
+                                           9.0e-05
+                                           CAAAAAATAATT
+                                           ++++++ +++++
+76   TTTTCACGTCGCGTTTATATCGATTACCAAAAATTAGCCAAAAACTCGATCAATACTGCATAACCTGTCTTACAC
+
+           [+1]
+           1.2e-05
+           TTTTCCTCCATTTTCTTTTC
+            ++++++ ++++++ +++++
+151  CTTCTCCTTCTCTTCATTTTATTTTTCTTCGAGCAATCTTGTTATTTCAG
+
+********************************************************************************
+
+
+CPU: node201
+Time 0.608 secs.
+
+mast -oc . -nostatus meme.xml 6.txt

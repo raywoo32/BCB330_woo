@@ -1,0 +1,8 @@
+rank	motif_DB	motif_ID	motif_alt_ID	consensus	p-value	adj_p-value	E-value	tests	FASTA_max	pos	neg	PWM_min	TP	%TP	FP	%FP
+1	motifs.meme	15		TATTTCAAAAA	1.94e-6	1.26e-3	1.26e-1	650	122	122	4656	1.07	35	28.69	578	12.41
+2	motifs.meme	13		GTACTTTTGAA	1.68e-4	4.20e-2	4.20e0	255	122	122	4656	1.91	11	9.02	106	2.28
+3	motifs.meme	12		GAACTTTTGAA	1.29e-4	5.93e-2	5.93e0	474	122	122	4656	58.5	6	4.92	26	0.56
+
+# AME (Analysis of Motif Enrichment): Version 5.0.4 compiled on Feb  4 2019 at 23:48:13
+# The format of this file is described at http://alternate.meme-suite.org//doc/ame-output-format.html.
+# ame --verbose 1 --oc . --scoring avg --method fisher --hit-lo-fraction 0.25 --evalue-report-threshold 10.0 --control 11Control.txt 11.txt motifs.meme

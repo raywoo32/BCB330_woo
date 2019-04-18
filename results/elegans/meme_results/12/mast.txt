@@ -1,0 +1,2198 @@
+********************************************************************************
+MAST - Motif Alignment and Search Tool
+********************************************************************************
+	MAST version 5.0.5 (Release date: Mon Mar 18 20:12:19 2019 -0700)
+
+	For further information on how to interpret these results please access http://meme-suite.org/.
+	To get a copy of the MAST software please access http://meme-suite.org.
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+	If you use this program in your research, please cite:
+
+	Timothy L. Bailey and Michael Gribskov,
+	"Combining evidence using p-values: application to sequence homology
+	searches", Bioinformatics, 14(48-54), 1998.
+********************************************************************************
+
+
+********************************************************************************
+DATABASE AND MOTIFS
+********************************************************************************
+	DATABASE 12_1.txt (nucleotide)
+	Last updated on Sat Mar 23 16:16:02 2019
+	Database contains 2822 sequences, 564400 residues
+
+	Scores for positive and reverse complement strands are combined.
+
+	MOTIFS meme.xml (nucleotide)
+	MOTIF ID             ALT ID WIDTH BEST POSSIBLE MATCH
+	----- -------------- ------ ----- -------------------
+	    1 WTTTTY         MEME-1     6 TTTTTC
+	    2 GYGCGC         MEME-2     6 GCGCGC
+	    3 CGGTGTTTGC     MEME-3    10 CGGTGTTTGC
+	    4 CTCTCTCTCTCTCT MEME-4    14 CTCTCTCTCTCTCT
+	    5 CTCYCTCTCTC    MEME-5    11 CTCCCTCTCTC
+	    6 CTCCGC         MEME-6     6 CTCCGC
+	    7 CCCCGCAC       MEME-7     8 CCCCGCAC
+	    8 GRCGCGTTTCTC   MEME-8    12 GGCGCGTTTCTC
+
+	PAIRWISE MOTIF CORRELATIONS:
+	MOTIF     1     2     3     4     5     6     7
+	----- ----- ----- ----- ----- ----- ----- -----
+	   2   0.00
+	   3   0.30  0.40
+	   4   0.37  0.29  0.29
+	   5   0.37  0.27  0.24  0.89
+	   6   0.30  0.44  0.38  0.56  0.71
+	   7   0.21  0.45  0.10  0.32  0.58  0.71
+	   8   0.16  0.56  0.31  0.43  0.67  0.58  0.42
+	Correlations above 0.60 may cause some combined p-values and
+	E-values to be underestimates.
+	Removing motifs 5 and 7 from the query may be advisable.
+
+	Random model letter frequencies (from non-redundant database):
+	A 0.274 C 0.225 G 0.225 T 0.274 
+********************************************************************************
+
+
+********************************************************************************
+SECTION I: HIGH-SCORING SEQUENCES
+********************************************************************************
+	- Each of the following 124 sequences has E-value less than 10.
+	- The E-value of a sequence is the expected number of sequences
+	  in a random database of the same size that would match the motifs as
+	  well as the sequence does and is equal to the combined p-value of the
+	  sequence times the number of sequences in the database.
+	- The combined p-value of a sequence measures the strength of the
+	  match of the sequence to all the motifs and is calculated by
+	    o finding the score of the single best match of each motif
+	      to the sequence (best matches may overlap),
+	    o calculating the sequence p-value of each score,
+	    o forming the product of the p-values,
+	    o taking the p-value of the product.
+	- The sequence p-value of a score is defined as the
+	  probability of a random sequence of the same length containing
+	  some match with as good or better a score.
+	- The score for the match of a position in a sequence to a motif
+	  is computed by by summing the appropriate entry from each column of
+	  the position-dependent scoring matrix that represents the motif.
+	- Sequences shorter than one or more of the motifs are skipped.
+	- The table is sorted by increasing E-value.
+********************************************************************************
+
+SEQUENCE NAME                      DESCRIPTION                   E-VALUE  LENGTH
+-------------                      -----------                   -------- ------
+WBGene00018743                                                    4.6e-07    200
+WBGene00020812                                                      6e-05    200
+WBGene00016573                                                    0.00025    200
+WBGene00006889                                                    0.00028    200
+WBGene00019989                                                    0.00044    200
+WBGene00017084                                                    0.00044    200
+WBGene00002264                                                    0.00049    200
+WBGene00012198                                                    0.00069    200
+WBGene00004138                                                     0.0029    200
+WBGene00020092                                                     0.0034    200
+WBGene00004147                                                     0.0058    200
+WBGene00022832                                                     0.0067    200
+WBGene00003825                                                     0.0068    200
+WBGene00003111                                                     0.0069    200
+WBGene00009508                                                      0.007    200
+WBGene00011645                                                     0.0073    200
+WBGene00010910                                                     0.0087    200
+WBGene00019698                                                     0.0092    200
+WBGene00018426                                                     0.0096    200
+WBGene00012136                                                      0.013    200
+WBGene00004013                                                      0.014    200
+WBGene00012113                                                      0.016    200
+WBGene00003221                                                      0.017    200
+WBGene00016603                                                      0.024    200
+WBGene00010828                                                      0.026    200
+WBGene00021691                                                      0.031    200
+WBGene00021004                                                      0.035    200
+WBGene00013307                                                      0.042    200
+WBGene00018794                                                       0.05    200
+WBGene00009212                                                      0.067    200
+WBGene00016115                                                       0.09    200
+WBGene00021758                                                      0.093    200
+WBGene00017951                                                       0.11    200
+WBGene00020234                                                       0.11    200
+WBGene00020706                                                       0.11    200
+WBGene00004728                                                       0.12    200
+WBGene00001604                                                       0.13    200
+WBGene00001579                                                       0.13    200
+WBGene00013446                                                       0.14    200
+WBGene00000776                                                       0.14    200
+WBGene00019719                                                       0.15    200
+WBGene00006836                                                       0.16    200
+WBGene00003576                                                       0.17    200
+WBGene00015330                                                       0.18    200
+WBGene00021050                                                       0.18    200
+WBGene00020758                                                        0.2    200
+WBGene00007030                                                       0.23    200
+WBGene00006833                                                       0.29    200
+WBGene00006568                                                       0.29    200
+WBGene00020160                                                       0.31    200
+WBGene00001915                                                       0.33    200
+WBGene00015468                                                       0.36    200
+WBGene00018793                                                       0.36    200
+WBGene00020334                                                       0.45    200
+WBGene00006366                                                       0.49    200
+WBGene00012258                                                       0.53    200
+WBGene00017016                                                       0.61    200
+WBGene00011434                                                       0.63    200
+WBGene00000160                                                        0.7    200
+WBGene00021883                                                       0.72    200
+WBGene00021726                                                       0.77    200
+WBGene00017988                                                        0.8    200
+WBGene00017778                                                       0.81    200
+WBGene00004437                                                       0.82    200
+WBGene00021506                                                       0.85    200
+WBGene00001569                                                       0.92    200
+WBGene00001580                                                       0.93    200
+WBGene00007089                                                       0.94    200
+WBGene00019250                                                       0.96    200
+WBGene00010002                                                        1.1    200
+WBGene00007139                                                        1.2    200
+WBGene00016489                                                        1.3    200
+WBGene00022456                                                        1.3    200
+WBGene00001086                                                        1.4    200
+WBGene00002148                                                        1.5    200
+WBGene00006793                                                        1.5    200
+WBGene00008852                                                        1.6    200
+WBGene00003389                                                        1.6    200
+WBGene00012348                                                        1.7    200
+WBGene00001892                                                        1.8    200
+WBGene00021681                                                        1.9    200
+WBGene00019730                                                        1.9    200
+WBGene00018064                                                          2    200
+WBGene00022139                                                        2.1    200
+WBGene00000591                                                        2.2    200
+WBGene00000897                                                        2.2    200
+WBGene00016258                                                        2.6    200
+WBGene00004340                                                        2.6    200
+WBGene00000410                                                        2.7    200
+WBGene00013734                                                        2.8    200
+WBGene00019918                                                        2.8    200
+WBGene00001002                                                        2.8    200
+WBGene00001396                                                        2.8    200
+WBGene00001239                                                          3    200
+WBGene00002999                                                          3    200
+WBGene00004136                                                        3.2    200
+WBGene00016235                                                        3.4    200
+WBGene00015811                                                        3.4    200
+WBGene00012558                                                        3.9    200
+WBGene00012983                                                        4.1    200
+WBGene00001173                                                        4.2    200
+WBGene00006808                                                        4.6    200
+WBGene00007934                                                        4.8    200
+WBGene00015569                                                        5.4    200
+WBGene00001974                                                        5.4    200
+WBGene00001412                                                        5.5    200
+WBGene00007217                                                        5.5    200
+WBGene00010174                                                        5.8    200
+WBGene00000566                                                        5.9    200
+WBGene00021248                                                          6    200
+WBGene00001340                                                        6.8    200
+WBGene00006974                                                        6.9    200
+WBGene00000449                                                        7.3    200
+WBGene00009588                                                        7.3    200
+WBGene00008412                                                        7.7    200
+WBGene00009587                                                        7.8    200
+WBGene00219275                                                        7.8    200
+WBGene00022703                                                        7.8    200
+WBGene00000534                                                        7.9    200
+WBGene00004248                                                        8.2    200
+WBGene00001026                                                        8.2    200
+WBGene00022381                                                        8.7    200
+WBGene00009353                                                        9.9    200
+WBGene00016977                                                         10    200
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION II: MOTIF DIAGRAMS
+********************************************************************************
+	- The ordering and spacing of all non-overlapping motif occurrences
+	  are shown for each high-scoring sequence listed in Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001.
+	- The POSITION p-value of a match is the probability of
+	  a single random subsequence of the length of the motif
+	  scoring at least as well as the observed match.
+	- For each sequence, all motif occurrences are shown unless there
+	  are overlaps.  In that case, a motif occurrence is shown only if its
+	  p-value is less than the product of the p-values of the other
+	  (lower-numbered) motif occurrences that it overlaps.
+	- The table also shows the E-value of each sequence.
+	- Spacers and motif occurences are indicated by
+	   o -d-    `d' residues separate the end of the preceding motif 
+		    occurrence and the start of the following motif occurrence
+	   o [sn]  occurrence of motif `n' with p-value less than 0.0001.
+		    A minus sign indicates that the occurrence is on the
+		    reverse complement strand.
+********************************************************************************
+
+SEQUENCE NAME                      E-VALUE   MOTIF DIAGRAM
+-------------                      --------  -------------
+WBGene00018743                      4.6e-07  44-[-4]-25-[-4]-11-[+7]-84
+WBGene00020812                        6e-05  40-[+4]-47-[-3]-89
+WBGene00016573                      0.00025  111-[+4]-18-[+3]-47
+WBGene00006889                      0.00028  122-[+5]-7-[+7]-19-[-8]-21
+WBGene00019989                      0.00044  1-[+4]-[+4]-[+4]-[+4]-27-[+3]-63-[+4]-29
+WBGene00017084                      0.00044  117-[-4]-69
+WBGene00002264                      0.00049  46-[+8]-8-[+4]-120
+WBGene00012198                      0.00069  28-[+4]-4-[+4]-17-[+3]-113
+WBGene00004138                       0.0029  70-[+4]-4-[+4]-98
+WBGene00020092                       0.0034  63-[+4]-123
+WBGene00004147                       0.0058  107-[+5]-17-[+4]-51
+WBGene00022832                       0.0067  68-[+8]-39-[-5]-70
+WBGene00003825                       0.0068  118-[-4]-46-[-4]-8
+WBGene00003111                       0.0069  97-[+4]-54-[+4]-21
+WBGene00009508                        0.007  55-[+4]-41-[+5]-38-[+4]-27
+WBGene00011645                       0.0073  30-[+4]-156
+WBGene00010910                       0.0087  24-[+4]-162
+WBGene00019698                       0.0092  82-[+4]-[+4]-[+4]-[+5]-42-[+4]-9
+WBGene00018426                       0.0096  54-[+8]-111-[-5]-12
+WBGene00012136                        0.013  99-[+4]-87
+WBGene00004013                        0.014  11-[+4]-11-[+4]-30-[-4]-51-[+4]-41
+WBGene00012113                        0.016  35-[+4]-65-[+5]-44-[+3]-21
+WBGene00003221                        0.017  114-[+4]-72
+WBGene00016603                        0.024  96-[-4]-50-[-3]-4-[+7]-18
+WBGene00010828                        0.026  22-[+5]-10-[+4]-143
+WBGene00021691                        0.031  25-[+4]-161
+WBGene00021004                        0.035  19-[-5]-31-[-3]-129
+WBGene00013307                        0.042  5-[+4]-77-[+3]-94
+WBGene00018794                         0.05  94-[+4]-92
+WBGene00009212                        0.067  87-[-4]-99
+WBGene00016115                         0.09  80-[-7]-86-[-5]-15
+WBGene00021758                        0.093  80-[+4]-66-[+7]-32
+WBGene00017951                         0.11  9-[+4]-[+4]-[+4]-7-[+4]-[+4]-[+4]-[+4]-[+4]-[+4]-[+4]-44
+WBGene00020234                         0.11  5-[+4]-29-[+3]-142
+WBGene00020706                         0.11  50-[+5]-39-[+7]-92
+WBGene00004728                         0.12  157-[+4]-29
+WBGene00001604                         0.13  77-[+4]-97-[+7]-4
+WBGene00001579                         0.13  133-[+3]-9-[+5]-37
+WBGene00013446                         0.14  48-[+4]-138
+WBGene00000776                         0.14  14-[+4]-172
+WBGene00019719                         0.15  [+4]-186
+WBGene00006836                         0.16  43-[+4]-143
+WBGene00003576                         0.17  [+4]-186
+WBGene00015330                         0.18  20-[+4]-60-[+4]-92
+WBGene00021050                         0.18  26-[+4]-110-[+5]-39
+WBGene00020758                          0.2  128-[-8]-45-[+4]-1
+WBGene00007030                         0.23  84-[-4]-40-[-4]-33-[+7]-7
+WBGene00006833                         0.29  62-[+4]-18-[+5]-95
+WBGene00006568                         0.29  29-[+4]-157
+WBGene00020160                         0.31  3-[+4]-20-[+5]-152
+WBGene00001915                         0.33  105-[-3]-[+5]-48-[-5]-15
+WBGene00015468                         0.36  9-[-5]-44-[-8]-124
+WBGene00018793                         0.36  5-[-5]-184
+WBGene00020334                         0.45  139-[+4]-47
+WBGene00006366                         0.49  105-[-4]-81
+WBGene00012258                         0.53  83-[+4]-103
+WBGene00017016                         0.61  153-[+4]-33
+WBGene00011434                         0.63  152-[+4]-34
+WBGene00000160                          0.7  2-[+4]-40-[-3]-134
+WBGene00021883                         0.72  25-[+4]-161
+WBGene00021726                         0.77  18-[+3]-160-[+5]-1
+WBGene00017988                          0.8  96-[-8]-27-[-5]-23-[+3]-21
+WBGene00017778                         0.81  93-[+8]-95
+WBGene00004437                         0.82  53-[+8]-135
+WBGene00021506                         0.85  155-[+4]-31
+WBGene00001569                         0.92  5-[+4]-14-[+4]-2-[+4]-60-[+4]-63
+WBGene00001580                         0.93  101-[+5]-88
+WBGene00007089                         0.94  98-[-4]-23-[-7]-57
+WBGene00019250                         0.96  165-[-4]-21
+WBGene00010002                          1.1  21-[-4]-165
+WBGene00007139                          1.2  156-[+5]-6-[+4]-13
+WBGene00016489                          1.3  5-[+5]-158-[-3]-16
+WBGene00022456                          1.3  88-[-5]-61-[-4]-26
+WBGene00001086                          1.4  152-[+4]-34
+WBGene00002148                          1.5  47-[+3]-31-[+8]-100
+WBGene00006793                          1.5  12-[-8]-20-[+3]-146
+WBGene00008852                          1.6  163-[+5]-26
+WBGene00003389                          1.6  47-[-4]-101-[+4]-24
+WBGene00012348                          1.7  67-[+4]-19-[+4]-28-[+4]-44
+WBGene00001892                          1.8  68-[-5]-17-[-4]-90
+WBGene00021681                          1.9  3-[-5]-46-[+5]-7-[+4]-4-[+4]-[+5]-79
+WBGene00019730                          1.9  79-[-4]-61-[+8]-34
+WBGene00018064                            2  88-[+5]-101
+WBGene00022139                          2.1  1-[-5]-19-[+4]-57-[+3]-88
+WBGene00000591                          2.2  24-[+4]-162
+WBGene00000897                          2.2  53-[+4]-133
+WBGene00016258                          2.6  14-[+7]-17-[+4]-147
+WBGene00004340                          2.6  63-[+5]-126
+WBGene00000410                          2.7  83-[+8]-105
+WBGene00013734                          2.8  141-[-3]-29-[+8]-8
+WBGene00019918                          2.8  145-[+5]-5-[+7]-31
+WBGene00001002                          2.8  28-[-4]-133-[+5]-14
+WBGene00001396                          2.8  115-[+4]-71
+WBGene00001239                            3  117-[-8]-11-[+4]-46
+WBGene00002999                            3  32-[+4]-93-[+4]-47
+WBGene00004136                          3.2  32-[-4]-154
+WBGene00016235                          3.4  65-[+5]-124
+WBGene00015811                          3.4  17-[-5]-29-[-3]-133
+WBGene00012558                          3.9  52-[-8]-63-[+4]-59
+WBGene00012983                          4.1  26-[+4]-146-[+5]-3
+WBGene00001173                          4.2  110-[+4]-33-[+7]-35
+WBGene00006808                          4.6  145-[+4]-2-[+4]-25
+WBGene00007934                          4.8  129-[-5]-28-[+8]-20
+WBGene00015569                          5.4  40-[-3]-66-[+4]-70
+WBGene00001974                          5.4  168-[+4]-18
+WBGene00001412                          5.5  47-[-8]-141
+WBGene00007217                          5.5  186-[-7]-6
+WBGene00010174                          5.8  20-[+5]-169
+WBGene00000566                          5.9  100-[+4]-86
+WBGene00021248                            6  11-[+3]-4-[+8]-163
+WBGene00001340                          6.8  17-[+7]-63-[+7]-92-[-3]-2
+WBGene00006974                          6.9  31-[+5]-158
+WBGene00000449                          7.3  177-[-3]-13
+WBGene00009588                          7.3  42-[-4]-62-[-3]-15-[-5]-46
+WBGene00008412                          7.7  159-[+7]-33
+WBGene00009587                          7.8  6-[+5]-15-[+3]-62-[+4]-82
+WBGene00219275                          7.8  143-[+4]-43
+WBGene00022703                          7.8  122-[+7]-70
+WBGene00004248                          8.2  19-[-8]-169
+WBGene00001026                          8.2  4-[-7]-12-[-5]-33-[-5]-121
+WBGene00022381                          8.7  86-[+8]-102
+WBGene00009353                          9.9  64-[+4]-122
+WBGene00016977                           10  114-[+4]-72
+
+********************************************************************************
+
+
+
+********************************************************************************
+SECTION III: ANNOTATED SEQUENCES
+********************************************************************************
+	- The positions and p-values of the non-overlapping motif occurrences
+	  are shown above the actual sequence for each of the high-scoring
+	  sequences from Section I.
+	- A motif occurrence is defined as a position in the sequence whose
+	  match to the motif has POSITION p-value less than 0.0001 as 
+	  defined in Section II.
+	- For each sequence, the first line specifies the name of the sequence.
+	- The second (and possibly more) lines give a description of the 
+	  sequence.
+	- Following the description line(s) is a line giving the length, 
+	  combined p-value, and E-value of the sequence as defined in Section I.
+	- The next line reproduces the motif diagram from Section II.
+	- The entire sequence is printed on the following lines.
+	- Motif occurrences are indicated directly above their positions in the
+	  sequence on lines showing
+	   o the motif number of the occurrence (a minus sign indicates that
+	  the occurrence is on the reverse complement strand),
+	   o the position p-value of the occurrence,
+	   o the best possible match to the motif (or its reverse complement), and
+	   o columns whose match to the motif has a positive score (indicated 
+	     by a plus sign).
+********************************************************************************
+
+
+WBGene00018743
+  LENGTH = 200  COMBINED P-VALUE = 1.64e-10  E-VALUE =  4.6e-07
+  DIAGRAM: 44-[-4]-25-[-4]-11-[+7]-84
+
+                                                 [-4]
+                                                 3.4e-09
+                                                 AGAGAGAGAGAGAG
+                                                 ++++++++++++++
+1    TGGCCGCGTACGGTCCGATAATGTGAGTGTGTGCGAGATGCAGAAGAGAGAGAGAGAGGGGGCAAGGAAAGGTGC
+
+             [-4]                     [+7]
+             8.7e-05                  1.5e-05
+             AGAGAGAGAGAGAG           CCCCGCAC
+              +  ++++ +++ +           ++++++++
+76   ATGTGAGCGGTAAGAGGGAGCGCTGCTGGCTGACCCCGCCCAATCTTTCCGCGCGCGTTGCGGACTGTGCGAGTG
+
+
+WBGene00020812
+  LENGTH = 200  COMBINED P-VALUE = 2.13e-08  E-VALUE =    6e-05
+  DIAGRAM: 40-[+4]-47-[-3]-89
+
+                                             [+4]
+                                             3.4e-09
+                                             CTCTCTCTCTCTCT
+                                             ++++++++++++++
+1    AACAACAAGTAGTCTCCGCCCAAGCGGGCCAATTCTCCATCTCTCTCTCTCTCTCTTTACCTTCACAAAACATTT
+
+                               [-3]
+                               3.1e-05
+                               GCAAACACCG
+                                ++ ++++++
+76   TTCTCTTGATGATAGCAGCAGACGCCACATACACCGTGTGTGTTCCAATTTTTTGTTGTTGTCTTTTCCTCAATT
+
+
+WBGene00016573
+  LENGTH = 200  COMBINED P-VALUE = 8.76e-08  E-VALUE =  0.00025
+  DIAGRAM: 111-[+4]-18-[+3]-47
+
+                                         [+4]                            [+3]
+                                         3.4e-09                         9.5e-05
+                                         CTCTCTCTCTCTCT                  CGGTGTT
+                                         ++++++++++++++                  + +++
+76   CTACAACCCGCGCATTTTACAACCTTCTCCCTTTATCTCTCTCTCTCTCTTCAAATTATCGATTTTTTCTGTGGC
+
+     
+     
+     TGC
+     +++
+151  CGCGCGCGCGCGTCCATTCAATCTTTCGCATTCTTACCTTCCTTTCTCTC
+
+
+WBGene00006889
+  LENGTH = 200  COMBINED P-VALUE = 9.89e-08  E-VALUE =  0.00028
+  DIAGRAM: 122-[+5]-7-[+7]-19-[-8]-21
+
+                                                    [+5]              [+7]
+                                                    6.5e-05           8.1e-06
+                                                    CTCCCTCTCTC       CCCCGCAC
+                                                    ++++++ ++++       ++++++++
+76   AATTTTCAGGGATTTTCAGCTACTTCCTGCGATTTTCCATTAAAAATCTCTGCGTCTCAATGTCTCCCCGCACTC
+
+                      [-8]
+                      3.7e-08
+                      GAGAAACGCGCC
+                      ++++++++++++
+151  TCTCGCTGGTTCTCGTCGAGAAACGCGCCAAGGCGAGTGCTGGCGCACTT
+
+
+WBGene00019989
+  LENGTH = 200  COMBINED P-VALUE = 1.55e-07  E-VALUE =  0.00044
+  DIAGRAM: 1-[+4]-[+4]-[+4]-[+4]-27-[+3]-63-[+4]-29
+
+      [+4]          [+4]          [+4]          [+4]
+      3.4e-09       3.4e-09       3.4e-09       3.4e-09
+      CTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCT
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1    TCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTTGCCTCGTAAGG
+
+              [+3]
+              6.3e-05
+              CGGTGTTTGC
+                ++++ +++
+76   GCCGCGCAGGTGTGTGCGCGCGCAATGGTTCCGACCATTCGAGAACTCATCAGTCCTTACTTGCCATTTCATTGT
+
+            [+4]
+            2.3e-06
+            CTCTCTCTCTCTCT
+            ++++++++  ++++
+151  TTCATTCCTCTCTCTAACTCTTTTTTCTTAACTCATTTCTTCAATTTCAG
+
+
+WBGene00017084
+  LENGTH = 200  COMBINED P-VALUE = 1.57e-07  E-VALUE =  0.00044
+  DIAGRAM: 117-[-4]-69
+
+                                               [-4]
+                                               6.2e-09
+                                               AGAGAGAGAGAGAG
+                                               ++++++++ +++++
+76   GAGTCGATAGGAAAATGCGAAAATCGATGAATGAACTGAATGAGAGAGAGGGAGAGGGGAGGAGGGGTACGGTAG
+
+
+WBGene00002264
+  LENGTH = 200  COMBINED P-VALUE = 1.74e-07  E-VALUE =  0.00049
+  DIAGRAM: 46-[+8]-8-[+4]-120
+
+                                                   [+8]                [+4]
+                                                   3.9e-05             3.4e-09
+                                                   GGCGCGTTTCTC        CTCTCTCTC
+                                                   +  +++++++++        +++++++++
+1    TCTCTTGTTTACACGTCTGTTGTCTCTCGGACTTTATTTACGAAATGCTGCGTCTCTCCTGCCCTTCTCTCTCTC
+
+     
+     
+     TCTCT
+     +++++
+76   TCTCTCTATTGCGCCCAGAGACCACACTTTTATTGCCATTGTCGTCGTCGTCGTCGGAAATTTTCTCGCTTTTTC
+
+
+WBGene00012198
+  LENGTH = 200  COMBINED P-VALUE = 2.46e-07  E-VALUE =  0.00069
+  DIAGRAM: 28-[+4]-4-[+4]-17-[+3]-113
+
+                                 [+4]              [+4]
+                                 4.7e-06           1.0e-05
+                                 CTCTCTCTCTCTCT    CTCTCTCTCTCTCT
+                                 + +++++ +++++     +++++++ + + ++
+1    CAAACCTCCCTCCGCGTCTACCCTCGCACACTCTCACTCTCCCGTACTCTCTCACCCCCTCCGTACTAATTGCGT
+
+       [+3]
+       7.4e-07
+       CGGTGTTTGC
+       ++++++++++
+76   GACGGTGTTTGCGTACCGCGTCGTGTTTGCCAAAAGGAGGCAATCTTGAATTTATCGATTTGCTAGTGTACTGTT
+
+
+WBGene00004138
+  LENGTH = 200  COMBINED P-VALUE = 1.03e-06  E-VALUE =   0.0029
+  DIAGRAM: 70-[+4]-4-[+4]-98
+
+                                                                           [+4]
+                                                                           1.2e-
+                                                                           CTCTC
+                                                                           +++++
+1    ATCGATAACCGCTCCGCAACCGCAATTGCCGTTCGTACTCTGCCACGCGACTTTCCCATCTGCTCTTCTTCTCTC
+
+                  [+4]
+     06           6.9e-08
+     TCTCTCTCT    CTCTCTCTCTCTCT
+      ++++++ +    +++ ++++++++++
+76   ACTCTCTTTCCCCCTCACTCTCTCTCTCACATTTTCGTTCATTCTATTCACCATCTTGTTACACTCATATCGTCT
+
+
+WBGene00020092
+  LENGTH = 200  COMBINED P-VALUE = 1.19e-06  E-VALUE =   0.0034
+  DIAGRAM: 63-[+4]-123
+
+                                                                    [+4]
+                                                                    3.4e-09
+                                                                    CTCTCTCTCTCT
+                                                                    ++++++++++++
+1    AATTCTTGTACATGTTCCCCTCCATCATCTCCTTTTACCAATTTCCTTCATTCCATCCACAATCTCTCTCTCTCT
+
+     
+     
+     CT
+     ++
+76   CTGTTTTTACCTCCTCGTTTCTTGTTGCGTTTATTGATCCATTTTTTCACGTCACTAATCAATATTTTCCAGATA
+
+
+WBGene00004147
+  LENGTH = 200  COMBINED P-VALUE = 2.04e-06  E-VALUE =   0.0058
+  DIAGRAM: 107-[+5]-17-[+4]-51
+
+                                     [+5]                        [+4]
+                                     4.7e-05                     3.4e-09
+                                     CTCCCTCTCTC                 CTCTCTCTCTCTCT
+                                     ++++++++++                  ++++++++++++++
+76   ACATTCCCCTTCTCACTTTTTTTTTGCGTTGTCTCCGTCTCTTTGTGTCGTTCAACGTGTCTCTCTCTCTCTCTG
+
+
+WBGene00022832
+  LENGTH = 200  COMBINED P-VALUE = 2.38e-06  E-VALUE =   0.0067
+  DIAGRAM: 68-[+8]-39-[-5]-70
+
+                                                                         [+8]
+                                                                         3.7e-08
+                                                                         GGCGCGT
+                                                                         +++++++
+1    GACATATCCAGAATCACAACTGAAAACAGTGGCCGTCCGAAAGTGCGCAAGCAAAAATCGAGAGAGTTGGCGCGT
+
+                                                 [-5]
+                                                 1.1e-06
+     TTCTC                                       GAGAGAGGGAG
+     +++++                                       +++++++++++
+76   TTCTCGTGCGGGAGCCTTTTTGTGGCGAGCGGCTGTTTTTTTTTGAGAGAGAGGGGTCCCAGCGGGCTATTTGTT
+
+
+WBGene00003825
+  LENGTH = 200  COMBINED P-VALUE = 2.42e-06  E-VALUE =   0.0068
+  DIAGRAM: 118-[-4]-46-[-4]-8
+
+                                                [-4]
+                                                1.5e-07
+                                                AGAGAGAGAGAGAG
+                                                +++++++ ++++++
+76   TATTGACTGCCGGCCTCTATGGGGGACAGAAAAATGGAGAAGAAGAGAGATAGAGAGCGGCGGAGACAGTAGAGA
+
+                                 [-4]
+                                 2.4e-08
+                                 AGAGAGAGAGAGAG
+                                  +++++++++++++
+151  AAATGGTTGAGGGAGAGGAGAGGGTACGTGAGAGAGAGAGAGTGAGTAGG
+
+
+WBGene00003111
+  LENGTH = 200  COMBINED P-VALUE = 2.44e-06  E-VALUE =   0.0069
+  DIAGRAM: 97-[+4]-54-[+4]-21
+
+                           [+4]
+                           3.5e-05
+                           CTCTCTCTCTCTCT
+                           +++++++  +++ +
+76   ATTACGATGTCTTCTCCGTCTACTCTCTCATTCTTTAGGACTAAAGAGGCACAGCTGCCAGTAACAGGGACCCCT
+
+                    [+4]
+                    6.2e-09
+                    CTCTCTCTCTCTCT
+                    +++++ ++++++++
+151  CCTTTGTGTCTGCGTCTCTCCCTCTCTCTCTCTTTGGGGTGGCCTTCGTC
+
+
+WBGene00009508
+  LENGTH = 200  COMBINED P-VALUE = 2.50e-06  E-VALUE =    0.007
+  DIAGRAM: 55-[+4]-41-[+5]-38-[+4]-27
+
+                                                            [+4]
+                                                            6.4e-06
+                                                            CTCTCTCTCTCTCT
+                                                             ++++ ++++++ +
+1    AAGCTCAATTGAAAACATGAAAGTGCGCCCCTCCGCCACACATTTCGCTTCCGTTTTCTCCCTCTCTATCCATTC
+
+                                        [+5]
+                                        7.3e-05
+                                        CTCCCTCTCTC
+                                        + +++++ +++
+76   TGCGTCTCTTGAATAGGCGCCCGACGTCTTCATTCCACCCTCACTCCCCTGATCAACGGATCGATTCTTCGGAAT
+
+              [+4]
+              1.5e-07
+              CTCTCTCTCTCTCT
+               +++++++++++++
+151  TCTCTTATTTTCTCTCTCTCTCTTGTATTCTCGTAATATCTCGTTTTTAG
+
+
+WBGene00011645
+  LENGTH = 200  COMBINED P-VALUE = 2.59e-06  E-VALUE =   0.0073
+  DIAGRAM: 30-[+4]-156
+
+                                   [+4]
+                                   6.9e-08
+                                   CTCTCTCTCTCTCT
+                                   +++ ++++++++++
+1    AAAAAACCCCCCTGCAGCAACACACCAATCCTCCCTCTCTCTCTCGTCTGCAGACACAAAAATGCAAGCGCGCCC
+
+
+WBGene00010910
+  LENGTH = 200  COMBINED P-VALUE = 3.07e-06  E-VALUE =   0.0087
+  DIAGRAM: 24-[+4]-162
+
+                             [+4]
+                             3.4e-09
+                             CTCTCTCTCTCTCT
+                             ++++++++++++++
+1    TGCCACCTCCACCAAAACGATGATCTCTCTCTCTCTCTCTCTTAATTTTTTTTCTTCTTGTTGATTTCGAAACTG
+
+
+WBGene00019698
+  LENGTH = 200  COMBINED P-VALUE = 3.25e-06  E-VALUE =   0.0092
+  DIAGRAM: 82-[+4]-[+4]-[+4]-[+5]-42-[+4]-9
+
+            [+4]          [+4]          [+4]          [+5]
+            3.4e-09       3.4e-09       3.4e-09       3.3e-05
+            CTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCCCTCTCTC
+            ++++++++++++++++++++++++++++++++++++++++++++++++++++
+76   CTCCTCACTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTTCTATATTCACGTGCC
+
+                                [+4]
+                                1.4e-05
+                                CTCTCTCTCTCTCT
+                                +++++ + ++ +++
+151  GTAGAGCGCACTTGTTTCGTAATCTTTCTCTCACGCTGTCTCATCTTTTC
+
+
+WBGene00018426
+  LENGTH = 200  COMBINED P-VALUE = 3.40e-06  E-VALUE =   0.0096
+  DIAGRAM: 54-[+8]-111-[-5]-12
+
+                                                           [+8]
+                                                           6.0e-05
+                                                           GGCGCGTTTCTC
+                                                           ++++++ + + +
+1    TTGCAAAAAGCCGTGCGGCTCATTGCGAAGGACTGTGCGGCGGGCTTGCGAAAAGGCGCGCCGCACATTGCCCTA
+
+                                [-5]
+                                2.0e-06
+                                GAGAGAGGGAG
+                                +++++++++++
+151  CGCTCTATTGCTACGCTCTAGAGATAAGAGAGACAGAGAAAATTTTCATC
+
+
+WBGene00012136
+  LENGTH = 200  COMBINED P-VALUE = 4.65e-06  E-VALUE =    0.013
+  DIAGRAM: 99-[+4]-87
+
+                             [+4]
+                             3.4e-09
+                             CTCTCTCTCTCTCT
+                             ++++++++++++++
+76   TTCTTTTTCATCTTCACCATCTTTCTCTCTCTCTCTCTCTTATTTCTTATCTACCGTATGACTCATCCGCGTCCA
+
+
+WBGene00004013
+  LENGTH = 200  COMBINED P-VALUE = 4.79e-06  E-VALUE =    0.014
+  DIAGRAM: 11-[+4]-11-[+4]-30-[-4]-51-[+4]-41
+
+                [+4]                     [+4]
+                6.4e-05                  6.9e-08
+                CTCTCTCTCTCTCT           CTCTCTCTCTCTCT
+                + +++++  ++++            +++++++++++ ++
+1    GGCACCGCGCCCGCTCTCGGTCTCCGATCACTCAGTCTCTCTCTCTCCCTCCACAACCCAAAAAGGAGGCTTGCA
+
+          [-4]                                                             [+4]
+          3.5e-05                                                          2.3e-
+          AGAGAGAGAGAGAG                                                   CTCTC
+          +++++   ++++++                                                   ++++
+76   GAAGTAGAGAAGCAGAGAGTGACGATCGCTGTCTCCAGGTGTCCGTGTCAAACTCTCTTATCAATCAGTGCTCTT
+
+     
+     05
+     TCTCTCTCT
+     + ++++++
+151  TTTCTCTCGTGTTACTGCGTCTCTATGTCCATTCCCTTCTACTCATTCCC
+
+
+WBGene00012113
+  LENGTH = 200  COMBINED P-VALUE = 5.72e-06  E-VALUE =    0.016
+  DIAGRAM: 35-[+4]-65-[+5]-44-[+3]-21
+
+                                        [+4]
+                                        6.9e-08
+                                        CTCTCTCTCTCTCT
+                                        +++++++++ ++++
+1    TGCCTTATTTCCACGAAACCAGATTGTCTGTTACACTCTCTCTCCCTCTATCTCTCAACTGTTTCCTCCAAGAGA
+
+                                            [+5]
+                                            6.5e-05
+                                            CTCCCTCTCTC
+                                            ++++++ ++++
+76   GGAGGTCATGAGGGCTTAGACCACATGATTCCTCGGCGTCTCTGCGTCTCTATCTCTTCGCATCACTCTCCTCGG
+
+                        [+3]
+                        1.8e-05
+                        CGGTGTTTGC
+                        + ++++ +++
+151  CTCCGCCCACTCGGCCGTTCTGTGTGTGCTTGTTGTTTCCTCCTCAATTT
+
+
+WBGene00003221
+  LENGTH = 200  COMBINED P-VALUE = 5.95e-06  E-VALUE =    0.017
+  DIAGRAM: 114-[+4]-72
+
+                                            [+4]
+                                            3.4e-09
+                                            CTCTCTCTCTCTCT
+                                            ++++++++++++++
+76   TTATATCTTTTTTGCGCTGTTCGTTTCACATTTTTCTTTCTCTCTCTCTCTCTGATTGGCGATTTCGAGATAAAT
+
+
+WBGene00016603
+  LENGTH = 200  COMBINED P-VALUE = 8.67e-06  E-VALUE =    0.024
+  DIAGRAM: 96-[-4]-50-[-3]-4-[+7]-18
+
+                          [-4]
+                          6.3e-07
+                          AGAGAGAGAGAGAG
+                           +++++++++ +++
+76   CTCAATTCGATATAGGCACATTGAGAGAGAGCGAGCGCCGTTTCGACGTCTTCTAGCCTTCACATCATCCAGACG
+
+               [-3]          [+7]
+               1.8e-05       4.7e-05
+               GCAAACACCG    CCCCGCAC
+               +++ ++++ +    ++++ +++
+151  ACGTTCACACGCACACACAGCCAACCCCACCCTTCTGACAACGAATAGAC
+
+
+WBGene00010828
+  LENGTH = 200  COMBINED P-VALUE = 9.28e-06  E-VALUE =    0.026
+  DIAGRAM: 22-[+5]-10-[+4]-143
+
+                           [+5]                 [+4]
+                           6.5e-05              3.4e-09
+                           CTCCCTCTCTC          CTCTCTCTCTCTCT
+                           ++++++ ++++          ++++++++++++++
+1    AAGTTCCGTCCACCCCATTGTTCTCTGCGTCTCGTTGTCCCTTCTCTCTCTCTCTCTGGGTGCCCCTAGAGCTCC
+
+
+WBGene00021691
+  LENGTH = 200  COMBINED P-VALUE = 1.10e-05  E-VALUE =    0.031
+  DIAGRAM: 25-[+4]-161
+
+                              [+4]
+                              2.4e-08
+                              CTCTCTCTCTCTCT
+                              +++++ ++++++++
+1    TTCCTTCTATCACACTATCTCCCGTCTCTCGCTCTCTCTCTCTCACTCGACAGTCTACCGGGGGCAGTGGTTGTG
+
+
+WBGene00021004
+  LENGTH = 200  COMBINED P-VALUE = 1.26e-05  E-VALUE =    0.035
+  DIAGRAM: 19-[-5]-31-[-3]-129
+
+                        [-5]                                      [-3]
+                        1.4e-06                                   7.4e-07
+                        GAGAGAGGGAG                               GCAAACACCG
+                        +++++++++++                               ++++++++++
+1    TAAAACAGTGTGCAAAAATGAGAGACGGAGAGTATTTGGCGTCGGTTTCAGTGTTTGGTACGCAAACACCGACCC
+
+
+WBGene00013307
+  LENGTH = 200  COMBINED P-VALUE = 1.48e-05  E-VALUE =    0.042
+  DIAGRAM: 5-[+4]-77-[+3]-94
+
+          [+4]
+          1.5e-07
+          CTCTCTCTCTCTCT
+           +++++++++++++
+1    ATGTAATCTCTCTCTCTCTATCTATCCGTCTCGATGTGCTGTGCTGGGGATGGAAAGGCGACTGGCCGTCGTTGC
+
+                          [+3]
+                          5.0e-05
+                          CGGTGTTTGC
+                            ++++ +++
+76   TGTTAGTATTTTACTATCGCTGTGTGTGTGCGTGCCCCCAATTCCTCCCCAGTTTCAGAAGTATTCTCGCTATTA
+
+
+WBGene00018794
+  LENGTH = 200  COMBINED P-VALUE = 1.77e-05  E-VALUE =     0.05
+  DIAGRAM: 94-[+4]-92
+
+                        [+4]
+                        1.9e-07
+                        CTCTCTCTCTCTCT
+                        +++++ + ++++++
+76   TGTTTATCCTTTTCTTTTTCTCTCCCGCTCTCTCGTTTTTGCATGCTCTCTCGTCTTCGCTTTCGAATTTAAATG
+
+
+WBGene00009212
+  LENGTH = 200  COMBINED P-VALUE = 2.36e-05  E-VALUE =    0.067
+  DIAGRAM: 87-[-4]-99
+
+                 [-4]
+                 3.4e-09
+                 AGAGAGAGAGAGAG
+                 ++++++++++++++
+76   TCGAGACCATATAGAGAGAGAGAGAGAGAGCAAACATAGTATGTCAGACAATGATGACGTGTCTACCTCTTGGAA
+
+
+WBGene00016115
+  LENGTH = 200  COMBINED P-VALUE = 3.20e-05  E-VALUE =     0.09
+  DIAGRAM: 80-[-7]-86-[-5]-15
+
+          [-7]
+          1.5e-05
+          GTGCGGGG
+          ++++++++
+76   TAGATGGGCGGGGTTTATGTCTCCAGAAGCCAATTGCCTCTCCGTAAGAGGCGTGGCCAGCCAATCAGCGCACTG
+
+                             [-5]
+                             4.0e-05
+                             GAGAGAGGGAG
+                              ++++++++++
+151  CAACAGCCTCCACGAGGGGTATAAAAGAGGGAGAGTCGCGCGCGCGCGTT
+
+
+WBGene00021758
+  LENGTH = 200  COMBINED P-VALUE = 3.31e-05  E-VALUE =    0.093
+  DIAGRAM: 80-[+4]-66-[+7]-32
+
+          [+4]
+          3.1e-06
+          CTCTCTCTCTCTCT
+          ++++++++++ + +
+76   ATTTACTCTCTCTCTATTTTTCTTAATTTCTTAATGTCGTCCAGAATCGTTTTTCAAAAACGATTTGAATATTTT
+
+               [+7]
+               1.5e-05
+               CCCCGCAC
+               ++++++++
+151  TCATCATAAGCCCCGCCCCTTTCCTCCCTAACCACGCCCCCACTTTGCAG
+
+
+WBGene00017951
+  LENGTH = 200  COMBINED P-VALUE = 3.89e-05  E-VALUE =     0.11
+  DIAGRAM: 9-[+4]-[+4]-[+4]-7-[+4]-[+4]-[+4]-[+4]-[+4]-[+4]-[+4]-44
+
+              [+4]          [+4]          [+4]                 [+4]          [+4
+              3.4e-09       3.4e-09       3.4e-09              3.4e-09       3.4
+              CTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCT       CTCTCTCTCTCTCTCTC
+              ++++++++++++++++++++++++++++++++++++++++++       +++++++++++++++++
+1    ACGCTGAAACTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCCTCTCTCTCTCTCTCTC
+
+     ]          [+4]          [+4]          [+4]          [+4]          [+4]
+     e-09       3.4e-09       3.4e-09       3.4e-09       3.4e-09       3.7e-07
+     TCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCT
+     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+76   TCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCTCT
+
+     
+     
+     CTCTCT
+     ++++
+151  CTCTTCGCTTTTAAAACCTTTTCACTTCACGAAAACAATATTTTTTTCAG
+
+
+WBGene00020234
+  LENGTH = 200  COMBINED P-VALUE = 4.04e-05  E-VALUE =     0.11
+  DIAGRAM: 5-[+4]-29-[+3]-142
+
+          [+4]                                       [+3]
+          1.5e-07                                    1.8e-05
+          CTCTCTCTCTCTCT                             CGGTGTTTGC
+           +++++++++++++                              +++++++++
+1    GTCTCTTCTCTCTCTCTCTACATTCCGGTTCTCGACAATCGTCATTCTGCGTGTTTGCCTGGTCACTAACTGAAC
+
+
+WBGene00020706
+  LENGTH = 200  COMBINED P-VALUE = 4.05e-05  E-VALUE =     0.11
+  DIAGRAM: 50-[+5]-39-[+7]-92
+
+                                                       [+5]
+                                                       6.8e-06
+                                                       CTCCCTCTCTC
+                                                       +++++++ +++
+1    CTCTCCCCTTCAAATACCAGTTCTAACAGTCACCACCCGCTGTTCACGTGCCCCCTCCCTCCCCAGCTGCCGTGT
+
+                              [+7]
+                              3.3e-05
+                              CCCCGCAC
+                              ++++ +++
+76   TCAATAGAGCGCGTTTGCATTTGCACCCCCCACCGCGTGAGCCCAGTCGATGAAATTGATCGATTTTTCTTCGTT
+
+
+WBGene00004728
+  LENGTH = 200  COMBINED P-VALUE = 4.22e-05  E-VALUE =     0.12
+  DIAGRAM: 157-[+4]-29
+
+            [+4]
+            3.4e-09
+            CTCTCTCTCTCTCT
+            ++++++++++++++
+151  TCTATTTCTCTCTCTCTCTCTACGTTTTCATTATTTTCCCATTTTTACAG
+
+
+WBGene00001604
+  LENGTH = 200  COMBINED P-VALUE = 4.71e-05  E-VALUE =     0.13
+  DIAGRAM: 77-[+4]-97-[+7]-4
+
+       [+4]
+       8.5e-06
+       CTCTCTCTCTCTCT
+       ++++   ++++++
+76   CTCTCTGCGTCTCTCCATTCTGAACACTCTCGTGTCTCTCCCACTATTATTGTCTTCCCATGTCATCGAAATCAA
+
+                                           [+7]
+                                           1.5e-05
+                                           CCCCGCAC
+                                           ++++++++
+151  CATAAATCTAGGTTTATCTAGAACCACGTGACCCAACGCCCCGCCCCGCC
+
+
+WBGene00001579
+  LENGTH = 200  COMBINED P-VALUE = 4.76e-05  E-VALUE =     0.13
+  DIAGRAM: 133-[+3]-9-[+5]-37
+
+                                                               [+3]
+                                                               7.4e-07
+                                                               CGGTGTTTGC
+                                                               ++++++++++
+76   TTCCTTGTTTTAGTGACATCGCGGGCACTCCTCGAAACTAGGTCCGCAGAGTGAGCGTCGGTGTTTGCGGACACA
+
+       [+5]
+       3.1e-06
+       CTCCCTCTCTC
+       + +++++++++
+151  GTCACCCTCTCTCCCACCTCTACACACTCACACCTTTGATTCATTCAAAC
+
+
+WBGene00013446
+  LENGTH = 200  COMBINED P-VALUE = 4.84e-05  E-VALUE =     0.14
+  DIAGRAM: 48-[+4]-138
+
+                                                     [+4]
+                                                     4.7e-07
+                                                     CTCTCTCTCTCTCT
+                                                     +++++ +++++++
+1    TTTTTACCGTAATTTTCCACTGTTTTCCCTCACTGGCTTGTCTGGCGTCTCTCACTCTCTCATTCCTCTGTCCAA
+
+
+WBGene00000776
+  LENGTH = 200  COMBINED P-VALUE = 4.86e-05  E-VALUE =     0.14
+  DIAGRAM: 14-[+4]-172
+
+                   [+4]
+                   3.0e-07
+                   CTCTCTCTCTCTCT
+                   +++++  +++++++
+1    CTGTTTCTCTCCGCCTCTCCATCTCTCTCCTCACACTCGTCCTGGCACTGATTGACGCTGTCCCCGCCTACTTTA
+
+
+WBGene00019719
+  LENGTH = 200  COMBINED P-VALUE = 5.36e-05  E-VALUE =     0.15
+  DIAGRAM: [+4]-186
+
+     [+4]
+     3.4e-09
+     CTCTCTCTCTCTCT
+     ++++++++++++++
+1    CTCTCTCTCTCTCTCACCCAGTCCACCTATTTCTTGTCCTCAGTTCATTCATTCATTTTCCCAGACTGACCATGT
+
+
+WBGene00006836
+  LENGTH = 200  COMBINED P-VALUE = 5.52e-05  E-VALUE =     0.16
+  DIAGRAM: 43-[+4]-143
+
+                                                [+4]
+                                                2.4e-08
+                                                CTCTCTCTCTCTCT
+                                                +++++++++++++
+1    TTCTCCATTCATACCCAACTACCCGTGATATCCTATACTTTTACTCTCTCTCTCTCATGTCCAATGTCCCTTCAG
+
+
+WBGene00003576
+  LENGTH = 200  COMBINED P-VALUE = 6.09e-05  E-VALUE =     0.17
+  DIAGRAM: [+4]-186
+
+     [+4]
+     2.4e-08
+     CTCTCTCTCTCTCT
+     +++++++++++++
+1    CTCTCTCTCTCTCGATATTGTTTTTACTCAAATTTCTATTTTCGTTTTTTTTTTCATAAATATTTCTGTAAAAAT
+
+
+WBGene00015330
+  LENGTH = 200  COMBINED P-VALUE = 6.27e-05  E-VALUE =     0.18
+  DIAGRAM: 20-[+4]-60-[+4]-92
+
+                         [+4]
+                         7.9e-05
+                         CTCTCTCTCTCTCT
+                         ++++ ++ ++ ++
+1    CTCAATCTCTTCACCCTACCCTCTATCACTTTCCGTTTTTTTTCCTTCGATTCGTTCTGCACCGGTCTCTACCAG
+
+                        [+4]
+                        6.9e-08
+                        CTCTCTCTCTCTCT
+                        + ++++++++++++
+76   GCACACGCACCTGGCCATTCACTCTCTCTCTCTTTCTTGATTTCTCATCATCTTCCATCAATTTTTTGTGTCTCA
+
+
+WBGene00021050
+  LENGTH = 200  COMBINED P-VALUE = 6.36e-05  E-VALUE =     0.18
+  DIAGRAM: 26-[+4]-110-[+5]-39
+
+                               [+4]
+                               4.0e-05
+                               CTCTCTCTCTCTCT
+                               ++ +++ + +++++
+1    GCGTGCCTGCTACATAATCATTATTACTGTCTTTATCTCTCTGTCCTATACAGTCTCTACTAAATGCATATTCGA
+
+     [+5]
+     1.8e-06
+     CTCCCTCTCTC
+     +++++++++++
+151  CCCCGCCTCTCACGGCCTCCTCCGTATAAAAGGGAGAAGGGGGAGGAGAG
+
+
+WBGene00020758
+  LENGTH = 200  COMBINED P-VALUE = 6.91e-05  E-VALUE =      0.2
+  DIAGRAM: 128-[-8]-45-[+4]-1
+
+                                                          [-8]
+                                                          6.9e-06
+                                                          GAGAAACGCGCC
+                                                          + + + ++++++
+76   ATATCTGTTTCCCGCCAAAATCGATTGGCAGCGGGACCAACGCGGTGCACAATGCGCAGCGCGTCGACAGATGAC
+
+                                        [+4]
+                                        2.0e-05
+                                        CTCTCTCTCTCTCT
+                                        +++++++  ++ ++
+151  ATCATTGCTCCGCCCATCTGCCAAGAAGGGTCCGTCTCTCTCCTTCACTT
+
+
+WBGene00007030
+  LENGTH = 200  COMBINED P-VALUE = 8.09e-05  E-VALUE =     0.23
+  DIAGRAM: 84-[-4]-40-[-4]-33-[+7]-7
+
+              [-4]                                                  [-4]
+              3.5e-05                                               1.4e-05
+              AGAGAGAGAGAGAG                                        AGAGAGAGAGAG
+              +++++   ++++++                                         +++ ++ ++++
+76   ACATTTTCGAGAGACGAAGAGAGTGGCGACGAGGAAGATAGTGTGGTAAGAGGAGAGTGTGCGCGAGGGAAAGAG
+
+                                        [+7]
+                                        4.7e-05
+     AG                                 CCCCGCAC
+     ++                                 ++++ +++
+151  AGCAAAGTGTGAGTGTCTGTGAGAAGAGAAGGAGACCCCCCCCCCCCCGC
+
+
+WBGene00006833
+  LENGTH = 200  COMBINED P-VALUE = 1.02e-04  E-VALUE =     0.29
+  DIAGRAM: 62-[+4]-18-[+5]-95
+
+                                                                   [+4]
+                                                                   3.4e-09
+                                                                   CTCTCTCTCTCTC
+                                                                   +++++++++++++
+1    TCTATAGCCATTCAGTCTTCTCCAACATCGTCTAACAAAGCCTCTCTTTCAGCTTCTATCTTCTCTCTCTCTCTC
+
+                        [+5]
+                        7.5e-07
+     T                  CTCCCTCTCTC
+     +                  +++++++++++
+76   TAGTTGACGTCTTCTACGTCTCTCTCTCTCGTTTCAATCTCACTAACCCCCTATTCACGTGAATTCAGCGTCGTC
+
+
+WBGene00006568
+  LENGTH = 200  COMBINED P-VALUE = 1.03e-04  E-VALUE =     0.29
+  DIAGRAM: 29-[+4]-157
+
+                                  [+4]
+                                  3.4e-09
+                                  CTCTCTCTCTCTCT
+                                  ++++++++++++++
+1    GTATCTGTATTATATATAGGTTTGTGCATCTCTCTCTCTCTCTTTTGTTTTACCCGTCGTTTTGTATGAATCGTA
+
+
+WBGene00020160
+  LENGTH = 200  COMBINED P-VALUE = 1.10e-04  E-VALUE =     0.31
+  DIAGRAM: 3-[+4]-20-[+5]-152
+
+        [+4]                              [+5]
+        3.4e-09                           3.3e-05
+        CTCTCTCTCTCTCT                    CTCCCTCTCTC
+        ++++++++++++++                    ++++++++ ++
+1    GTTCTCTCTCTCTCTCTTACCAAAGGCGCAATCGTTCCTCTCTCTTTCCTTACTCCCTCGTCATTTGCATGCGAT
+
+
+WBGene00001915
+  LENGTH = 200  COMBINED P-VALUE = 1.16e-04  E-VALUE =     0.33
+  DIAGRAM: 105-[-3]-[+5]-48-[-5]-15
+
+                                   [-3]      [+5]
+                                   4.5e-05   5.6e-05
+                                   GCAAACACCGCTCCCTCTCTC
+                                   +++ +++++  ++++++++++
+76   AGCCGACGAAAATCGATGCAAAATACGCATGCGCACACGCGCCCGCCTCTCTATTTAACTATTTCTCTCGGTGTG
+
+                             [-5]
+                             1.4e-05
+                             GAGAGAGGGAG
+                             ++++++ ++++
+151  GGCGGAGTCTAGTTCCGCGGCAGCGAGAGGTGGGGCCACCGCTGGCGAGT
+
+
+WBGene00015468
+  LENGTH = 200  COMBINED P-VALUE = 1.27e-04  E-VALUE =     0.36
+  DIAGRAM: 9-[-5]-44-[-8]-124
+
+              [-5]                                                   [-8]
+              4.7e-05                                                8.9e-05
+              GAGAGAGGGAG                                            GAGAAACGCGC
+              ++++++++ ++                                            +  +  +++++
+1    TACTCACTTGAGAGACGCAGAGAAACCATCGATGGCCTAGATGTCTCGTCTCGCCTCCTTCTCGGCCACGCGCGC
+
+     
+     
+     C
+     +
+76   CTATCTATCGATGTTTTTCTGCCTGTTCGCTCCGTTTTCTTTTTCGAATCTTGACCGCTTCGCATGCCTGTTCCG
+
+
+WBGene00018793
+  LENGTH = 200  COMBINED P-VALUE = 1.29e-04  E-VALUE =     0.36
+  DIAGRAM: 5-[-5]-184
+
+          [-5]
+          1.4e-06
+          GAGAGAGGGAG
+          +++++++++++
+1    GAAGTGAGAGACGGAGCTTGTGTAGATTTACGGTGAACAACGCGTGGGGGTGGGATAGCGGAGTGTCGTTTGGGA
+
+
+WBGene00020334
+  LENGTH = 200  COMBINED P-VALUE = 1.58e-04  E-VALUE =     0.45
+  DIAGRAM: 139-[+4]-47
+
+                                                                     [+4]
+                                                                     6.3e-07
+                                                                     CTCTCTCTCTC
+                                                                     +++++++++ +
+76   CAACACCACATTTGACGCAACATCACACAGTCATTTGCCATATCGACTCTCTTGTTTTTCTGTACTCTCTCTCGC
+
+     
+     
+     TCT
+     ++
+151  TCATTTATCTCGTTCCAGATTATTTCCCAAAGCCGCTTGTTTTTACTCGA
+
+
+WBGene00006366
+  LENGTH = 200  COMBINED P-VALUE = 1.73e-04  E-VALUE =     0.49
+  DIAGRAM: 105-[-4]-81
+
+                                   [-4]
+                                   2.4e-08
+                                   AGAGAGAGAGAGAG
+                                    +++++++++++++
+76   GCCTTCTTCGACTTCTCGCCGGTCACGCAGCGAGAGAGAGAGAGATAACCAACATTTAGAATCATCAATTAGACC
+
+
+WBGene00012258
+  LENGTH = 200  COMBINED P-VALUE = 1.88e-04  E-VALUE =     0.53
+  DIAGRAM: 83-[+4]-103
+
+             [+4]
+             3.0e-07
+             CTCTCTCTCTCTCT
+             +++++  +++++++
+76   CTTTTTGTCTCTCCGTCTCTCTTATCGTTTGATATGCCTATAATCTCTAGCCACAGTTGTTGTTTTTCATTTTTA
+
+
+WBGene00017016
+  LENGTH = 200  COMBINED P-VALUE = 2.16e-04  E-VALUE =     0.61
+  DIAGRAM: 153-[+4]-33
+
+        [+4]
+        4.7e-06
+        CTCTCTCTCTCTCT
+        +++++   ++++++
+151  CATCTCTCCTCCTCTCTGCTTTTAAAAATGGCCGTGGCCGTGTCTTTTCT
+
+
+WBGene00011434
+  LENGTH = 200  COMBINED P-VALUE = 2.22e-04  E-VALUE =     0.63
+  DIAGRAM: 152-[+4]-34
+
+       [+4]
+       1.0e-05
+       CTCTCTCTCTCTCT
+       + + +++++++ ++
+151  CACACACTCTCTCGCTGGTCAACACGGGCGGTGCGCGCGCTAGACATCGT
+
+
+WBGene00000160
+  LENGTH = 200  COMBINED P-VALUE = 2.49e-04  E-VALUE =      0.7
+  DIAGRAM: 2-[+4]-40-[-3]-134
+
+       [+4]                                                  [-3]
+       2.0e-05                                               1.6e-05
+       CTCTCTCTCTCTCT                                        GCAAACACCG
+       +  ++++++++ ++                                        +++ ++++++
+1    GTCCTTCTCTCTCCCTTTTCGGCAATATTTGGAGGTTTTGCGGGACGGAAATCTTTGCGCACACGGCAACTTATC
+
+
+WBGene00021883
+  LENGTH = 200  COMBINED P-VALUE = 2.54e-04  E-VALUE =     0.72
+  DIAGRAM: 25-[+4]-161
+
+                              [+4]
+                              6.3e-07
+                              CTCTCTCTCTCTCT
+                              + +++++++++++
+1    CTCCCCTCGGTCTCCCCAATTCTTGCACTCTCTCTCTCGTCCATCGTTGTGTTCCGATCGATTTCAGGCAGTTGT
+
+
+WBGene00021726
+  LENGTH = 200  COMBINED P-VALUE = 2.71e-04  E-VALUE =     0.77
+  DIAGRAM: 18-[+3]-160-[+5]-1
+
+                       [+3]
+                       2.3e-05
+                       CGGTGTTTGC
+                       ++++++++ +
+1    AAGTTTCATTATGAAATTCGGTGTTTTCAGACAATTTTGAGTCTAATGAGGTAATAAAAAAATTCGACTACACCA
+
+                                           [+5]
+                                           1.7e-06
+                                           CTCCCTCTCTC
+                                           +++++++++++
+151  ATATATTTGTCGTTAGGGGTCAAGACCACCCAGTCTCCCCCCGTCTCTCA
+
+
+WBGene00017988
+  LENGTH = 200  COMBINED P-VALUE = 2.83e-04  E-VALUE =      0.8
+  DIAGRAM: 96-[-8]-27-[-5]-23-[+3]-21
+
+                          [-8]                                   [-5]
+                          7.9e-05                                4.7e-05
+                          GAGAAACGCGCC                           GAGAGAGGGAG
+                           ++ ++++ +++                           ++++++++ ++
+76   ACAAAATGGACGTGGAAAAAATAGGAACGGGCCTACACACGCAAAAGAGTGTGTAAAAGTGAGAGACGCAGAGAA
+
+                        [+3]
+                        1.6e-05
+                        CGGTGTTTGC
+                        ++++++ +++
+151  ACAACGACACTCCACCATCCCGTGTGCGCCTAGTTTATCACACTTCAAAT
+
+
+WBGene00017778
+  LENGTH = 200  COMBINED P-VALUE = 2.87e-04  E-VALUE =     0.81
+  DIAGRAM: 93-[+8]-95
+
+                       [+8]
+                       2.4e-07
+                       GGCGCGTTTCTC
+                       ++++++++++++
+76   ACAGAGTATGGAAGACGCGACGCGTCTCTCCGCGCTGCGTTCAGCCGCGTGTGCACCCTTTTCTATCGATCCGTT
+
+
+WBGene00004437
+  LENGTH = 200  COMBINED P-VALUE = 2.92e-04  E-VALUE =     0.82
+  DIAGRAM: 53-[+8]-135
+
+                                                          [+8]
+                                                          8.4e-07
+                                                          GGCGCGTTTCTC
+                                                          +++++ ++++++
+1    TTTGAATCACCGCGCTTTTATCACCGACGCAAAGTGCGCAAGCAACACTCGCTGGCGCCTTTCTCTCCCTTTGCG
+
+
+WBGene00021506
+  LENGTH = 200  COMBINED P-VALUE = 3.01e-04  E-VALUE =     0.85
+  DIAGRAM: 155-[+4]-31
+
+          [+4]
+          6.4e-06
+          CTCTCTCTCTCTCT
+          ++++   +++++++
+151  AATTTCTCTGCGTCTCTCTCCGCCACATTATGTCTCAGTTGCCACGTTAA
+
+
+WBGene00001569
+  LENGTH = 200  COMBINED P-VALUE = 3.28e-04  E-VALUE =     0.92
+  DIAGRAM: 5-[+4]-14-[+4]-2-[+4]-60-[+4]-63
+
+          [+4]                        [+4]            [+4]
+          9.5e-05                     2.0e-05         6.3e-07
+          CTCTCTCTCTCTCT              CTCTCTCTCTCTCT  CTCTCTCTCTCTCT
+          ++ ++  ++++ +               + + ++++ +++++  +++++ + ++++++
+1    CGCCCCTGTCCGTCTCGCCACACACTATTTCCGCGCGCTCTTTCTCTACCTCTCACACTCTCTCAATCTCCCTAA
+
+                                                     [+4]
+                                                     4.0e-05
+                                                     CTCTCTCTCTCTCT
+                                                      +++++ +++ +++
+76   CTCAAGTGTTCATTCTTGTTGCGTGGTCCCACCGGTTTGCATTTTTTCATCTCTGTCTTTCTTTTTCGTTGTATT
+
+
+WBGene00001580
+  LENGTH = 200  COMBINED P-VALUE = 3.28e-04  E-VALUE =     0.93
+  DIAGRAM: 101-[+5]-88
+
+                               [+5]
+                               1.7e-07
+                               CTCCCTCTCTC
+                               +++++++++++
+76   TCGTGGTCTACATTTTTTATAACGGTCTCCCTCTCTCGTTCAAACTGCCGCCAACAAAAGAGCGCAATAGAGCAT
+
+
+WBGene00007089
+  LENGTH = 200  COMBINED P-VALUE = 3.34e-04  E-VALUE =     0.94
+  DIAGRAM: 98-[-4]-23-[-7]-57
+
+                            [-4]                                 [-7]
+                            3.5e-05                              1.5e-05
+                            AGAGAGAGAGAGAG                       GTGCGGGG
+                            +++ ++  ++++++                       ++++++++
+76   TATATTACCGGTACAGAGAGTGTAGATAGTTAGAGAGTGCCAGACATCCGGGACCCAATGGGGCGGGGCGCGCGG
+
+
+WBGene00019250
+  LENGTH = 200  COMBINED P-VALUE = 3.41e-04  E-VALUE =     0.96
+  DIAGRAM: 165-[-4]-21
+
+                    [-4]
+                    4.7e-06
+                    AGAGAGAGAGAGAG
+                     + +++++++ +++
+151  GTGTCTGTAAGAGACGGCGAGAGAGCGAGCGGCCGTGGCCTAGCGTTTGC
+
+
+WBGene00010002
+  LENGTH = 200  COMBINED P-VALUE = 3.83e-04  E-VALUE =      1.1
+  DIAGRAM: 21-[-4]-165
+
+                          [-4]
+                          9.6e-06
+                          AGAGAGAGAGAGAG
+                           +++ +++++++ +
+1    TTTAAACCTCCGCGTTTTTTCCGAGTGAGAGAGTGTGCGGTTTGAAGAGACGAAGATGAGAAAGGCTAACGAGAC
+
+
+WBGene00007139
+  LENGTH = 200  COMBINED P-VALUE = 4.37e-04  E-VALUE =      1.2
+  DIAGRAM: 156-[+5]-6-[+4]-13
+
+           [+5]             [+4]
+           5.4e-05          3.0e-07
+           CTCCCTCTCTC      CTCTCTCTCTCTCT
+           ++++++++ ++      +++++  +++++++
+151  CTTGTGCTCCGCCTTTCTTCCCGCTCTCCTTCTCTCTCCCCCATCCCCTC
+
+
+WBGene00016489
+  LENGTH = 200  COMBINED P-VALUE = 4.61e-04  E-VALUE =      1.3
+  DIAGRAM: 5-[+5]-158-[-3]-16
+
+          [+5]
+          8.4e-06
+          CTCCCTCTCTC
+          +++++++++ +
+1    GCTGTCCCCCCCTCCCCTATTTTTGTCTTTTCCCCGTGAGTGGACGATTAAAAGGCGGGGCCTAAATATTAGGTT
+
+                             [-3]
+                             3.3e-05
+                             GCAAACACCG
+                             +++  +++++
+151  AAAACGAGTGTTACCGTAGTGTATGCACCCACCGAGACCCAGCGAACGCG
+
+
+WBGene00022456
+  LENGTH = 200  COMBINED P-VALUE = 4.70e-04  E-VALUE =      1.3
+  DIAGRAM: 88-[-5]-61-[-4]-26
+
+                  [-5]
+                  7.5e-07
+                  GAGAGAGGGAG
+                  +++++++++++
+76   TTTCTTTTTATTGGAGAGAGAGAGGAGGCGCCAAAGAAGATAAGACACCCGCGAACTCGAGTGTAAGAAGAAACA
+
+               [-4]
+               3.1e-06
+               AGAGAGAGAGAGAG
+               +++++++ +++ ++
+151  AGGGAGGAGAAGAGAGAAAGAAAGGGATGGTTGAACACAGAAAATGAATT
+
+
+WBGene00001086
+  LENGTH = 200  COMBINED P-VALUE = 4.88e-04  E-VALUE =      1.4
+  DIAGRAM: 152-[+4]-34
+
+       [+4]
+       1.9e-07
+       CTCTCTCTCTCTCT
+       +++++ +++++ ++
+151  TACTCTCCCTCTCCCTTTTAATATTTATCAAAATTAATTCCTTTTTTCAG
+
+
+WBGene00002148
+  LENGTH = 200  COMBINED P-VALUE = 5.15e-04  E-VALUE =      1.5
+  DIAGRAM: 47-[+3]-31-[+8]-100
+
+                                                    [+3]
+                                                    7.4e-07
+                                                    CGGTGTTTGC
+                                                    ++++++++++
+1    TATTCGCGCATGTGATACGATGAACAATCGTCTGCGATTTGCCGTCGCGGTGTTTGCGAGCCACAGAAATAAATT
+
+                  [+8]
+                  2.6e-05
+                  GGCGCGTTTCTC
+                   +++++++++++
+76   GTTCACAATTGTTTGCGCGTCTCTCACAACAGTAAATTTAATGGTTTTTCGCAAAAAATTTTGGGTTTTCTGGAA
+
+
+WBGene00006793
+  LENGTH = 200  COMBINED P-VALUE = 5.28e-04  E-VALUE =      1.5
+  DIAGRAM: 12-[-8]-20-[+3]-146
+
+                 [-8]                            [+3]
+                 4.9e-05                         2.3e-05
+                 GAGAAACGCGCC                    CGGTGTTTGC
+                 +++ + +++++                     + ++++ +++
+1    CATTTCGCTCAGGAGGAGCGCGCGCGCGGAGGGGCAATGCACATCTGTGTCCGCCTCGCTCAATTGATTTCGTAT
+
+
+WBGene00008852
+  LENGTH = 200  COMBINED P-VALUE = 5.53e-04  E-VALUE =      1.6
+  DIAGRAM: 163-[+5]-26
+
+                  [+5]
+                  1.7e-06
+                  CTCCCTCTCTC
+                  +++++++++++
+151  TGTTCTTTTCCGTCTCCGCCTCTCATTCTCTCAATCCTTTTTCTTTATTT
+
+
+WBGene00003389
+  LENGTH = 200  COMBINED P-VALUE = 5.56e-04  E-VALUE =      1.6
+  DIAGRAM: 47-[-4]-101-[+4]-24
+
+                                                    [-4]
+                                                    2.3e-06
+                                                    AGAGAGAGAGAGAG
+                                                    +++++++ ++++ +
+1    CTCCGGGAAACCTTTAATGAGAGAAAAGAAAAGAAAAAGATGCAACAAGAGAGAAAGAGTGTTGAGAAAATTGAA
+
+                 [+4]
+                 6.9e-08
+                 CTCTCTCTCTCTCT
+                 +++++++ ++++++
+151  TCATAATGCGTTCTCTCTCGCTCTCTCATTTTTTATTTATTTTTTATTTA
+
+
+WBGene00012348
+  LENGTH = 200  COMBINED P-VALUE = 6.16e-04  E-VALUE =      1.7
+  DIAGRAM: 67-[+4]-19-[+4]-28-[+4]-44
+
+                                                                        [+4]
+                                                                        6.6e-05
+                                                                        CTCTCTCT
+                                                                        ++ ++ ++
+1    AAATAAAACCCATTTCAATACATTTTATTCCCGAATCTGATCACTTGTCGACCTACATTGCCATTTACTTTCACT
+
+                              [+4]                                      [+4]
+                              6.4e-05                                   6.9e-08
+     CTCTCT                   CTCTCTCTCTCTCT                            CTCTCTCT
+     ++++                     + ++  ++ +++++                            ++++++++
+76   CTCTTCTTATCATAATTTCGATAACCACTGCCTATCTCTTTTACACCATTCCGCGTTAATAAAAACCCTCTCTCT
+
+     
+     
+     CTCTCT
+     +++ ++
+151  CTCACTCTCTCGCAATAAAAAATCAATATATATATATATACATTTTGCAG
+
+
+WBGene00001892
+  LENGTH = 200  COMBINED P-VALUE = 6.51e-04  E-VALUE =      1.8
+  DIAGRAM: 68-[-5]-17-[-4]-90
+
+                                                                         [-5]
+                                                                         1.8e-06
+                                                                         GAGAGAG
+                                                                         +++++++
+1    CAATTGGAATCCGATAGGGACTGTGAATAAAGGAGACATGTACACTGCATTTATACAAGGTTCTGGTGGAGAGGC
+
+                          [-4]
+                          1.4e-05
+     GGAG                 AGAGAGAGAGAGAG
+     ++++                 ++++ +++ ++++
+76   GGGGAAGTTAGAGAGTAGGTAAGAGTGAGTGAGAACAAAGATAACAAGACAAATGTGTCCCCGCAGTGTCTCCTC
+
+
+WBGene00021681
+  LENGTH = 200  COMBINED P-VALUE = 6.84e-04  E-VALUE =      1.9
+  DIAGRAM: 3-[-5]-46-[+5]-7-[+4]-4-[+4]-[+5]-79
+
+        [-5]                                                     [+5]
+        6.5e-05                                                  2.1e-05
+        GAGAGAGGGAG                                              CTCCCTCTCTC
+        ++++ ++++++                                              +++++ +++++
+1    AAAGAGACGCAGAGAAAGCGCTGCAAGACCCCACATCTGTGTGTTTGTCCTTCCTCAATCCTCCGGCTCTCTCGT
+
+        [+4]              [+4]          [+5]
+        6.4e-05           8.5e-06       5.4e-05
+        CTCTCTCTCTCTCT    CTCTCTCTCTCTCTCTCCCTCTCTC
+        +++ +  +++++ +     ++++  ++++++  ++++++++++
+76   CGCCTCGCCGTCTCTTTCAAATTCTCCATCTCTCCTCCCGTCTCTCTTAGTTGTTCTGGTGTATGCTTGCGTGCG
+
+
+WBGene00019730
+  LENGTH = 200  COMBINED P-VALUE = 6.89e-04  E-VALUE =      1.9
+  DIAGRAM: 79-[-4]-61-[+8]-34
+
+         [-4]
+         1.4e-05
+         AGAGAGAGAGAGAG
+          + ++++++ ++++
+76   ACTACGCGAGAGAAAGAGGCAGCAGACAAGGCCCGGCCGATTGCGTTTGATTATGTTCTTGCATCAGGTTGCCGC
+
+         [+8]
+         6.5e-05
+         GGCGCGTTTCTC
+         +++ ++ +++ +
+151  CGTCGGCCCGCCTCACGGCCCGCCCATTTTTCGACGGCCAAGAGGCCTTT
+
+
+WBGene00018064
+  LENGTH = 200  COMBINED P-VALUE = 7.22e-04  E-VALUE =        2
+  DIAGRAM: 88-[+5]-101
+
+                  [+5]
+                  6.8e-06
+                  CTCCCTCTCTC
+                  +++ +++++++
+76   GCGGCCTAGAAATCCCGCTCTCTCACTGTTCTCTTCCAGATTTTTTAATTTGAAAAATAATTTATTTCGCCGCGT
+
+
+WBGene00022139
+  LENGTH = 200  COMBINED P-VALUE = 7.33e-04  E-VALUE =      2.1
+  DIAGRAM: 1-[-5]-19-[+4]-57-[+3]-88
+
+      [-5]                          [+4]
+      6.5e-05                       4.7e-06
+      GAGAGAGGGAG                   CTCTCTCTCTCTCT
+      ++++ ++++++                    ++++ +++++ ++
+1    AGAGACGCAGAGAACATGGGATGTTCTCTGCGTCTCCCTCTCACTCACGCACTAACTTTCTGCGCTCTCTGCGCT
+
+                                [+3]
+                                5.0e-05
+                                CGGTGTTTGC
+                                  ++++ +++
+76   CTCTGCACTCTCCCAAGCCACCAGTGTGTGTGTGTGCCTCCTTCTTTCCCTTTTTAAGCACCCAATTAATATTTG
+
+
+WBGene00000591
+  LENGTH = 200  COMBINED P-VALUE = 7.85e-04  E-VALUE =      2.2
+  DIAGRAM: 24-[+4]-162
+
+                             [+4]
+                             4.6e-07
+                             CTCTCTCTCTCTCT
+                             +++++ ++++ ++
+1    TACACCCTCTACATCTCACATTGTCTCTCCCTCTTTCCCTATCTGCATCGCAGCTAAATGCTCGCGTTGCGGTTG
+
+
+WBGene00000897
+  LENGTH = 200  COMBINED P-VALUE = 7.87e-04  E-VALUE =      2.2
+  DIAGRAM: 53-[+4]-133
+
+                                                          [+4]
+                                                          7.1e-06
+                                                          CTCTCTCTCTCTCT
+                                                           +++++ ++++++
+1    CTAGGTGAGCCGCTCGTCAGTATCTGCTCACCGTCTGCGTCTCTGCTTGGCTCTTCTCTTTCTCTCCATGTGCTC
+
+
+WBGene00016258
+  LENGTH = 200  COMBINED P-VALUE = 9.29e-04  E-VALUE =      2.6
+  DIAGRAM: 14-[+7]-17-[+4]-147
+
+                   [+7]                     [+4]
+                   7.2e-05                  1.4e-05
+                   CCCCGCAC                 CTCTCTCTCTCTCT
+                   ++++ +++                 +  ++++++++++
+1    GCGCTCCACCGCACCCCCTCACGGCGAGAGACCAGGAATCGATCTCTCTCTCGGTTTGCACGCTGTCAAATTTTT
+
+
+WBGene00004340
+  LENGTH = 200  COMBINED P-VALUE = 9.33e-04  E-VALUE =      2.6
+  DIAGRAM: 63-[+5]-126
+
+                                                                    [+5]
+                                                                    4.4e-07
+                                                                    CTCCCTCTCTC
+                                                                    +++++++++++
+1    ACCAACATGATTAGTCAGATGACCAGAAAACTCACGTTAATTTCACAAGGCCCAAAAAAATCTCTCCCCCTCTCG
+
+
+WBGene00000410
+  LENGTH = 200  COMBINED P-VALUE = 9.66e-04  E-VALUE =      2.7
+  DIAGRAM: 83-[+8]-105
+
+             [+8]
+             9.9e-05
+             GGCGCGTTTCTC
+             + + + ++++++
+76   GCCACTCCGCCCCTTTTCTCTATTTCTCAATGTTTTTTTTTGCAATTTTCCTCTATTTTTTCGGTTTTTTCGCAA
+
+
+WBGene00013734
+  LENGTH = 200  COMBINED P-VALUE = 9.86e-04  E-VALUE =      2.8
+  DIAGRAM: 141-[-3]-29-[+8]-8
+
+                                                                       [-3]
+                                                                       7.4e-07
+                                                                       GCAAACACC
+                                                                       +++++++++
+76   TAGAAAAACTATGTAAAATTTTTTTTTTAAATCGCAATTTTCTCCAGGTATACGGTAAGCAAGTCCGCAAACACC
+
+                                   [+8]
+                                   2.5e-05
+     G                             GGCGCGTTTCTC
+     +                             ++++++++++ +
+151  GAAGCATTGCTGCACGCGTCGCACGACCGCGACGCGTCTCCCCCCTCTTT
+
+
+WBGene00019918
+  LENGTH = 200  COMBINED P-VALUE = 9.89e-04  E-VALUE =      2.8
+  DIAGRAM: 145-[+5]-5-[+7]-31
+
+                                                                           [+5]
+                                                                           2.1e-
+                                                                           CTCCC
+                                                                           +++++
+76   TTGTATTATGTAGTTTGTAGTTTGGAAATTGTACTCCTCTTGGACATGGGATCTTTTCTCACAGTCTCGTCTCTC
+
+                [+7]
+     05         7.2e-05
+     TCTCTC     CCCCGCAC
+     ++++ +     ++++ +++
+151  CCTCCCGTTGACCCCTCACGTGTAGGCCACACACACACACACACACACAC
+
+
+WBGene00001002
+  LENGTH = 200  COMBINED P-VALUE = 1.00e-03  E-VALUE =      2.8
+  DIAGRAM: 28-[-4]-133-[+5]-14
+
+                                 [-4]
+                                 9.6e-06
+                                 AGAGAGAGAGAGAG
+                                 ++++ + + +++++
+1    CTTTTCTAGTCAAAAGCGAAAAACGGCGAGAGTGTGTGAGAGCGGAGTAAATATGCAAGGATTTGCGGGTGCCTC
+
+                              [+5]
+                              5.4e-05
+                              CTCCCTCTCTC
+                              ++++++++ ++
+151  TACACTTTGTTGGCTCCCGCCATCGCCCCGTCTTTCGTTGAGATGCCTGC
+
+
+WBGene00001396
+  LENGTH = 200  COMBINED P-VALUE = 1.00e-03  E-VALUE =      2.8
+  DIAGRAM: 115-[+4]-71
+
+                                             [+4]
+                                             3.0e-07
+                                             CTCTCTCTCTCTCT
+                                             +++++ ++++++ +
+76   TTGTTTACTGTCAATTCAAAAACCTGTTTTGAAATATCAACTCTCCCTCTCTTTACATTATTCGTTTCCTTTGCT
+
+
+WBGene00001239
+  LENGTH = 200  COMBINED P-VALUE = 1.05e-03  E-VALUE =        3
+  DIAGRAM: 117-[-8]-11-[+4]-46
+
+                                               [-8]                   [+4]
+                                               2.6e-05                2.0e-05
+                                               GAGAAACGCGCC           CTCTCTCTCT
+                                               ++ +++++++++           ++ ++++++
+76   TTCATCTCTTTTTACTACTCCATATCGCCCTTTCACCCCGTCGACAGACGCGCCTGTTTACTATCCTATCTCTCG
+
+     
+     
+     CTCT
+     + ++
+151  CACTTTTTGCAGACGGAAATTTATTTCTTTTTTTTTTTGAAACAATTATT
+
+
+WBGene00002999
+  LENGTH = 200  COMBINED P-VALUE = 1.08e-03  E-VALUE =        3
+  DIAGRAM: 32-[+4]-93-[+4]-47
+
+                                     [+4]
+                                     1.5e-07
+                                     CTCTCTCTCTCTCT
+                                     ++++++++++ +++
+1    ACAATTGTTAATTCTAAATTTTCCCACGTTAACTCTCTCTCTGTCTGCTTCTCTCTTGTCCCTCTTCTTCATCGC
+
+                                                                     [+4]
+                                                                     2.3e-06
+                                                                     CTCTCTCTCTC
+                                                                     ++++++++ ++
+76   TCTAATTAATTCGCGTGTGAGACGAGAGAAGAGCATCCAATAATCCATGTCCTTTTCCCGCTTCCTCTCTCTTTC
+
+     
+     
+     TCT
+      ++
+151  CCTCATCTTCCTATCTATTTTCCATCGGACCATGAACAATTCTGTTGCAG
+
+
+WBGene00004136
+  LENGTH = 200  COMBINED P-VALUE = 1.14e-03  E-VALUE =      3.2
+  DIAGRAM: 32-[-4]-154
+
+                                     [-4]
+                                     1.0e-05
+                                     AGAGAGAGAGAGAG
+                                     ++ +++++++ + +
+1    CAAGGTGGTCGTCCGCAAACGCGCAAACAAAAAGCGAGAGAGTGTGCGCATTTCTCGTGCGGGAGGCCGTGATCC
+
+
+WBGene00016235
+  LENGTH = 200  COMBINED P-VALUE = 1.19e-03  E-VALUE =      3.4
+  DIAGRAM: 65-[+5]-124
+
+                                                                      [+5]
+                                                                      1.7e-06
+                                                                      CTCCCTCTCT
+                                                                      ++++++++++
+1    CACCGGCCAAAAAACATTTCATAACACCAGCATCCATCGTGACCCACTCTGTTTTTCTCGCGACTCTCCGCCTCT
+
+     
+     
+     C
+     +
+76   CATTCATTTCCTCATCCTGACTCACTCTGATTGACTTCTTGTTTATTTACACGAACTACTTTCACATTTAACGTT
+
+
+WBGene00015811
+  LENGTH = 200  COMBINED P-VALUE = 1.22e-03  E-VALUE =      3.4
+  DIAGRAM: 17-[-5]-29-[-3]-133
+
+                      [-5]                                    [-3]
+                      8.2e-05                                 7.4e-07
+                      GAGAGAGGGAG                             GCAAACACCG
+                      ++++++ ++ +                             ++++++++++
+1    ATTGAAAGATGAAAATAGAGAGAAGGCGCCTTAAGGCACGCGGGACTGACAAAGTGTGCAAACACCGCCACGCGA
+
+
+WBGene00012558
+  LENGTH = 200  COMBINED P-VALUE = 1.37e-03  E-VALUE =      3.9
+  DIAGRAM: 52-[-8]-63-[+4]-59
+
+                                                         [-8]
+                                                         1.1e-07
+                                                         GAGAAACGCGCC
+                                                         ++++++++++++
+1    TCTAGTGCCGTGCTGGCTTTTCTCTATGCACGAGATATGCGCCAGCAAAATCGAGAAACGCGTCAGCGAGGACAT
+
+                                                         [+4]
+                                                         3.5e-05
+                                                         CTCTCTCTCTCTCT
+                                                         +++ ++ + +++++
+76   GTTTGCGCCATCCGGGAATGGGAATGGGATTTATTTGGTTTTTCTCGTTTTTCTCGCTTTTTCTCTCACATGAGT
+
+
+WBGene00012983
+  LENGTH = 200  COMBINED P-VALUE = 1.47e-03  E-VALUE =      4.1
+  DIAGRAM: 26-[+4]-146-[+5]-3
+
+                               [+4]
+                               3.5e-05
+                               CTCTCTCTCTCTCT
+                               ++ + ++++ ++++
+1    AACACGGGAAAACATCATTTTTCTCGCTTTTTCTCCCTCTTCCCTCCTCTCACCGCATACTTGCTCCCCCAAGCA
+
+                                         [+5]
+                                         4.7e-05
+                                         CTCCCTCTCTC
+                                         ++ ++++++++
+151  AAGAGTTCCGCCCGTGTTTTTGTTTTCTTTTTCTCCCTGCGTCTCTCCGC
+
+
+WBGene00001173
+  LENGTH = 200  COMBINED P-VALUE = 1.50e-03  E-VALUE =      4.2
+  DIAGRAM: 110-[+4]-33-[+7]-35
+
+                                        [+4]
+                                        2.3e-05
+                                        CTCTCTCTCTCTCT
+                                        +++++  + +++++
+76   AAAAACTGCATTTTTTCGCTGAAAATTTGAATTTCCTCTCGATTTCTCTCTCACTTTTCCGCATTTTTTTCCGTT
+
+            [+7]
+            6.2e-05
+            CCCCGCAC
+            ++++++ +
+151  TTTTCCTCCCCGCTCCGCTCAAAAAAATCAATAAATAAATACTTTTACAG
+
+
+WBGene00006808
+  LENGTH = 200  COMBINED P-VALUE = 1.65e-03  E-VALUE =      4.6
+  DIAGRAM: 145-[+4]-2-[+4]-25
+
+                                                                           [+4]
+                                                                           3.1e-
+                                                                           CTCTC
+                                                                            ++++
+76   CCAAACAACGACGACATTTGGAGCAAAGGCATAGAGCATTCATTTAGTTTGGCGGCTGGAGCCCTCTAGCATCTC
+
+                [+4]
+     06         8.5e-06
+     TCTCTCTCT  CTCTCTCTCTCTCT
+     +++++++ +  ++++   ++++++
+151  TCTCTCTTTGTCTCTGCATCTCTCCAACGTCGTCAGTTTGCCTTTTTCCT
+
+
+WBGene00007934
+  LENGTH = 200  COMBINED P-VALUE = 1.71e-03  E-VALUE =      4.8
+  DIAGRAM: 129-[-5]-28-[+8]-20
+
+                                                           [-5]
+                                                           1.4e-05
+                                                           GAGAGAGGGAG
+                                                           ++++++ ++++
+76   CAGGGGGTCGCCGTCGTCTTACTCTCCTCACCTTACTCTTGTTTCGTTTTCTCTGAGAGGTGGGGGTCGCGTGCC
+
+                       [+8]
+                       5.7e-06
+                       GGCGCGTTTCTC
+                       + +++ ++++ +
+151  TAGGTAGGTGTATGGGCAGCCGCCTTTCGCGAAACAAAACTCACTCCGCC
+
+
+WBGene00015569
+  LENGTH = 200  COMBINED P-VALUE = 1.90e-03  E-VALUE =      5.4
+  DIAGRAM: 40-[-3]-66-[+4]-70
+
+                                             [-3]
+                                             4.0e-06
+                                             GCAAACACCG
+                                             +++ ++++++
+1    AGGTTGCTCTATCTACCGGTCACTTGCCTCCACGTTGAACGCACACACCGTCGTTACCCTTATCTTGGCTAAAAA
+
+                                              [+4]
+                                              2.3e-06
+                                              CTCTCTCTCTCTCT
+                                              ++++ ++++ ++++
+76   ACTGCATATTGCAATGCCTGTTCGTCTACACCATTATTTTTCTCTTTCTCACTCTTAAAATCATTCAAAACCCTT
+
+
+WBGene00001974
+  LENGTH = 200  COMBINED P-VALUE = 1.90e-03  E-VALUE =      5.4
+  DIAGRAM: 168-[+4]-18
+
+                       [+4]
+                       6.3e-07
+                       CTCTCTCTCTCTCT
+                       + +++++++++++
+151  CTCTTCTTTCGATTTCTTCCCTCTCTCTCTCGTTAACTAGACTTATTGAC
+
+
+WBGene00001412
+  LENGTH = 200  COMBINED P-VALUE = 1.93e-03  E-VALUE =      5.5
+  DIAGRAM: 47-[-8]-141
+
+                                                    [-8]
+                                                    3.7e-08
+                                                    GAGAAACGCGCC
+                                                    ++++++++++++
+1    AAATGTTATTAATACAATACAATGCGAATTAAATTAATATTTCGCGCGAGAAACGCGCCAACGCACCGAAAGTGC
+
+
+WBGene00007217
+  LENGTH = 200  COMBINED P-VALUE = 1.96e-03  E-VALUE =      5.5
+  DIAGRAM: 186-[-7]-6
+
+                                         [-7]
+                                         1.5e-05
+                                         GTGCGGGG
+                                         ++++++++
+151  GGTATTGCGAAACCGCGCGCCGCACATTGCAAAAGTGGGCGGGGCGTCGT
+
+
+WBGene00010174
+  LENGTH = 200  COMBINED P-VALUE = 2.05e-03  E-VALUE =      5.8
+  DIAGRAM: 20-[+5]-169
+
+                         [+5]
+                         1.8e-06
+                         CTCCCTCTCTC
+                         +++++++++++
+1    GATCTTTGCAAACACCATCACCCCGCCTCTCCATCGCCTCCTCCTTTGAGTATTCACCTCCCATTGCCATCTTGT
+
+
+WBGene00000566
+  LENGTH = 200  COMBINED P-VALUE = 2.09e-03  E-VALUE =      5.9
+  DIAGRAM: 100-[+4]-86
+
+                              [+4]
+                              3.7e-07
+                              CTCTCTCTCTCTCT
+                              ++++++++ ++++
+76   TTTCCCTCAATTTCTCTCTCAATTTCTCTCTCTTTCTCCACCGCCACAAAGAACCATTTTTCATCAGTTTTATCG
+
+
+WBGene00021248
+  LENGTH = 200  COMBINED P-VALUE = 2.12e-03  E-VALUE =        6
+  DIAGRAM: 11-[+3]-4-[+8]-163
+
+                [+3]          [+8]
+                2.7e-06       2.0e-05
+                CGGTGTTTGC    GGCGCGTTTCTC
+                ++++++ +++    +++ ++ + + +
+1    AATTTGCGGCGCGGTGTCTGCCATTGGCCCGACACGCCTAGATTTGCAAGTTTGCCGCACGAGATTTTTCGCGCC
+
+
+WBGene00001340
+  LENGTH = 200  COMBINED P-VALUE = 2.43e-03  E-VALUE =      6.8
+  DIAGRAM: 17-[+7]-63-[+7]-92-[-3]-2
+
+                      [+7]
+                      6.2e-05
+                      CCCCGCAC
+                      ++++++ +
+1    TGTTTGTATTGTTACTGCCCCGCGCGCCGCAAAAAGCAGCAGCAGTCGGGTGGCGATAGTCTCTGAGAACAGTTC
+
+                  [+7]
+                  1.5e-05
+                  CCCCGCAC
+                  ++++++++
+76   AAATTGAGGTGATCCCCGCCCCATTCATCAATATATTTCTTCCACATTTGAACTGATTAATGTCAGAAAAGAGTG
+
+                                           [-3]
+                                           6.3e-05
+                                           GCAAACACCG
+                                            ++ ++++++
+151  AATGATTTGATAAGAATCTCTTCTCTGGCCAGAACTTTACACACACGGTC
+
+
+WBGene00006974
+  LENGTH = 200  COMBINED P-VALUE = 2.44e-03  E-VALUE =      6.9
+  DIAGRAM: 31-[+5]-158
+
+                                    [+5]
+                                    2.4e-05
+                                    CTCCCTCTCTC
+                                    +++++++ +++
+1    GATTTATCTGCGTGGCTGGTCTCACTGCGCACCCTCCCCCTCCGCCGCCAGTTTGAATTCTAACCGTTCTCACAT
+
+
+WBGene00000449
+  LENGTH = 200  COMBINED P-VALUE = 2.57e-03  E-VALUE =      7.3
+  DIAGRAM: 177-[-3]-13
+
+                                [-3]
+                                7.8e-05
+                                GCAAACACCG
+                                 ++ ++++++
+151  AGGCTGGACTGAAGGCGCACGGGAGACACGCACACGGTGAACGATCCTCC
+
+
+WBGene00009588
+  LENGTH = 200  COMBINED P-VALUE = 2.58e-03  E-VALUE =      7.3
+  DIAGRAM: 42-[-4]-62-[-3]-15-[-5]-46
+
+                                               [-4]
+                                               4.2e-05
+                                               AGAGAGAGAGAGAG
+                                                ++ ++++ + +++
+1    TGCAATTTTTCGAAGAAAATGCACAAAGAAGAAACAGGAGATCGAAAGAGGGCGAGACGGGACGCAAGTTAGTAA
+
+                                                [-3]                     [-5]
+                                                7.8e-05                  4.7e-05
+                                                GCAAACACCG               GAGAGAG
+                                                 ++ ++++ +               +++++++
+76   GAGGGGAGAATAAAAGGCGATGCCGGCTGCGAAACAGACACACACAGACACAGGCACGGGTATCGATCGAGAGAC
+
+     
+     
+     GGAG
+     + ++
+151  GCAGTGAATGGACGCCACAAGGTCATATGCTTTGACGCACACGACAAGTA
+
+
+WBGene00008412
+  LENGTH = 200  COMBINED P-VALUE = 2.71e-03  E-VALUE =      7.7
+  DIAGRAM: 159-[+7]-33
+
+              [+7]
+              6.2e-05
+              CCCCGCAC
+              ++++++ +
+151  GATTTTTCCCCCCGCTCCGCCCTTGTCCCGCAATTTTTTGTGCAGTTTTT
+
+
+WBGene00009587
+  LENGTH = 200  COMBINED P-VALUE = 2.76e-03  E-VALUE =      7.8
+  DIAGRAM: 6-[+5]-15-[+3]-62-[+4]-82
+
+           [+5]                      [+3]
+           4.7e-05                   7.8e-05
+           CTCCCTCTCTC               CGGTGTTTGC
+           ++ ++++++++               + ++++ ++
+1    CATTCACTGCGTCTCTCGATCGATACCCGTGCCTGTGTCTGTGTGTGTCTGTTTCGCAGCCGGCATCGCCTTTTA
+
+                                  [+4]
+                                  4.2e-05
+                                  CTCTCTCTCTCTCT
+                                  +++ + ++++ ++
+76   TTCTCCCCTCTTACTAACTTGCGTCCCGTCTCGCCCTCTTTCGATCTCCTGTTTCTTCTTTGTGCATTTTCTTCG
+
+
+WBGene00219275
+  LENGTH = 200  COMBINED P-VALUE = 2.76e-03  E-VALUE =      7.8
+  DIAGRAM: 143-[+4]-43
+
+                                                                         [+4]
+                                                                         3.1e-06
+                                                                         CTCTCTC
+                                                                          + ++++
+76   TTAGGTTTTCTGCAGTACACGCCACGCAGTTTTATTATTTTGAGTGTAAGATACGCTGGCTCTTTTCGTTTTCTC
+
+     
+     
+     TCTCTCT
+     +++++++
+151  TCTCTCTGCGTCTTCTCACTTTTTTATTGCTCTTTTTCTTTACATTCTAT
+
+
+WBGene00022703
+  LENGTH = 200  COMBINED P-VALUE = 2.76e-03  E-VALUE =      7.8
+  DIAGRAM: 122-[+7]-70
+
+                                                    [+7]
+                                                    8.1e-06
+                                                    CCCCGCAC
+                                                    ++++++++
+76   GCGGTGGTGGGCGGAGTTTATGGCAGGAGGCGGAGTCGGAATGCAACCCCCGCACGGTTTCTTCTCTCCACGAAT
+
+
+WBGene00000534
+  LENGTH = 200  COMBINED P-VALUE = 2.80e-03  E-VALUE =      7.9
+
+                                            [+5]
+                                            1.7e-06
+                                            CTCCCTCTCTC
+                                            +++++++++++
+151  GTCACGCGTCTCCATTATTCCCGTTATGTCTCTCAATGTCTCCGCCTCTC
+
+
+WBGene00004248
+  LENGTH = 200  COMBINED P-VALUE = 2.92e-03  E-VALUE =      8.2
+  DIAGRAM: 19-[-8]-169
+
+                        [-8]
+                        3.7e-08
+                        GAGAAACGCGCC
+                        ++++++++++++
+1    AAATTTTTTTCGCGGGCACGAGAAACGCGCCAATGACACTGGCACGAAGTGCGCCAGCAGGCACCCATGGCGTGA
+
+
+WBGene00001026
+  LENGTH = 200  COMBINED P-VALUE = 2.92e-03  E-VALUE =      8.2
+  DIAGRAM: 4-[-7]-12-[-5]-33-[-5]-121
+
+         [-7]                [-5]                                        [-5]
+         3.3e-05             8.2e-05                                     4.7e-05
+         GTGCGGGG            GAGAGAGGGAG                                 GAGAGAG
+         +++ ++++            +++++  ++++                                  ++++++
+1    GTCAGTGTGGGGATCGATAAGCTTGAGAGCAGGAGGATTGAGCACTTGGAGAAAATAGAAACTGAAGGAAGAGAC
+
+     
+     
+     GGAG
+     ++++
+76   GGAGACGCGAGAGTCACAATGAGTCCGCGCCCATCTCCGTTATTACTTTTTGCAAAGTGTTTGTGTTCGCTCTCA
+
+
+WBGene00022381
+  LENGTH = 200  COMBINED P-VALUE = 3.10e-03  E-VALUE =      8.7
+  DIAGRAM: 86-[+8]-102
+
+                [+8]
+                3.7e-08
+                GGCGCGTTTCTC
+                ++++++++++++
+76   CCGCACGCGCTGGCGCGTTTCTCGGCGCGTTTTATCATTATTATTTTGTTTCCTATTTCCATCGGTTTTTCGTCG
+
+
+WBGene00009353
+  LENGTH = 200  COMBINED P-VALUE = 3.52e-03  E-VALUE =      9.9
+  DIAGRAM: 64-[+4]-122
+
+                                                                     [+4]
+                                                                     4.7e-06
+                                                                     CTCTCTCTCTC
+                                                                     + +++  ++++
+1    TTCGCTAAACAACACGCGTAATCGTTATTTCGGAGTGTTGTACGAACCGCCGAATTGATTTTGTCCCTCCTTCTC
+
+     
+     
+     TCT
+     +++
+76   TCTTGTTTTTGTGTGTTCTCTATTCAGAAAGTAGCGAATTTATTAAAATTTTCAAATTTGATTAATGAAATATTT
+
+
+WBGene00016977
+  LENGTH = 200  COMBINED P-VALUE = 3.54e-03  E-VALUE =       10
+  DIAGRAM: 114-[+4]-72
+
+                                            [+4]
+                                            2.3e-06
+                                            CTCTCTCTCTCTCT
+                                            + ++++ +++++++
+76   CTGATGCAGATAAGTAACTCATTTGCGATAGTAAACAAGCCCTCTTTCTCTCTTTTTCACCTCTCATTTTCTCAC
+
+********************************************************************************
+
+
+CPU: node023
+Time 0.232 secs.
+
+mast -oc . -nostatus meme.xml 12_1.txt

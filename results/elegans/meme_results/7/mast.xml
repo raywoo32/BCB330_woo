@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mast version="5.0.4" release="Wed Jan 23 14:05:40 2019 -0800">
+	<command_line><arg>mast</arg><arg>-oc</arg><arg>.</arg><arg>-nostatus</arg><arg>meme.xml</arg><arg>7.txt</arg></command_line>
+	<settings strand_handling="combine" max_correlation="0.60" remove_correlated="n" max_seq_evalue="10" adjust_hit="n" max_hit_pvalue="0.0001" max_weak_pvalue="0.0001"/>
+	<alphabet name="DNA" like="dna">
+		<letter id="A" symbol="A" complement="T" name="Adenine" colour="CC0000"/>
+		<letter id="C" symbol="C" complement="G" name="Cytosine" colour="0000CC"/>
+		<letter id="G" symbol="G" complement="C" name="Guanine" colour="FFB300"/>
+		<letter id="T" symbol="T" aliases="U" complement="A" name="Thymine" colour="008000"/>
+		<letter id="N" symbol="N" aliases="X." equals="ACGT" name="Any base"/>
+		<letter id="V" symbol="V" equals="ACG" name="Not T"/>
+		<letter id="H" symbol="H" equals="ACT" name="Not G"/>
+		<letter id="D" symbol="D" equals="AGT" name="Not C"/>
+		<letter id="B" symbol="B" equals="CGT" name="Not A"/>
+		<letter id="M" symbol="M" equals="AC" name="Amino"/>
+		<letter id="R" symbol="R" equals="AG" name="Purine"/>
+		<letter id="W" symbol="W" equals="AT" name="Weak"/>
+		<letter id="S" symbol="S" equals="CG" name="Strong"/>
+		<letter id="Y" symbol="Y" equals="CT" name="Pyrimidine"/>
+		<letter id="K" symbol="K" equals="GT" name="Keto"/>
+	</alphabet>
+	<background source="--nrdb--" A="0.274262" C="0.22521" G="0.22521" T="0.274262"/>
+	<motif_dbs>
+		<motif_db source="meme.xml" last_mod_date="Mon Feb 25 20:47:37 2019">
+			<background A="0.325" C="0.175" G="0.175" T="0.325"/>
+		</motif_db>
+	</motif_dbs>
+	<motifs>
+		<motif db="0" id="CWYYYTCY" alt="MEME-1" length="8" nsites="5925" evalue="7.3e-005">
+			<pos A="-1918" C="222" G="-538" T="-84"/>
+			<pos A="-24" C="12" G="-88" T="44"/>
+			<pos A="-472" C="124" G="0" T="30"/>
+			<pos A="-148" C="117" G="-199" T="46"/>
+			<pos A="-476" C="139" G="-145" T="52"/>
+			<pos A="-165" C="-7" G="-64" T="93"/>
+			<pos A="-203" C="186" G="-174" T="-50"/>
+			<pos A="-1918" C="183" G="-643" T="20"/>
+		</motif>
+		<motif db="0" id="TATATAT" alt="MEME-2" length="7" nsites="21" evalue="1.9e+000">
+			<pos A="-1104" C="-1104" G="-1104" T="162"/>
+			<pos A="162" C="-1104" G="-1104" T="-1104"/>
+			<pos A="-1104" C="-1104" G="-1104" T="162"/>
+			<pos A="162" C="-1104" G="-1104" T="-1104"/>
+			<pos A="-1104" C="-1104" G="-1104" T="162"/>
+			<pos A="162" C="-1104" G="-1104" T="-1104"/>
+			<pos A="-1104" C="-1104" G="-1104" T="162"/>
+		</motif>
+		<motif db="0" id="TRTGTGTG" alt="MEME-3" length="8" nsites="39" evalue="4.3e-001">
+			<pos A="-1193" C="-1193" G="-1193" T="162"/>
+			<pos A="66" C="-1193" G="148" T="-1193"/>
+			<pos A="-1193" C="-1193" G="-1193" T="162"/>
+			<pos A="-1193" C="-1193" G="251" T="-1193"/>
+			<pos A="-1193" C="-1193" G="-1193" T="162"/>
+			<pos A="-1193" C="-1193" G="251" T="-1193"/>
+			<pos A="-1193" C="-1193" G="-1193" T="162"/>
+			<pos A="-34" C="-1193" G="209" T="-1193"/>
+		</motif>
+		<motif db="0" id="TATGTATA" alt="MEME-4" length="8" nsites="6" evalue="4.7e-001" bad="y">
+			<pos A="-923" C="-923" G="-923" T="162"/>
+			<pos A="162" C="-923" G="-923" T="-923"/>
+			<pos A="-923" C="-923" G="-923" T="162"/>
+			<pos A="-923" C="-923" G="251" T="-923"/>
+			<pos A="-923" C="-923" G="-923" T="162"/>
+			<pos A="162" C="-923" G="-923" T="-923"/>
+			<pos A="-923" C="-923" G="-923" T="162"/>
+			<pos A="162" C="-923" G="-923" T="-923"/>
+		</motif>
+		<motif db="0" id="CAAATRMTGA" alt="MEME-5" length="10" nsites="29" evalue="2.0e+000">
+			<pos A="-165" C="235" G="-1150" T="-1150"/>
+			<pos A="162" C="-1150" G="-1150" T="-1150"/>
+			<pos A="141" C="-1150" G="-34" T="-1150"/>
+			<pos A="101" C="-76" G="-134" T="-91"/>
+			<pos A="-1150" C="-1150" G="-1150" T="162"/>
+			<pos A="101" C="-1150" G="98" T="-1150"/>
+			<pos A="46" C="111" G="-2" T="-1150"/>
+			<pos A="-1150" C="-1150" G="-1150" T="162"/>
+			<pos A="-1150" C="-1150" G="251" T="-1150"/>
+			<pos A="162" C="-1150" G="-1150" T="-1150"/>
+		</motif>
+		<motif db="0" id="AATCATTAT" alt="MEME-6" length="9" nsites="5" evalue="2.3e+000">
+			<pos A="162" C="-897" G="-897" T="-897"/>
+			<pos A="162" C="-897" G="-897" T="-897"/>
+			<pos A="-897" C="-897" G="-897" T="162"/>
+			<pos A="-897" C="251" G="-897" T="-897"/>
+			<pos A="162" C="-897" G="-897" T="-897"/>
+			<pos A="-897" C="-897" G="-897" T="162"/>
+			<pos A="-897" C="-897" G="-897" T="162"/>
+			<pos A="162" C="-897" G="-897" T="-897"/>
+			<pos A="-897" C="-897" G="-897" T="162"/>
+		</motif>
+		<motif db="0" id="AHATAT" alt="MEME-7" length="6" nsites="445" evalue="4.0e+000" bad="y">
+			<pos A="131" C="-1544" G="-1544" T="-73"/>
+			<pos A="27" C="57" G="-1544" T="10"/>
+			<pos A="162" C="-1544" G="-1544" T="-1544"/>
+			<pos A="-1544" C="-1544" G="-1544" T="162"/>
+			<pos A="162" C="-1544" G="-1544" T="-1544"/>
+			<pos A="-1544" C="-1544" G="-1544" T="162"/>
+		</motif>
+		<motif db="0" id="TGATAA" alt="MEME-8" length="6" nsites="45" evalue="1.5e-002">
+			<pos A="-1214" C="-1214" G="-1214" T="162"/>
+			<pos A="-1214" C="-1214" G="251" T="-1214"/>
+			<pos A="162" C="-1214" G="-1214" T="-1214"/>
+			<pos A="-1214" C="-1214" G="-1214" T="162"/>
+			<pos A="162" C="-1214" G="-1214" T="-1214"/>
+			<pos A="162" C="-1214" G="-1214" T="-1214"/>
+		</motif>
+	</motifs>
+	<correlations>
+		<correlation idx_a="0" idx_b="1" value="0.10"/>
+		<correlation idx_a="0" idx_b="2" value="0.15"/>
+		<correlation idx_a="1" idx_b="2" value="0.55"/>
+		<correlation idx_a="0" idx_b="3" value="0.10"/>
+		<correlation idx_a="1" idx_b="3" value="0.81"/>
+		<correlation idx_a="2" idx_b="3" value="0.71"/>
+		<correlation idx_a="0" idx_b="4" value="0.03"/>
+		<correlation idx_a="1" idx_b="4" value="0.26"/>
+		<correlation idx_a="2" idx_b="4" value="0.20"/>
+		<correlation idx_a="3" idx_b="4" value="0.18"/>
+		<correlation idx_a="0" idx_b="5" value="0.14"/>
+		<correlation idx_a="1" idx_b="5" value="0.43"/>
+		<correlation idx_a="2" idx_b="5" value="0.32"/>
+		<correlation idx_a="3" idx_b="5" value="0.38"/>
+		<correlation idx_a="4" idx_b="5" value="0.45"/>
+		<correlation idx_a="0" idx_b="6" value="0.09"/>
+		<correlation idx_a="1" idx_b="6" value="0.83"/>
+		<correlation idx_a="2" idx_b="6" value="0.42"/>
+		<correlation idx_a="3" idx_b="6" value="0.61"/>
+		<correlation idx_a="4" idx_b="6" value="0.50"/>
+		<correlation idx_a="5" idx_b="6" value="0.47"/>
+		<correlation idx_a="0" idx_b="7" value="0.07"/>
+		<correlation idx_a="1" idx_b="7" value="0.39"/>
+		<correlation idx_a="2" idx_b="7" value="0.28"/>
+		<correlation idx_a="3" idx_b="7" value="0.39"/>
+		<correlation idx_a="4" idx_b="7" value="0.59"/>
+		<correlation idx_a="5" idx_b="7" value="0.56"/>
+		<correlation idx_a="6" idx_b="7" value="0.36"/>
+	</correlations>
+	<sequence_dbs>
+		<sequence_db source="7.txt" last_mod_date="Mon Feb 25 13:06:21 2019" seq_count="1310" residue_count="262000"/>
+	</sequence_dbs>
+	<sequences>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00009432" comment="" length="200">
+			<score strand="both" combined_pvalue="1.74e-03" evalue="2.3"/>
+			<seg start="1">
+				<data>
+GCGTAATCTATACATACGAAGTGATAACAAATGATGATAAATATTTCCCAATAATAATCTTAAATTAATTTTTGT
+				</data>
+				<hit pos="9" idx="3" rc="y" pvalue="2.6e-05" match="++++++++"/>
+				<hit pos="28" idx="4" rc="n" pvalue="5.4e-06" match="++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00044391" comment="" length="200">
+			<score strand="both" combined_pvalue="3.42e-03" evalue="4.5"/>
+			<seg start="76">
+				<data>
+AGAAACAAAAAACAAATGATGATTTGACTCACTTTCACTTTCGAAAAGATATCATTTAATACATCTTTTATGTAT
+AATCCGCTTGCCTCATTTATTCTATCAACAGCTGATTGCCGCAAATAATT
+				</data>
+				<hit pos="88" idx="4" rc="n" pvalue="5.4e-06" match="++++++++++"/>
+				<hit pos="144" idx="3" rc="n" pvalue="2.6e-05" match="++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00000088" comment="" length="200">
+			<score strand="both" combined_pvalue="4.92e-03" evalue="6.4"/>
+			<seg start="1">
+				<data>
+ATTAATTCGTAATAAAAAGTCGAAAAAAATTGTGCTCCCTCCCCCCATTAATAATAATTCTATCCCAAAATCTAC
+				</data>
+				<hit pos="35" idx="0" rc="n" pvalue="9.8e-06" match="++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00022644" comment="" length="200">
+			<score strand="both" combined_pvalue="5.79e-03" evalue="7.6"/>
+			<seg start="1">
+				<data>
+GAGTTATTTAAGAAATACTTCACCAAATGCTGAGCCGTTAAACTTTTATCAGTTACAGATGCTCCATTGACTGTC
+				</data>
+				<hit pos="24" idx="4" rc="n" pvalue="2.4e-06" match="++++++++++"/>
+			</seg>
+		</sequence>
+	</sequences>
+	<runtime host="node208" when="Mon Feb 25 20:47:38 2019" cycles="108000" seconds="0.108"/>
+</mast>

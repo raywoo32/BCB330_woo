@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mast version="5.0.4" release="Wed Jan 23 14:05:40 2019 -0800">
+	<command_line><arg>mast</arg><arg>-oc</arg><arg>.</arg><arg>-nostatus</arg><arg>meme.xml</arg><arg>11_1.txt</arg></command_line>
+	<settings strand_handling="combine" max_correlation="0.60" remove_correlated="n" max_seq_evalue="10" adjust_hit="n" max_hit_pvalue="0.0001" max_weak_pvalue="0.0001"/>
+	<alphabet name="DNA" like="dna">
+		<letter id="A" symbol="A" complement="T" name="Adenine" colour="CC0000"/>
+		<letter id="C" symbol="C" complement="G" name="Cytosine" colour="0000CC"/>
+		<letter id="G" symbol="G" complement="C" name="Guanine" colour="FFB300"/>
+		<letter id="T" symbol="T" aliases="U" complement="A" name="Thymine" colour="008000"/>
+		<letter id="N" symbol="N" aliases="X." equals="ACGT" name="Any base"/>
+		<letter id="V" symbol="V" equals="ACG" name="Not T"/>
+		<letter id="H" symbol="H" equals="ACT" name="Not G"/>
+		<letter id="D" symbol="D" equals="AGT" name="Not C"/>
+		<letter id="B" symbol="B" equals="CGT" name="Not A"/>
+		<letter id="M" symbol="M" equals="AC" name="Amino"/>
+		<letter id="R" symbol="R" equals="AG" name="Purine"/>
+		<letter id="W" symbol="W" equals="AT" name="Weak"/>
+		<letter id="S" symbol="S" equals="CG" name="Strong"/>
+		<letter id="Y" symbol="Y" equals="CT" name="Pyrimidine"/>
+		<letter id="K" symbol="K" equals="GT" name="Keto"/>
+	</alphabet>
+	<background source="--nrdb--" A="0.274262" C="0.22521" G="0.22521" T="0.274262"/>
+	<motif_dbs>
+		<motif_db source="meme.xml" last_mod_date="Thu Feb 28 21:08:15 2019">
+			<background A="0.338" C="0.162" G="0.162" T="0.338"/>
+		</motif_db>
+	</motif_dbs>
+	<motifs>
+		<motif db="0" id="TTCACG" alt="MEME-1" length="6" nsites="572" evalue="4.2e-014">
+			<pos A="-335" C="-136" G="70" T="92"/>
+			<pos A="-190" C="84" G="-1580" T="87"/>
+			<pos A="-1580" C="263" G="-1580" T="-1580"/>
+			<pos A="156" C="-1580" G="-1580" T="-1580"/>
+			<pos A="-1580" C="263" G="-1580" T="-1580"/>
+			<pos A="-1580" C="-1580" G="263" T="-1580"/>
+		</motif>
+		<motif db="0" id="AWAAWA" alt="MEME-2" length="6" nsites="1518" evalue="4.9e-003">
+			<pos A="156" C="-1721" G="-1721" T="-1721"/>
+			<pos A="90" C="-1721" G="-1721" T="12"/>
+			<pos A="156" C="-1721" G="-1721" T="-1721"/>
+			<pos A="145" C="-1721" G="-1721" T="-218"/>
+			<pos A="66" C="-1721" G="-1721" T="46"/>
+			<pos A="110" C="-1721" G="-1721" T="-30"/>
+		</motif>
+		<motif db="0" id="CCCCCCCCCCCCC" alt="MEME-3" length="13" nsites="11" evalue="2.8e+000">
+			<pos A="-1010" C="263" G="-1010" T="-1010"/>
+			<pos A="-1010" C="217" G="-83" T="-90"/>
+			<pos A="-189" C="234" G="-1010" T="-189"/>
+			<pos A="-1010" C="249" G="-83" T="-1010"/>
+			<pos A="-1010" C="263" G="-1010" T="-1010"/>
+			<pos A="-1010" C="263" G="-1010" T="-1010"/>
+			<pos A="-1010" C="249" G="-83" T="-1010"/>
+			<pos A="-1010" C="263" G="-1010" T="-1010"/>
+			<pos A="-1010" C="263" G="-1010" T="-1010"/>
+			<pos A="-1010" C="234" G="-1010" T="-90"/>
+			<pos A="-1010" C="263" G="-1010" T="-1010"/>
+			<pos A="-189" C="234" G="-1010" T="-189"/>
+			<pos A="-1010" C="263" G="-1010" T="-1010"/>
+		</motif>
+		<motif db="0" id="CTCCTCC" alt="MEME-4" length="7" nsites="5" evalue="2.8e+000" bad="y">
+			<pos A="-897" C="263" G="-897" T="-897"/>
+			<pos A="-897" C="-897" G="-897" T="156"/>
+			<pos A="-897" C="263" G="-897" T="-897"/>
+			<pos A="-897" C="263" G="-897" T="-897"/>
+			<pos A="-897" C="-897" G="-897" T="156"/>
+			<pos A="-897" C="263" G="-897" T="-897"/>
+			<pos A="-897" C="263" G="-897" T="-897"/>
+		</motif>
+		<motif db="0" id="BHTHYHTYWYTTYYW" alt="MEME-5" length="15" nsites="4450" evalue="3.5e+000">
+			<pos A="-374" C="118" G="37" T="23"/>
+			<pos A="-69" C="77" G="3" T="5"/>
+			<pos A="-70" C="29" G="-37" T="47"/>
+			<pos A="3" C="76" G="8" T="-68"/>
+			<pos A="-723" C="92" G="-4" T="66"/>
+			<pos A="-18" C="37" G="-57" T="18"/>
+			<pos A="-80" C="40" G="-5" T="37"/>
+			<pos A="-158" C="105" G="1" T="20"/>
+			<pos A="-2" C="-73" G="-4" T="28"/>
+			<pos A="-406" C="185" G="-95" T="-11"/>
+			<pos A="-122" C="-1" G="4" T="64"/>
+			<pos A="-72" C="-4" G="32" T="36"/>
+			<pos A="-710" C="144" G="14" T="17"/>
+			<pos A="-639" C="150" G="27" T="3"/>
+			<pos A="-5" C="-9" G="7" T="5"/>
+		</motif>
+		<motif db="0" id="TCAAWTTTGATTTG" alt="MEME-6" length="14" nsites="9" evalue="4.4e+000">
+			<pos A="-982" C="-54" G="-982" T="139"/>
+			<pos A="-982" C="246" G="-982" T="-160"/>
+			<pos A="156" C="-982" G="-982" T="-982"/>
+			<pos A="156" C="-982" G="-982" T="-982"/>
+			<pos A="71" C="-982" G="-982" T="39"/>
+			<pos A="-982" C="46" G="-982" T="120"/>
+			<pos A="-982" C="-982" G="-982" T="156"/>
+			<pos A="-982" C="-982" G="-982" T="156"/>
+			<pos A="-982" C="-54" G="246" T="-982"/>
+			<pos A="156" C="-982" G="-982" T="-982"/>
+			<pos A="-61" C="-982" G="-54" T="98"/>
+			<pos A="-982" C="-982" G="-982" T="156"/>
+			<pos A="-982" C="-982" G="-982" T="156"/>
+			<pos A="-982" C="-982" G="263" T="-982"/>
+		</motif>
+		<motif db="0" id="TGACAT" alt="MEME-7" length="6" nsites="6" evalue="3.9e+000">
+			<pos A="-923" C="-923" G="-923" T="156"/>
+			<pos A="-923" C="-923" G="263" T="-923"/>
+			<pos A="156" C="-923" G="-923" T="-923"/>
+			<pos A="-923" C="263" G="-923" T="-923"/>
+			<pos A="156" C="-923" G="-923" T="-923"/>
+			<pos A="-923" C="-923" G="-923" T="156"/>
+		</motif>
+		<motif db="0" id="TTTGAAATT" alt="MEME-8" length="9" nsites="2" evalue="4.5e+000" bad="y">
+			<pos A="-765" C="-765" G="-765" T="156"/>
+			<pos A="-765" C="-765" G="-765" T="156"/>
+			<pos A="-765" C="-765" G="-765" T="156"/>
+			<pos A="-765" C="-765" G="262" T="-765"/>
+			<pos A="156" C="-765" G="-765" T="-765"/>
+			<pos A="156" C="-765" G="-765" T="-765"/>
+			<pos A="156" C="-765" G="-765" T="-765"/>
+			<pos A="-765" C="-765" G="-765" T="156"/>
+			<pos A="-765" C="-765" G="-765" T="156"/>
+		</motif>
+	</motifs>
+	<correlations>
+		<correlation idx_a="0" idx_b="1" value="0.04"/>
+		<correlation idx_a="0" idx_b="2" value="0.57"/>
+		<correlation idx_a="1" idx_b="2" value="-0.06"/>
+		<correlation idx_a="0" idx_b="3" value="0.38"/>
+		<correlation idx_a="1" idx_b="3" value="-0.01"/>
+		<correlation idx_a="2" idx_b="3" value="0.64"/>
+		<correlation idx_a="0" idx_b="4" value="0.28"/>
+		<correlation idx_a="1" idx_b="4" value="-0.10"/>
+		<correlation idx_a="2" idx_b="4" value="0.43"/>
+		<correlation idx_a="3" idx_b="4" value="0.60"/>
+		<correlation idx_a="0" idx_b="5" value="0.26"/>
+		<correlation idx_a="1" idx_b="5" value="0.54"/>
+		<correlation idx_a="2" idx_b="5" value="0.12"/>
+		<correlation idx_a="3" idx_b="5" value="0.21"/>
+		<correlation idx_a="4" idx_b="5" value="0.23"/>
+		<correlation idx_a="0" idx_b="6" value="0.39"/>
+		<correlation idx_a="1" idx_b="6" value="0.31"/>
+		<correlation idx_a="2" idx_b="6" value="0.20"/>
+		<correlation idx_a="3" idx_b="6" value="0.17"/>
+		<correlation idx_a="4" idx_b="6" value="0.17"/>
+		<correlation idx_a="5" idx_b="6" value="0.40"/>
+		<correlation idx_a="0" idx_b="7" value="0.16"/>
+		<correlation idx_a="1" idx_b="7" value="0.60"/>
+		<correlation idx_a="2" idx_b="7" value="-0.00"/>
+		<correlation idx_a="3" idx_b="7" value="0.10"/>
+		<correlation idx_a="4" idx_b="7" value="0.18"/>
+		<correlation idx_a="5" idx_b="7" value="0.55"/>
+		<correlation idx_a="6" idx_b="7" value="0.78"/>
+	</correlations>
+	<sequence_dbs>
+		<sequence_db source="11_1.txt" last_mod_date="Thu Feb 28 13:23:18 2019" seq_count="890" residue_count="178000"/>
+	</sequence_dbs>
+	<sequences>
+		<sequence db="0" name="WBGene00022162" comment="" length="200">
+			<score strand="both" combined_pvalue="1.11e-08" evalue="9.9e-06"/>
+			<seg start="1">
+				<data>
+AATTATGCGGGGGCACAAATGAAATTCGGCGATTTCAAGCTCAAATATAAAATCAGGGATTTTTTTGTTGAATTT
+				</data>
+				<hit pos="16" idx="5" rc="y" pvalue="6.7e-06" match="+++++ +++++ + "/>
+			</seg>
+			<seg start="151">
+				<data>
+ATTGTCCACGTAACCTTGCCCCCCCCCCTCTTCCTAATTGTTCCAACAAC
+				</data>
+				<hit pos="171" idx="4" rc="n" pvalue="1.2e-08" match="+++++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00016399" comment="" length="200">
+			<score strand="both" combined_pvalue="1.61e-07" evalue="0.00014"/>
+			<seg start="151">
+				<data>
+CACGTTTATAAAAAATCCCCCCCCCCCCCTCCCTCTCTGTCGGAAAAAAT
+				</data>
+				<hit pos="167" idx="2" rc="n" pvalue="3.8e-09" match="+++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00007209" comment="" length="200">
+			<score strand="both" combined_pvalue="1.91e-07" evalue="0.00017"/>
+			<seg start="151">
+				<data>
+TGACAAAACGAGTCAGTGGGGGGGGGGGGGGGGGGGGGAGAATTTCAATC
+				</data>
+				<hit pos="168" idx="2" rc="y" pvalue="3.8e-09" match="+++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00009463" comment="" length="200">
+			<score strand="both" combined_pvalue="4.17e-07" evalue="0.00037"/>
+			<seg start="76">
+				<data>
+TTAAATTCATAACGTGAAACCCCCCCCCCCCCCCCTACCTCCCCCATTTATTGATTTTCCCTTTTTTCAAATTGA
+				</data>
+				<hit pos="95" idx="2" rc="n" pvalue="3.8e-09" match="+++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00011919" comment="" length="200">
+			<score strand="both" combined_pvalue="4.46e-06" evalue="0.004"/>
+			<seg start="1">
+				<data>
+ATTCAACTTTCGACTAATCTCTGATATTGACAACTTTCAAATAAGGAGGGGGGGGGGGACGTGGAAGTTCAAATT
+				</data>
+				<hit pos="46" idx="2" rc="y" pvalue="4.3e-08" match="+ +++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00022818" comment="" length="200">
+			<score strand="both" combined_pvalue="5.46e-06" evalue="0.0049"/>
+			<seg start="1">
+				<data>
+TAAAATTGACGTGACCTTTTCCAACGATCTCCGACTTGTTTTTCTCCTCCCTCCACGCCTACGTTCCACGTCGAT
+				</data>
+				<hit pos="44" idx="3" rc="n" pvalue="4.4e-05" match="+++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+GAAGTTTGGATTACAAAGTCAATTTTGATTTGAGAAGAAAGTAACAAAGG
+				</data>
+				<hit pos="169" idx="5" rc="n" pvalue="1.5e-08" match="++++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00020070" comment="" length="200">
+			<score strand="both" combined_pvalue="8.82e-06" evalue="0.0078"/>
+			<seg start="76">
+				<data>
+TTATATTTAATTTCCAAGAAAAATGTCGAAGTATCAAATTTCAAAAAAACGTGGCCCCCCTATTCCCTAATAATT
+				</data>
+				<hit pos="112" idx="7" rc="y" pvalue="7.2e-06" match="+++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+GCAACGTGCTCTGCCATCGACTCCTCCCCCTCTTGCACTTCCACAACAAT
+				</data>
+				<hit pos="173" idx="4" rc="n" pvalue="1.8e-06" match="++++++++++++++ "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00044158" comment="" length="200">
+			<score strand="both" combined_pvalue="9.37e-06" evalue="0.0083"/>
+			<seg start="151">
+				<data>
+AAAATATATACCCCCCCCCCCCACCCCCAATCAATCTACGTTTCACCAAT
+				</data>
+				<hit pos="162" idx="2" rc="n" pvalue="4.3e-08" match="+++++++++++ +"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00020227" comment="" length="200">
+			<score strand="both" combined_pvalue="1.04e-05" evalue="0.0093"/>
+			<seg start="1">
+				<data>
+AAAGACTAGCCTAAAACTGAAAATTTAGGTTGAAAATAATGCAATTGCAAACAATGCATTTGAAGGCCTCCTCCA
+CTCCCTGATCAGACACGGAGACCAGTTGACAGGTCTTCAACAACAGAGCAGATTTCACAGTGATCTTCTGAATAT
+				</data>
+				<hit pos="67" idx="4" rc="n" pvalue="5.2e-07" match="++++++++ ++ +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00020072" comment="" length="200">
+			<score strand="both" combined_pvalue="1.18e-05" evalue="0.01"/>
+			<seg start="1">
+				<data>
+GGAAAATAATTGTTGTGGAAGTGCAAGAGGGGGAGGAGTCGATGGCAGAGCACGTTGCAATTATTAGGGAATAGG
+				</data>
+				<hit pos="16" idx="4" rc="y" pvalue="1.8e-06" match=" +++++ + ++++++"/>
+				<hit pos="32" idx="3" rc="y" pvalue="4.4e-05" match="+++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+GGGGCCACGTTTTTTTGAAATTTGATACTTCGACATTTTTCTTGGAAATTAAATATAAACGTGTTCCAATTAAAT
+				</data>
+				<hit pos="89" idx="7" rc="n" pvalue="7.2e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00009753" comment="" length="200">
+			<score strand="both" combined_pvalue="2.07e-05" evalue="0.018"/>
+			<seg start="151">
+				<data>
+GACCCCCCCCCCCCCCCCCCACGTAATATCTTCTCCCAGCATAATCAGCC
+				</data>
+				<hit pos="153" idx="2" rc="n" pvalue="3.8e-09" match="+++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00015026" comment="" length="200">
+			<score strand="both" combined_pvalue="2.25e-05" evalue="0.02"/>
+			<seg start="76">
+				<data>
+GTCCAAGCCCAAATCCAGATTTGAAGTTGAAAGGTGCCAGTGTAGTGCAGCCACTTCCACCTCCTCCACCTCCGG
+				</data>
+				<hit pos="85" idx="5" rc="y" pvalue="7.1e-05" match="++++++ +++++  "/>
+				<hit pos="135" idx="4" rc="n" pvalue="9.9e-07" match="++++++++ ++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00022071" comment="" length="200">
+			<score strand="both" combined_pvalue="2.70e-05" evalue="0.024"/>
+			<seg start="1">
+				<data>
+AAAATGAAAAAAAAAATCAGAAACCCCCCCCCCCCCCCTTAACAATGACTTTCAGTACCTTTTGTCATTTGTACT
+				</data>
+				<hit pos="24" idx="2" rc="n" pvalue="3.8e-09" match="+++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00013621" comment="" length="200">
+			<score strand="both" combined_pvalue="2.91e-05" evalue="0.026"/>
+			<seg start="1">
+				<data>
+ACTACTTGTGAGATCTTTTTAAATTGTAAAAAGGCGTGGGTGGGATTGGGAGGGGGGTGGGGGGCGTTTCAAAGA
+				</data>
+				<hit pos="48" idx="2" rc="y" pvalue="1.9e-07" match="+++ ++++++ ++"/>
+			</seg>
+			<seg start="151">
+				<data>
+TTTCCGAGATAAAACTACGCCAAGTCAAGATCAAATCGAGAACATCCATT
+				</data>
+				<hit pos="171" idx="5" rc="y" pvalue="8.9e-05" match="+++ +++++++  +"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00044744" comment="" length="200">
+			<score strand="both" combined_pvalue="3.27e-05" evalue="0.029"/>
+			<seg start="1">
+				<data>
+ATATTTCCGCAAAACCGTGCCACCCAACTTCCAAGCGAGAAGCGAGGCGGGAAGGGCGTCCAATTACGCCTCGCC
+				</data>
+				<hit pos="42" idx="2" rc="y" pvalue="2.1e-05" match="+ + ++ +++  +"/>
+			</seg>
+			<seg start="151">
+				<data>
+TGTTTCCCCCCCCCCCCCCCCCCCCTTTAAAAATCCAACCTTATTAAAAC
+				</data>
+				<hit pos="156" idx="2" rc="n" pvalue="3.8e-09" match="+++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00010168" comment="" length="200">
+			<score strand="both" combined_pvalue="6.72e-05" evalue="0.06"/>
+			<seg start="76">
+				<data>
+TTTTGGTGAAAAATTCAAAAGCCGACCCACCACCTGAGATAAGGATCTCCATTTGGAACTAGAAATCCTCCTCCT
+				</data>
+				<hit pos="143" idx="3" rc="n" pvalue="4.4e-05" match="+++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+CCTCCTCCTCAATTTTTATTCCATTTTTTGGTCATTCATTCGTATCCGAA
+				</data>
+				<hit pos="152" idx="3" rc="n" pvalue="4.4e-05" match="+++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00003114" comment="" length="200">
+			<score strand="both" combined_pvalue="8.16e-05" evalue="0.073"/>
+			<seg start="1">
+				<data>
+TTTCTCTCAAAAACTCATTTCTCCTCAATTCAATTTCGAAAATGGCGTCAATACATCATCATACAAGCTCCTCCT
+CCCCCTTCCTCTGTTCTATTTCTTTGAAGCCGAATGTCGATTGGTCCACGCACTGTTCTATGGCCACGCCTCTTT
+				</data>
+				<hit pos="26" idx="5" rc="y" pvalue="2.8e-05" match="+++ ++++ ++ ++"/>
+				<hit pos="67" idx="4" rc="n" pvalue="1.4e-05" match="+++++++++++ +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00235288" comment="" length="200">
+			<score strand="both" combined_pvalue="1.03e-04" evalue="0.091"/>
+			<seg start="76">
+				<data>
+TAATTTTAGGGATGAAAATCAATTTTTTTTTGAAATTTAATTCGAAAAAAATTAAATCTCCCCGTGAACTCCTGC
+				</data>
+				<hit pos="104" idx="7" rc="n" pvalue="7.2e-06" match="+++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+CACTCAATGTAATTTTTCAAATTTGAGTTGAAAATATCAAAAATTAAATC
+				</data>
+				<hit pos="167" idx="5" rc="n" pvalue="3.4e-08" match="++++++++++ +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00235342" comment="" length="200">
+			<score strand="both" combined_pvalue="1.28e-04" evalue="0.11"/>
+			<seg start="1">
+				<data>
+AATGGATAGTTTTCAGAAAATCAAGGAAAACAGTACAATTTTTAGCGATGAAAATCGATATTTTCTTTTGAAATT
+				</data>
+				<hit pos="67" idx="7" rc="n" pvalue="7.2e-06" match="+++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+TCATTTAAAAAAATTTAATTTTACCGTGAATTCCTGCCACGCAATGTGTTGTTTTTCAAATTTGATTTGAAAATA
+				</data>
+				<hit pos="131" idx="5" rc="n" pvalue="7.5e-09" match="++++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00008649" comment="" length="200">
+			<score strand="both" combined_pvalue="1.77e-04" evalue="0.16"/>
+			<seg start="151">
+				<data>
+GTCCTCCTCCCCTCCCTCATCAATCAAAAAATGTATTTCTTCTCGTAAAA
+				</data>
+				<hit pos="154" idx="2" rc="n" pvalue="3.6e-06" match="+ ++ ++++ +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00022095" comment="" length="200">
+			<score strand="both" combined_pvalue="1.91e-04" evalue="0.17"/>
+			<seg start="1">
+				<data>
+TGGATAGTTTTCAGAAAATCAAGGAAAACAGTACAACTTTTAGCGATGAAAATCGATATTTTCTTTTGAAATTTC
+				</data>
+				<hit pos="65" idx="7" rc="n" pvalue="7.2e-06" match="+++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+ATTCGAAAAAAATTACATTTTACCGTGAACTCCTGCCGCGCAATGTGTTGTTTTTCCAAATTTGATTTGAAAATA
+				</data>
+				<hit pos="131" idx="5" rc="n" pvalue="5.4e-08" match=" +++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00015242" comment="" length="200">
+			<score strand="both" combined_pvalue="2.36e-04" evalue="0.21"/>
+			<seg start="1">
+				<data>
+TCGGTAAGAGAAGGGAGGGGTGGGGTTCACGTTTTACAATATATTTTTTTTAATTTTTTTTTTTGAAAATCAATA
+				</data>
+				<hit pos="13" idx="2" rc="y" pvalue="1.8e-06" match="+++ ++++ ++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+TTCAACTTACGTTTGACCTTTCTTAAGTTTCCAAAAAATTCATTTCTCGA
+				</data>
+				<hit pos="153" idx="5" rc="y" pvalue="5.7e-05" match="+++ + + ++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00018121" comment="" length="200">
+			<score strand="both" combined_pvalue="5.72e-04" evalue="0.51"/>
+			<seg start="1">
+				<data>
+CTCGTACAACAAATTTTTTGCACAAACTGAAAATTATGGTTTTGCCGCCAATACCTATCAAGACCAATGATTCGG
+GGGCGGAGAGTTTTTATTTGACATTGGAGCGCAATTTCAAACCATACATATTTTTCCCCAAATACGTGAAGAAAT
+				</data>
+				<hit pos="73" idx="2" rc="y" pvalue="6.6e-05" match=" +++++ ++ + +"/>
+				<hit pos="108" idx="7" rc="y" pvalue="7.2e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00005624" comment="" length="200">
+			<score strand="both" combined_pvalue="1.52e-03" evalue="1.4"/>
+			<seg start="1">
+				<data>
+ACCGGATATTACTCCGAAGCACACTATTTGTACAGTAGCATATAAACTTTGAAATTGATAACTAACATGACATTA
+				</data>
+				<hit pos="48" idx="7" rc="n" pvalue="7.2e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00235343" comment="" length="200">
+			<score strand="both" combined_pvalue="1.54e-03" evalue="1.4"/>
+			<seg start="1">
+				<data>
+TTTTCAGAAAATCGATATATTTCAAGGAAATCAGTGCAATTTTAGCGAAAATTGAGAATTTCTTATAAAGTTTCA
+TTTGAAAAACATTTTATTTTAAAGTGAACTCTTGCCACGCAATCTTTTTTTTTCAAATTTGATTTGAAAATATCA
+				</data>
+				<hit pos="66" idx="5" rc="n" pvalue="5.7e-05" match="+ ++ +++ +++++"/>
+				<hit pos="128" idx="5" rc="n" pvalue="7.5e-09" match="++++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00044388" comment="" length="200">
+			<score strand="both" combined_pvalue="1.61e-03" evalue="1.4"/>
+			<seg start="76">
+				<data>
+TTAAAAATTGAAACAAAAACAGTTCCACCCCCTCCAGTTTTTGAAAAAAATCAATAATTATTTTGATTTGATTTT
+				</data>
+				<hit pos="132" idx="5" rc="n" pvalue="7.9e-05" match="   +++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00019835" comment="" length="200">
+			<score strand="both" combined_pvalue="1.80e-03" evalue="1.6"/>
+			<seg start="1">
+				<data>
+TATCAATTATTTCTTATCGGAAATATTTTCAAGTCACTTCATCTTCTTCTTACTTTTCATTTGACATCTCGATTA
+				</data>
+				<hit pos="50" idx="5" rc="n" pvalue="1.2e-05" match="+ + ++++ +++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+GACCACTGGCGGAGGAGCAGCCACTACGACTTGCTGTTGCGGTGGATAGT
+				</data>
+				<hit pos="157" idx="4" rc="y" pvalue="3.2e-05" match=" ++++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00013047" comment="" length="200">
+			<score strand="both" combined_pvalue="1.80e-03" evalue="1.6"/>
+			<seg start="76">
+				<data>
+TTAAAACAAAAATTACGTTATATTTGAAATTGAGCAATGAATTGAAAATCTTTTTTCATTCTGTGTGAACTTCTC
+CCTCCTCTTTCCACGTGGAAGATCAAACTTTGAGATAACCGGATTGCTAT
+				</data>
+				<hit pos="98" idx="7" rc="n" pvalue="7.2e-06" match="+++++++++"/>
+				<hit pos="148" idx="4" rc="n" pvalue="3.2e-05" match="++++++++++++++ "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00006103" comment="" length="200">
+			<score strand="both" combined_pvalue="2.55e-03" evalue="2.3"/>
+			<seg start="76">
+				<data>
+ATCCAAATCAGCTCAATAATCATTCATTTTTCCCATTCAATTCGCCCCGCCTCCCAAGCCACCTGATGCCAAAGC
+				</data>
+				<hit pos="118" idx="2" rc="n" pvalue="2.2e-07" match="+ ++++ ++ +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00219423" comment="" length="200">
+			<score strand="both" combined_pvalue="2.63e-03" evalue="2.3"/>
+			<seg start="1">
+				<data>
+TCACCTGAAAGAAAAAAAACCAGATTCCCATCTCCCTCTCCTCCATCAAAAGTCTATTTTTATACAATTACTACT
+				</data>
+				<hit pos="31" idx="4" rc="n" pvalue="5.2e-06" match="++++++++++++++ "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00007572" comment="" length="200">
+			<score strand="both" combined_pvalue="2.83e-03" evalue="2.5"/>
+			<seg start="76">
+				<data>
+ACTTTCAAAAAATCCAAACTCTCCCCCATCCTTTTTCCTTCTCCTTCTTCAAAATTCTATTCATTTCAATTTCAA
+AAAAGTTTGGTGGCAAATCAAAAACTAGGAATTCTCACATTCTGAAAACA
+				</data>
+				<hit pos="143" idx="7" rc="y" pvalue="7.2e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00008821" comment="" length="200">
+			<score strand="both" combined_pvalue="3.21e-03" evalue="2.9"/>
+			<seg start="76">
+				<data>
+TAAAATCAAAAAGAATATAGGTTTTCAAAAAATCAAAACGCGTGACGTGAACTTTTTCACGTCCTATCCCTCTCT
+CACTTCCCACGTTTCATTTAGAATCGAGTTGAAAAATCGAAAAATCGATC
+				</data>
+				<hit pos="144" idx="4" rc="n" pvalue="1.8e-07" match="++++++++ +++++ "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00016083" comment="" length="200">
+			<score strand="both" combined_pvalue="3.87e-03" evalue="3.4"/>
+			<seg start="1">
+				<data>
+GAAGTGAATGGTAGAGGGAAGCCATAACAAAATTATAATTTGTGAGAAAAAACCATTTTATTGTCGTGAACGTGC
+CCCCCTCCTTTTTTCCAAAATTTAAAATTCACACGTCGAGTAAATCAAAATACAAAAAATTACAAAAAAATTCAC
+				</data>
+				<hit pos="71" idx="2" rc="n" pvalue="1.1e-05" match="+   ++++++ ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00017035" comment="" length="200">
+			<score strand="both" combined_pvalue="4.95e-03" evalue="4.4"/>
+			<seg start="1">
+				<data>
+TTCCAAATTTATTGTTTGGAAATTTTAATATCGACCAAACTTGATTTTTCGCGTAACCCATGTTTTCGAAATTAA
+				</data>
+				<hit pos="35" idx="5" rc="n" pvalue="4.5e-06" match=" ++++++++++++ "/>
+			</seg>
+			<seg start="76">
+				<data>
+AATTAATCTTTCCCGTTTCGCCCCCAAACTTAACGTGAACTTTTTAAACGTCGTGGAATTCGTGTAATCCGAATT
+				</data>
+				<hit pos="87" idx="4" rc="n" pvalue="7.1e-05" match="++++++++ ++ ++ "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00169980" comment="" length="200">
+			<score strand="both" combined_pvalue="5.50e-03" evalue="4.9"/>
+			<seg start="151">
+				<data>
+AAAGACAATTTCAATCATTACTTAACTACTTGGCAATTCAAGATTGACGA
+				</data>
+				<hit pos="184" idx="5" rc="y" pvalue="9.5e-08" match="+++ ++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00168798" comment="" length="200">
+			<score strand="both" combined_pvalue="5.56e-03" evalue="4.9"/>
+			<seg start="151">
+				<data>
+GACAATTTCAATCATTACTTAACTACTTGGCAATTCAAGATTGACGATAT
+				</data>
+				<hit pos="181" idx="5" rc="y" pvalue="9.5e-08" match="+++ ++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00022833" comment="" length="200">
+			<score strand="both" combined_pvalue="5.72e-03" evalue="5.1"/>
+			<seg start="76">
+				<data>
+TCTAATCTTCAAAATCATTCATTTAATCAATTACGATTATTTATTTCATTCAAATTTCATTTGGAAATTTCTGTA
+				</data>
+				<hit pos="125" idx="5" rc="n" pvalue="1.1e-07" match="++++++++ +++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00002112" comment="" length="200">
+			<score strand="both" combined_pvalue="6.18e-03" evalue="5.5"/>
+			<seg start="1">
+				<data>
+TCAGCTCAAATTTCAGCAATGTGTTGTTTTTCGGTCCCTCTGGATCACGCCATAAATGTTTCAGATTGCCGAGAA
+				</data>
+				<hit pos="2" idx="5" rc="y" pvalue="4.3e-05" match="++  ++++++++ +"/>
+			</seg>
+			<seg start="76">
+				<data>
+AGAGACTTAGACGCAAAGAGGACCGGCGCCCAGCTCCCCCGGCTCTAACTCCGCCTCCTCGGAGCCACAGTGGGG
+				</data>
+				<hit pos="102" idx="2" rc="n" pvalue="6.6e-05" match="+ +++  + ++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00013148" comment="" length="200">
+			<score strand="both" combined_pvalue="6.29e-03" evalue="5.6"/>
+			<seg start="1">
+				<data>
+ACCGGCAATTAAATTTTGCGATTTGCGAAATTTGCCGAACGGCAATTCCAATGCCACAAATCAAATGTTAATGTA
+				</data>
+				<hit pos="57" idx="5" rc="y" pvalue="2.5e-05" match="++++++++++ + +"/>
+			</seg>
+			<seg start="76">
+				<data>
+ATAGAACCAAAATTCTAAAAAGATAGAAAATTTTAAAAAATTTCAACCTTTGAATTTTGAATTTCCGTGAACTTT
+				</data>
+				<hit pos="126" idx="5" rc="n" pvalue="7.6e-05" match="+ ++++++++ ++ "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00021630" comment="" length="200">
+			<score strand="both" combined_pvalue="6.71e-03" evalue="6"/>
+			<seg start="1">
+				<data>
+TCAAATAAAAATTGGCACATTGTCCAAGTACAAAACACTCGAAACATGTTCCCCGTTGGTCACTTTATGAAGAAT
+				</data>
+				<hit pos="2" idx="5" rc="y" pvalue="3.7e-06" match="+++++ +++++++ "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00011046" comment="" length="200">
+			<score strand="both" combined_pvalue="7.84e-03" evalue="7"/>
+			<seg start="1">
+				<data>
+TTTCGTAAATTTCAAAATTGTCGATTCAAAATTTTTTTTTCTGCTCTCAAATTTCCCAGTTATCACCACCGTCCT
+				</data>
+				<hit pos="8" idx="7" rc="y" pvalue="7.2e-06" match="+++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+ACACTATCGACATGAGTACAAAAGTCACTGTAAATTTTTTGAAATTTCAG
+				</data>
+				<hit pos="188" idx="7" rc="n" pvalue="7.2e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00015630" comment="" length="200">
+			<score strand="both" combined_pvalue="8.77e-03" evalue="7.8"/>
+			<seg start="1">
+				<data>
+ACGTAACCTCTCCCACTTATAAATCGTTTTCAATTTTCTCAATCTTCACGTGACCCCAACGTGTTATAACCTTCC
+CCCCTACCATCATATCAATCGATAGTTCAAACAATCAGTACCAGTTTTCAACCGATCATCTTCGTCTTCCATCGA
+				</data>
+				<hit pos="39" idx="5" rc="n" pvalue="6.4e-05" match="++++++++ +  ++"/>
+				<hit pos="71" idx="2" rc="n" pvalue="1.3e-05" match="+  ++++++  ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00019450" comment="" length="200">
+			<score strand="both" combined_pvalue="9.12e-03" evalue="8.1"/>
+			<seg start="1">
+				<data>
+TCCAAATCATTCTTCTTTGTTCACCAGAAACCGGAAAAATGTTTCGGAGATCATAGTGATAGAGGAGGAGTACTT
+				</data>
+				<hit pos="64" idx="3" rc="y" pvalue="4.4e-05" match="+++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+AAATTAGGGAATCGTCTGGAAACTTTGAAATTTATATTTTATTTTTGATTTTCGGATCCTGAATTTCCAACAGTA
+				</data>
+				<hit pos="99" idx="7" rc="n" pvalue="7.2e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00010764" comment="" length="200">
+			<score strand="both" combined_pvalue="1.00e-02" evalue="8.9"/>
+			<seg start="76">
+				<data>
+TTCTTTCAGGAGGAGGAGGAGCCATTTACTGTTTCGCTTGCTTTGAACTATTCAGCAAACTGTGGAAATGCTCAT
+				</data>
+				<hit pos="83" idx="4" rc="y" pvalue="4.1e-06" match="+++++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00011911" comment="" length="200">
+			<score strand="both" combined_pvalue="1.04e-02" evalue="9.2"/>
+			<seg start="76">
+				<data>
+AAAGTTCATTTAGTTAAATTAAAACCATTTAAATATTTGAATTTCCATAGCGTGTTGTCCTCCTCCCACTTCTGA
+				</data>
+				<hit pos="135" idx="3" rc="n" pvalue="4.4e-05" match="+++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="WBGene00045060" comment="" length="200">
+			<score strand="both" combined_pvalue="1.05e-02" evalue="9.3"/>
+			<seg start="151">
+				<data>
+TTCATTTTATTAATAAAAAAATGCGTGACAAAATTTCAAAAAAAAAAGGC
+				</data>
+				<hit pos="182" idx="7" rc="y" pvalue="7.2e-06" match="+++++++++"/>
+			</seg>
+		</sequence>
+	</sequences>
+	<runtime host="node216" when="Thu Feb 28 21:08:27 2019" cycles="1012000" seconds="1.012"/>
+</mast>

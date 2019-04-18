@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mast version="5.0.4" release="Wed Jan 23 14:05:40 2019 -0800">
+	<command_line><arg>mast</arg><arg>-oc</arg><arg>.</arg><arg>-nostatus</arg><arg>meme.xml</arg><arg>5.txt</arg></command_line>
+	<settings strand_handling="combine" max_correlation="0.60" remove_correlated="n" max_seq_evalue="10" adjust_hit="n" max_hit_pvalue="0.0001" max_weak_pvalue="0.0001"/>
+	<alphabet name="DNA" like="dna">
+		<letter id="A" symbol="A" complement="T" name="Adenine" colour="CC0000"/>
+		<letter id="C" symbol="C" complement="G" name="Cytosine" colour="0000CC"/>
+		<letter id="G" symbol="G" complement="C" name="Guanine" colour="FFB300"/>
+		<letter id="T" symbol="T" aliases="U" complement="A" name="Thymine" colour="008000"/>
+		<letter id="N" symbol="N" aliases="X." equals="ACGT" name="Any base"/>
+		<letter id="V" symbol="V" equals="ACG" name="Not T"/>
+		<letter id="H" symbol="H" equals="ACT" name="Not G"/>
+		<letter id="D" symbol="D" equals="AGT" name="Not C"/>
+		<letter id="B" symbol="B" equals="CGT" name="Not A"/>
+		<letter id="M" symbol="M" equals="AC" name="Amino"/>
+		<letter id="R" symbol="R" equals="AG" name="Purine"/>
+		<letter id="W" symbol="W" equals="AT" name="Weak"/>
+		<letter id="S" symbol="S" equals="CG" name="Strong"/>
+		<letter id="Y" symbol="Y" equals="CT" name="Pyrimidine"/>
+		<letter id="K" symbol="K" equals="GT" name="Keto"/>
+	</alphabet>
+	<background source="--nrdb--" A="0.274262" C="0.22521" G="0.22521" T="0.274262"/>
+	<motif_dbs>
+		<motif_db source="meme.xml" last_mod_date="Mon Feb 25 20:42:24 2019">
+			<background A="0.322" C="0.178" G="0.178" T="0.322"/>
+		</motif_db>
+	</motif_dbs>
+	<motifs>
+		<motif db="0" id="TYTYTTTTTCC" alt="MEME-1" length="11" nsites="3028" evalue="4.8e-015">
+			<pos A="-347" C="50" G="-156" T="103"/>
+			<pos A="-301" C="130" G="-163" T="52"/>
+			<pos A="-217" C="57" G="-169" T="92"/>
+			<pos A="-125" C="126" G="-119" T="16"/>
+			<pos A="-71" C="40" G="-208" T="71"/>
+			<pos A="-355" C="-29" G="-125" T="122"/>
+			<pos A="-1821" C="-75" G="-907" T="147"/>
+			<pos A="-1821" C="78" G="-708" T="110"/>
+			<pos A="-1821" C="-245" G="-387" T="157"/>
+			<pos A="-1821" C="203" G="-192" T="-52"/>
+			<pos A="-1821" C="209" G="-262" T="-61"/>
+		</motif>
+		<motif db="0" id="GGCGGCG" alt="MEME-2" length="7" nsites="13" evalue="2.4e-002">
+			<pos A="-1035" C="-1035" G="249" T="-1035"/>
+			<pos A="-1035" C="-1035" G="249" T="-1035"/>
+			<pos A="-1035" C="249" G="-1035" T="-1035"/>
+			<pos A="-1035" C="-1035" G="249" T="-1035"/>
+			<pos A="-1035" C="-1035" G="249" T="-1035"/>
+			<pos A="-1035" C="249" G="-1035" T="-1035"/>
+			<pos A="-1035" C="-1035" G="249" T="-1035"/>
+		</motif>
+		<motif db="0" id="CNCCCSCCCSCC" alt="MEME-3" length="12" nsites="87" evalue="2.2e+000">
+			<pos A="-1309" C="229" G="-50" T="-1309"/>
+			<pos A="-81" C="85" G="44" T="-35"/>
+			<pos A="-1309" C="219" G="-15" T="-380"/>
+			<pos A="-248" C="211" G="-5" T="-1309"/>
+			<pos A="-200" C="231" G="-1309" T="-322"/>
+			<pos A="-200" C="133" G="140" T="-1309"/>
+			<pos A="-222" C="177" G="57" T="-248"/>
+			<pos A="-1309" C="213" G="29" T="-1309"/>
+			<pos A="-72" C="163" G="50" T="-1309"/>
+			<pos A="-100" C="150" G="90" T="-1309"/>
+			<pos A="-1309" C="242" G="-395" T="-322"/>
+			<pos A="-1309" C="244" G="-237" T="-1309"/>
+		</motif>
+		<motif db="0" id="GCTCCGCC" alt="MEME-4" length="8" nsites="94" evalue="3.4e-001" bad="y">
+			<pos A="-1320" C="-1320" G="236" T="-192"/>
+			<pos A="-1320" C="249" G="-1320" T="-1320"/>
+			<pos A="-1320" C="-1320" G="-148" T="154"/>
+			<pos A="-1320" C="195" G="79" T="-1320"/>
+			<pos A="-1320" C="249" G="-1320" T="-1320"/>
+			<pos A="-1320" C="-1320" G="200" T="-16"/>
+			<pos A="-1320" C="249" G="-1320" T="-1320"/>
+			<pos A="-1320" C="222" G="-7" T="-1320"/>
+		</motif>
+		<motif db="0" id="TCTTATCADT" alt="MEME-5" length="10" nsites="102" evalue="2.5e+000">
+			<pos A="-1332" C="-1332" G="-1332" T="164"/>
+			<pos A="-1332" C="249" G="-1332" T="-1332"/>
+			<pos A="-1332" C="-1332" G="-1332" T="164"/>
+			<pos A="-1332" C="-1332" G="-1332" T="164"/>
+			<pos A="103" C="-186" G="-1332" T="-13"/>
+			<pos A="-1332" C="-1332" G="-1332" T="164"/>
+			<pos A="-1332" C="249" G="-1332" T="-1332"/>
+			<pos A="164" C="-1332" G="-1332" T="-1332"/>
+			<pos A="-4" C="-38" G="86" T="-51"/>
+			<pos A="-1332" C="21" G="-1332" T="130"/>
+		</motif>
+		<motif db="0" id="GGTCAGTGC" alt="MEME-6" length="9" nsites="20" evalue="1.3e+000">
+			<pos A="-1097" C="-1097" G="197" T="-10"/>
+			<pos A="-1097" C="-1097" G="249" T="-1097"/>
+			<pos A="-1097" C="-1097" G="-183" T="156"/>
+			<pos A="-1097" C="249" G="-1097" T="-1097"/>
+			<pos A="164" C="-1097" G="-1097" T="-1097"/>
+			<pos A="-1097" C="-1097" G="249" T="-1097"/>
+			<pos A="-1097" C="-1097" G="-1097" T="164"/>
+			<pos A="-1097" C="-1097" G="249" T="-1097"/>
+			<pos A="-10" C="197" G="-1097" T="-1097"/>
+		</motif>
+		<motif db="0" id="GAGCCG" alt="MEME-7" length="6" nsites="8" evalue="2.9e+000">
+			<pos A="-965" C="-965" G="249" T="-965"/>
+			<pos A="164" C="-965" G="-965" T="-965"/>
+			<pos A="-965" C="-965" G="249" T="-965"/>
+			<pos A="-965" C="249" G="-965" T="-965"/>
+			<pos A="-965" C="249" G="-965" T="-965"/>
+			<pos A="-965" C="-965" G="249" T="-965"/>
+		</motif>
+	</motifs>
+	<correlations>
+		<correlation idx_a="0" idx_b="1" value="0.16"/>
+		<correlation idx_a="0" idx_b="2" value="0.25"/>
+		<correlation idx_a="1" idx_b="2" value="0.46"/>
+		<correlation idx_a="0" idx_b="3" value="0.41"/>
+		<correlation idx_a="1" idx_b="3" value="0.62"/>
+		<correlation idx_a="2" idx_b="3" value="0.48"/>
+		<correlation idx_a="0" idx_b="4" value="0.37"/>
+		<correlation idx_a="1" idx_b="4" value="0.17"/>
+		<correlation idx_a="2" idx_b="4" value="0.09"/>
+		<correlation idx_a="3" idx_b="4" value="0.32"/>
+		<correlation idx_a="0" idx_b="5" value="0.16"/>
+		<correlation idx_a="1" idx_b="5" value="0.53"/>
+		<correlation idx_a="2" idx_b="5" value="0.25"/>
+		<correlation idx_a="3" idx_b="5" value="0.36"/>
+		<correlation idx_a="4" idx_b="5" value="0.42"/>
+		<correlation idx_a="0" idx_b="6" value="0.10"/>
+		<correlation idx_a="1" idx_b="6" value="0.56"/>
+		<correlation idx_a="2" idx_b="6" value="0.45"/>
+		<correlation idx_a="3" idx_b="6" value="0.52"/>
+		<correlation idx_a="4" idx_b="6" value="0.36"/>
+		<correlation idx_a="5" idx_b="6" value="0.40"/>
+	</correlations>
+	<sequence_dbs>
+		<sequence_db source="5.txt" last_mod_date="Mon Feb 25 13:04:02 2019" seq_count="1652" residue_count="330400"/>
+	</sequence_dbs>
+	<sequences>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00022519" comment="" length="200">
+			<score strand="both" combined_pvalue="4.35e-06" evalue="0.0072"/>
+			<seg start="1">
+				<data>
+TTTGTTTCGAAACGGCTGAAAATGGGAATGTGGAGGCTTTAGTAACCCATTAACGCCCCGCCGTCACACCGGCTT
+				</data>
+				<hit pos="54" idx="2" rc="n" pvalue="3.9e-05" match="++++++++++ +"/>
+			</seg>
+			<seg start="76">
+				<data>
+CTCCTCTTCTCATTTCGTAGTACGGCTCCCTCCTCCGAGCAGCTCTTCATTTTTCCACCCCCCCCCCCGCTGCTC
+CAAATTATTCGTTCACGTTCTTTTTCCCCACCCAAAAATTTCACTTGCAG
+				</data>
+				<hit pos="80" idx="4" rc="n" pvalue="2.7e-05" match="++++ +++ +"/>
+				<hit pos="131" idx="2" rc="n" pvalue="3.9e-07" match="+ ++++++++++"/>
+				<hit pos="144" idx="3" rc="n" pvalue="5.8e-05" match="+++++ ++"/>
+				<hit pos="167" idx="0" rc="n" pvalue="6.5e-05" match=" ++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00021213" comment="" length="200">
+			<score strand="both" combined_pvalue="9.25e-06" evalue="0.015"/>
+			<seg start="1">
+				<data>
+CTTCTTCTCCATCGTCGTCTTCTTCTTCTTCTTCTTCTTCTACTAGAGACCTTCTTCTAGTAATGAGAAGAATCT
+				</data>
+				<hit pos="62" idx="4" rc="y" pvalue="2.7e-05" match="+ +++ ++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+CACACACAAGCCGGGGTGGAGAAAAGAGAGATAGGATAGGACAAGACAGTACACAGGGCGGCGGCGGACGCGCGG
+				</data>
+				<hit pos="93" idx="0" rc="y" pvalue="4.4e-05" match="+++++++++++"/>
+				<hit pos="131" idx="2" rc="y" pvalue="2.1e-06" match="+++++++++ ++"/>
+			</seg>
+			<seg start="151">
+				<data>
+AAGTTGGGCGGAGACACCACTGTGTTGCTTTGTTTAACCGTCTGCGTCGG
+				</data>
+				<hit pos="157" idx="3" rc="y" pvalue="7.5e-05" match="+++++++ "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00006948" comment="" length="200">
+			<score strand="both" combined_pvalue="2.99e-05" evalue="0.049"/>
+			<seg start="76">
+				<data>
+TGGGCCCCCCCCCCCCCCCCCCTACGGCTTCACTCCCGGTGTTGTAGATCTGACTTTCACTTGCCTTATCTCGAG
+				</data>
+				<hit pos="80" idx="2" rc="n" pvalue="3.4e-08" match="++++++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+GAATCTGGAGAGGAGAAGGAGGGACAACCGATCCGCGCGCGCGTAACAAT
+				</data>
+				<hit pos="162" idx="0" rc="y" pvalue="4.4e-06" match="+++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00009722" comment="" length="200">
+			<score strand="both" combined_pvalue="3.99e-05" evalue="0.066"/>
+			<seg start="1">
+				<data>
+AGAGATGAATCTCCAGTTTCAGTACACTTGCGGGCGCCGCCGCCGCCGAAATTCTGCACTTTGCCTCCAGATTCC
+				</data>
+				<hit pos="36" idx="2" rc="n" pvalue="2.1e-05" match=" ++ ++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+CTTGTCCTTTTTGTTTTCGACACTGCGATTTGTCGTTTTGATTCACTAGTCTGTTCCTCCTTTTCCTATTTTTCT
+				</data>
+				<hit pos="131" idx="0" rc="n" pvalue="3.0e-06" match="+++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00022389" comment="" length="200">
+			<score strand="both" combined_pvalue="4.62e-05" evalue="0.076"/>
+			<seg start="1">
+				<data>
+ATGGGCGGTGAAGGCGGCGGCATCAGTGTGAACACAGCAGATGACAACCCCCCGAAGACGACGACGACGACGACG
+				</data>
+				<hit pos="13" idx="1" rc="n" pvalue="2.9e-05" match="+++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+ACGACGGCGGCGGCGCCGAGACATTGCAGACGCGAGAGGGCGCTCGACGACACGACGGGCCCCCCGATGACATGA
+				</data>
+				<hit pos="81" idx="2" rc="y" pvalue="2.8e-05" match="++++++++ ++ "/>
+			</seg>
+			<seg start="151">
+				<data>
+GAATTGGGAGGAGGAGGAGGAGGAGGAGGAGGCAGAGAAGAATTGAGAGA
+				</data>
+				<hit pos="157" idx="0" rc="y" pvalue="5.3e-05" match="++++ ++++++"/>
+				<hit pos="169" idx="0" rc="y" pvalue="5.3e-05" match="++++ ++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00019644" comment="" length="200">
+			<score strand="both" combined_pvalue="5.23e-05" evalue="0.086"/>
+			<seg start="1">
+				<data>
+GCTGAGTGTGTGTGTTATCAGTTATATCATTATCGCCGAAACCTCCCTATCAAATATTTCCCCTTTTCCGTAGTA
+				</data>
+				<hit pos="13" idx="4" rc="n" pvalue="7.3e-05" match="+ ++++++++"/>
+				<hit pos="59" idx="0" rc="n" pvalue="1.6e-06" match="+++++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+CATGTGCGCCCCGCCGTCAGAATATACTTTGCCCGGGCCTAATACTATAAAAAGGCACCCCCTATATCATTGGGC
+				</data>
+				<hit pos="82" idx="2" rc="n" pvalue="3.9e-05" match="++++++++++ +"/>
+			</seg>
+			<seg start="151">
+				<data>
+GCAATGACCAAACGTTCAATTTTCAACCCCCCTTCACGTTTTTCTTTCAG
+				</data>
+				<hit pos="151" idx="5" rc="y" pvalue="9.2e-05" match="+++ +++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00020281" comment="" length="200">
+			<score strand="both" combined_pvalue="6.17e-05" evalue="0.1"/>
+			<seg start="1">
+				<data>
+TATGTATATGAAATGTTTAAAAACCTAAAACCTAAAAAAAAACCAACCTAATACAGTGTTCACGAGCGCCCCCCG
+CCGCCGGCGGCTCCTTATTTGCCTTGTGCTCACCGTGAGGTGGCTCCGCGCGGGAGCCCCAGTGATGAGCATCTC
+				</data>
+				<hit pos="69" idx="2" rc="n" pvalue="5.0e-07" match="++++++++++++"/>
+				<hit pos="118" idx="3" rc="n" pvalue="3.4e-05" match="+++++++ "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00010330" comment="" length="200">
+			<score strand="both" combined_pvalue="8.84e-05" evalue="0.15"/>
+			<seg start="1">
+				<data>
+TCACCTCCCCCCTCTCCAGGTGAAAAGACCACTCATGAATATTATATCTAGGACAATCCCCGTCTGTTTACAACT
+				</data>
+				<hit pos="7" idx="0" rc="n" pvalue="3.6e-05" match="+++++ +++++"/>
+				<hit pos="19" idx="4" rc="y" pvalue="2.1e-05" match="+ +++ ++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+CTCCTCTCACCCCCCCCCCCCCCCCCCATCTCTCACTGTTTTCTCCGAACACCGGATCATCACGACGCATGTTTC
+				</data>
+				<hit pos="85" idx="2" rc="n" pvalue="3.4e-08" match="++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00018727" comment="" length="200">
+			<score strand="both" combined_pvalue="1.19e-04" evalue="0.2"/>
+			<seg start="76">
+				<data>
+TTCATTTCATGACAGATGGTGTGCTAGGTGAACACTGCTAGCCCCCCCCCCCCCCACGTTGCTATTAGCAACACG
+				</data>
+				<hit pos="117" idx="2" rc="n" pvalue="3.4e-08" match="++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00007751" comment="" length="200">
+			<score strand="both" combined_pvalue="1.60e-04" evalue="0.26"/>
+			<seg start="1">
+				<data>
+CGAGAGTGAGCCAGAGAGGGGAAAAGCAAATTATTCCTCAAACATAGTGCCGCCATGGCGTCGTTTCCATGGTTT
+				</data>
+				<hit pos="20" idx="0" rc="y" pvalue="6.5e-05" match="+++++++ +++"/>
+			</seg>
+			<seg start="151">
+				<data>
+CATTGCACGCCCCCCCCCCCCCTATTTTGCATATCAATCCCACCAATTCC
+				</data>
+				<hit pos="160" idx="2" rc="n" pvalue="3.4e-08" match="++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00007841" comment="" length="200">
+			<score strand="both" combined_pvalue="1.93e-04" evalue="0.32"/>
+			<seg start="1">
+				<data>
+CTCACTGTGTGCTCTGTCCTCAATTTCCAGAGTTCACAAAGTACCCTTCTTCTCTCACCCCGCCCCCAGCAGCCT
+				</data>
+				<hit pos="56" idx="2" rc="n" pvalue="1.5e-06" match="+ ++++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+GGCACCATGCCAACCTGGTCTCTGTGTGTGTGTCGGCGGCGGCGGCAGCAGTGTGGGAAGTAGGCGGGCCGCTGG
+GCCCGCCTCCCTTCGCCGCGCCTATAAAAGCCTGACGACGTCGCGACGTT
+				</data>
+				<hit pos="110" idx="2" rc="y" pvalue="2.1e-05" match="++++++++ ++ "/>
+				<hit pos="142" idx="2" rc="y" pvalue="9.0e-05" match="++++++ ++++ "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00012339" comment="" length="200">
+			<score strand="both" combined_pvalue="1.96e-04" evalue="0.32"/>
+			<seg start="1">
+				<data>
+CCTCCTATTCTCTGCCAACACAAAGGTGTAACAGATGCAACGTCGCGCCGCCCTATCGCCTTTTGCATTCATTGA
+				</data>
+				<hit pos="42" idx="2" rc="n" pvalue="2.8e-05" match="  + ++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00015116" comment="" length="200">
+			<score strand="both" combined_pvalue="1.97e-04" evalue="0.33"/>
+			<seg start="1">
+				<data>
+TTCGTTTTCCTTATTTTTCCTCTTTTCTCTACGTTTTCGTATAAACGATTATCGATATACACAAGTTGCTCTTTG
+				</data>
+				<hit pos="10" idx="0" rc="n" pvalue="9.1e-05" match="+++ +++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+AAAACCTGTGATTTTTCAAAGAAAGAGCTTCACAATGACTGGCGGCGGCGGTTTTCTCTGTATTTTCAGTGGCGC
+				</data>
+				<hit pos="116" idx="1" rc="n" pvalue="2.9e-05" match="+++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+AACACCGAACTGATAAGACGGGGAAAAAGGCTGAAAACAAGATGTTTGTC
+				</data>
+				<hit pos="159" idx="4" rc="y" pvalue="1.3e-06" match="++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00004150" comment="" length="200">
+			<score strand="both" combined_pvalue="2.00e-04" evalue="0.33"/>
+			<seg start="76">
+				<data>
+AAGGCAGATTTGACACTATTTGCTCTGACCGGCGGCGCTCCAAATCCGCCTCGCTCTGACATTTGCACTGTCTCC
+				</data>
+				<hit pos="97" idx="5" rc="y" pvalue="4.3e-05" match="++ ++++++"/>
+				<hit pos="106" idx="1" rc="n" pvalue="2.9e-05" match="+++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00002132" comment="" length="200">
+			<score strand="both" combined_pvalue="3.23e-04" evalue="0.53"/>
+			<seg start="1">
+				<data>
+TTCCCTCTCAATCTTTTTCTCCGTTAACTTACTGTTCTTCTCCGCTTCTTCTTCATCTCTTCCTTCTATTATTTT
+				</data>
+				<hit pos="12" idx="0" rc="n" pvalue="7.4e-06" match="+++++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+CCTTTTGTTTGCTCTTTCTTTGGTCTCCCGCCGCCAACCGCGCTCCGACAGTTTTCACAACAGCCACTTCTTACT
+TTTTCCCGCGAGCCTTCAACTTTCTCTGACTCATATATCTTTATGTTTAG
+				</data>
+				<hit pos="103" idx="2" rc="n" pvalue="2.6e-05" match="++ +++++  ++"/>
+				<hit pos="146" idx="0" rc="n" pvalue="9.1e-05" match="++ ++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00004310" comment="" length="200">
+			<score strand="both" combined_pvalue="3.29e-04" evalue="0.54"/>
+			<seg start="1">
+				<data>
+TCCCTTCGAAACCCCGCCCCTTTTCCCTCGGGCATGTGTTTGCCCCCACCGACTTTTCGGCTTTTTCTCCCTGAC
+				</data>
+				<hit pos="16" idx="0" rc="n" pvalue="4.4e-05" match=" ++++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+TTTTCTCCTCGAAAAAAAATTTCAAAAAAATTTTTTTGGAACAAAAACCGTTTTTTTTTTCTTTTTCCCTCTGCG
+				</data>
+				<hit pos="133" idx="0" rc="n" pvalue="3.0e-06" match="+++++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+CCTCTTGATCTCTTATCAGCTGATGAAAAATGAAAGAAATGATAAGAAAT
+				</data>
+				<hit pos="161" idx="4" rc="n" pvalue="4.1e-06" match="++++++++++"/>
+				<hit pos="188" idx="4" rc="y" pvalue="8.3e-06" match="+ ++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00000553" comment="" length="200">
+			<score strand="both" combined_pvalue="3.45e-04" evalue="0.57"/>
+			<seg start="76">
+				<data>
+GAGAGATAGAGAAAGAGCACTGGGGGGGAGGGGCGGAGTCTGTTTCTCTGACGTTCTCCATCTCTCTCCAACTCT
+				</data>
+				<hit pos="99" idx="2" rc="y" pvalue="6.2e-06" match="+++++ ++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+CTTCGTCTCCAGCCATATTCTAGTTTTTTCCCCCCCCCCCCCCCCCTTTT
+				</data>
+				<hit pos="180" idx="2" rc="n" pvalue="3.4e-08" match="++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00015496" comment="" length="200">
+			<score strand="both" combined_pvalue="3.79e-04" evalue="0.63"/>
+			<seg start="1">
+				<data>
+ATTTTTTCGGTCTCATCACCCCTAAAGTTCTATATCAAATCCTAAGTGGATCAACGGTGGGCAGTGCGGATGAGA
+				</data>
+				<hit pos="59" idx="5" rc="n" pvalue="1.1e-05" match="++ ++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+GACGCAGAGAGCACAACAACCTTTGTGAGAACGAGGGCGGGCGGGCGCTT
+				</data>
+				<hit pos="186" idx="2" rc="y" pvalue="1.7e-07" match="++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00008886" comment="" length="200">
+			<score strand="both" combined_pvalue="4.95e-04" evalue="0.82"/>
+			<seg start="76">
+				<data>
+CGAGCTCTGCGCAACGCAACGAATGGGCGGAGCCGAAGTGTGTCTAAGAGGTACAAGTTGAAGTGTTCCATGAGC
+				</data>
+				<hit pos="101" idx="3" rc="y" pvalue="8.1e-06" match="++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+GGGCGCAACAACAAGAGGCGGGCATTGGGCCGCCCGGCCGCCTCTTCGAC
+				</data>
+				<hit pos="181" idx="2" rc="n" pvalue="8.3e-07" match="++++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00022500" comment="" length="200">
+			<score strand="both" combined_pvalue="5.57e-04" evalue="0.92"/>
+			<seg start="1">
+				<data>
+AATCGAAAATGAGTGTCGTGAAAAAATACGATGAGTGGCGGCGGTCAGCGCGGCGCAAAGGAAACCGGCGGCTCA
+				</data>
+				<hit pos="37" idx="1" rc="n" pvalue="2.9e-05" match="+++++++"/>
+				<hit pos="49" idx="3" rc="y" pvalue="9.9e-05" match=" ++++ ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00011423" comment="" length="200">
+			<score strand="both" combined_pvalue="5.86e-04" evalue="0.97"/>
+			<seg start="1">
+				<data>
+TGGAGCGAAAAAAAGCGGTGCGCCTTTTTCCTTCCTTTTTTCATTTTTCTTTCCATTTTCGGCTCTTCTAGACAC
+				</data>
+				<hit pos="21" idx="0" rc="n" pvalue="7.7e-05" match="+ +++++++++"/>
+				<hit pos="32" idx="0" rc="n" pvalue="7.7e-05" match="+++++++++ +"/>
+				<hit pos="44" idx="0" rc="n" pvalue="7.7e-05" match="+++++ +++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+ACGCAGACATGAAAGCACACGGGGCTCCGCAGAGCAACTCTCTGTCCTCTCATCGATTTTCTTTTCTTTTTTTCC
+				</data>
+				<hit pos="140" idx="0" rc="n" pvalue="5.7e-06" match="+++++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+GCTGCCGTTGGCTCCGCGTGTGCTCTTTTTATGGTAGGCACTTGCACTTT
+				</data>
+				<hit pos="161" idx="3" rc="n" pvalue="3.4e-05" match="+++++++ "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00007664" comment="" length="200">
+			<score strand="both" combined_pvalue="6.69e-04" evalue="1.1"/>
+			<seg start="1">
+				<data>
+TTTTTCTCTTTTTTTTTCTTCATCTCACTAAAATAAAATAGTTTTGTCCCCCCCCCCCCCCCTCTTTTGCCTCTT
+				</data>
+				<hit pos="48" idx="2" rc="n" pvalue="3.4e-08" match="++++++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+TTTCAGTCCTTTTGCGCAGATTTCTTCTTCCTACATTGTCAACCTTTCAG
+				</data>
+				<hit pos="171" idx="0" rc="n" pvalue="4.4e-05" match="++++++ ++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00015478" comment="" length="200">
+			<score strand="both" combined_pvalue="7.05e-04" evalue="1.2"/>
+			<seg start="1">
+				<data>
+CCGAGCACTTTTTCATTCGGTTACCATGACAATTTCTTCATCTCCTTCTTCTCTTCCTCTTCTTTTTCTTTTTCT
+				</data>
+				<hit pos="41" idx="0" rc="n" pvalue="4.4e-05" match="+++++++++ +"/>
+				<hit pos="65" idx="0" rc="n" pvalue="6.5e-05" match="++++++++++ "/>
+			</seg>
+			<seg start="76">
+				<data>
+TCGTTCAACTATTCTAGAGCCGCCGCCACCACTCTTTCCGTCTACTCCCACACCTTAATCGATGCTCTCTTTTTT
+				</data>
+				<hit pos="96" idx="1" rc="y" pvalue="2.9e-05" match="+++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+ACTTTTTCTTTTTTCAAATAATATTTTCTTTCACTTTCCAAAGATTTCAG
+				</data>
+				<hit pos="155" idx="0" rc="n" pvalue="6.5e-05" match="+++++++++ +"/>
+				<hit pos="179" idx="0" rc="n" pvalue="9.1e-05" match="++++  +++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00006915" comment="" length="200">
+			<score strand="both" combined_pvalue="7.24e-04" evalue="1.2"/>
+			<seg start="1">
+				<data>
+CGGTCTGATATTGATAATCGACTTCTTTGACGTGCCTGACGGAGCAGCAAAGCGGAGCACTGATAAGACAATGAA
+				</data>
+				<hit pos="41" idx="3" rc="y" pvalue="5.8e-05" match="++ +++++"/>
+				<hit pos="59" idx="4" rc="y" pvalue="1.3e-06" match="++++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+GAACTAAAAAATTGTCTTCGGTTTTCAGTCTTTAGTTCTGCAGCACTTTATTTTTTGTTTCTCCTATTTTTCCGC
+				</data>
+				<hit pos="138" idx="0" rc="n" pvalue="4.4e-05" match="+++ +++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00022038" comment="" length="200">
+			<score strand="both" combined_pvalue="9.24e-04" evalue="1.5"/>
+			<seg start="76">
+				<data>
+AAAAGTTCCTTCGGTGTGTGTGAGTGTGTGTTTGTGTATGTAGTATATCCGGATTCGTTTTCCCGCCGCCGCCAA
+				</data>
+				<hit pos="137" idx="2" rc="n" pvalue="3.5e-06" match="+++ ++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+AACCAATCGGTTGCCCGCAGTGTTACACATTCAATCAGAATGGAGGAGCC
+				</data>
+				<hit pos="192" idx="3" rc="y" pvalue="3.4e-05" match="++ +++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00006408" comment="" length="200">
+			<score strand="both" combined_pvalue="9.41e-04" evalue="1.6"/>
+			<seg start="151">
+				<data>
+AGGCGCGTGGGTGTTTCCGAGGCGGCGCTCCCCGGTGCTGCCATCGACGC
+				</data>
+				<hit pos="152" idx="2" rc="y" pvalue="3.3e-05" match="++++++ +++ +"/>
+				<hit pos="171" idx="1" rc="n" pvalue="2.9e-05" match="+++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00018522" comment="" length="200">
+			<score strand="both" combined_pvalue="1.07e-03" evalue="1.8"/>
+			<seg start="1">
+				<data>
+TCACAGTTCCGTCTCACTCCAAAGGGTGCCTCCTGCAACAAGCACGAAATTTTAGCATTCATTCGCGGTGTTGGC
+GCTCGGCGGCCTGATCGCTCAACATGGCGGGCTTGGACACGTAGATGTATGTGAGAATCAATTTTATTTCCGTTT
+				</data>
+				<hit pos="73" idx="2" rc="y" pvalue="6.3e-05" match="+++++ +++ ++"/>
+			</seg>
+			<seg start="151">
+				<data>
+TTCTCTCTTTCTATCAATATCGTATTTGGCCCGCCGCCCCCCTTCACCTC
+				</data>
+				<hit pos="181" idx="2" rc="n" pvalue="8.3e-07" match="++ +++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00003727" comment="" length="200">
+			<score strand="both" combined_pvalue="1.19e-03" evalue="2"/>
+			<seg start="151">
+				<data>
+GCCCCGCCTTCGTCCTCGCCCACCACCCGAAAACCTCTTCCTCCTCGGTG
+				</data>
+				<hit pos="167" idx="2" rc="n" pvalue="1.5e-05" match="+++++ ++ +++"/>
+				<hit pos="184" idx="0" rc="n" pvalue="4.4e-05" match="++++++ ++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00010605" comment="" length="200">
+			<score strand="both" combined_pvalue="1.23e-03" evalue="2"/>
+			<seg start="76">
+				<data>
+GTCGGCTCCACCCAAAAATTGACGCTGCCTCTTTTTCCTGTCCTTGCCGTACTTTACAAAAATTTTGATATACAT
+				</data>
+				<hit pos="103" idx="0" rc="n" pvalue="2.1e-06" match="+++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00015519" comment="" length="200">
+			<score strand="both" combined_pvalue="1.25e-03" evalue="2.1"/>
+			<seg start="1">
+				<data>
+ATAATCTCTATTTCTCTCTCCTTCGAAAAATTTCAAAATCGACACATAGGCTAGGAGGCTCCGCCTATTTTATTT
+				</data>
+				<hit pos="11" idx="0" rc="n" pvalue="2.7e-05" match="+++++ +++++"/>
+				<hit pos="58" idx="3" rc="n" pvalue="8.1e-06" match="++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+GCTCTGACCACCCTCTCCAACCCACGTTTGATTATATATATAAATTGCACAAATTCTTTAAAACCTTCACGACAA
+				</data>
+				<hit pos="76" idx="5" rc="y" pvalue="4.3e-05" match="++ ++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00022144" comment="" length="200">
+			<score strand="both" combined_pvalue="1.26e-03" evalue="2.1"/>
+			<seg start="76">
+				<data>
+CTGACGCCCCCCATGAGCACAGCGGAAAAGTATTCAGAATGTGTTGAAGAAGAAGAAGACGTCACGTAGGCTAGA
+				</data>
+				<hit pos="76" idx="2" rc="n" pvalue="4.6e-05" match="+   ++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+CGCAGAGAAACAGGCCGGCGGCGGCCAAATCGATGTGAGAGAGCCCCGTT
+				</data>
+				<hit pos="163" idx="2" rc="y" pvalue="3.5e-06" match="+++++++++ ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00011263" comment="" length="200">
+			<score strand="both" combined_pvalue="1.31e-03" evalue="2.2"/>
+			<seg start="1">
+				<data>
+GATTCTCGGAAGTCAGTTCATCCTTCTATTCTCATTCAAAACTTCTTCTTTCCCCTTTCTTGTGTCTCATCTTAT
+				</data>
+				<hit pos="43" idx="0" rc="n" pvalue="9.1e-05" match="+++++ +++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+TCAGTCATTCATCGGCTCATTCAAAGACTACTTGCTCTCTTCGTTCTCGGCTCCGCCCTTTTCTATCGGCTCGCG
+				</data>
+				<hit pos="125" idx="3" rc="n" pvalue="8.1e-06" match="++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00001147" comment="" length="200">
+			<score strand="both" combined_pvalue="1.35e-03" evalue="2.2"/>
+			<seg start="1">
+				<data>
+ACTCTCTCCCTCTTAAATATTTGCTCTTATACCGCCTCCCCCAATACATACCCCCCCCCCCCCAAATATTCCATA
+				</data>
+				<hit pos="51" idx="2" rc="n" pvalue="3.4e-08" match="++++++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+CCTCCCCCCCCTCCCCTACCCCTCACAATTATTTACCCCTGTCCCCTTTGTCCCCCCAGACCCCGACTGTGTTCC
+CCTGTCCCCCACTGTGTCCCCCCAGTCCCCCACTGTCCCCCCTGTCCCCC
+				</data>
+				<hit pos="77" idx="2" rc="n" pvalue="2.1e-05" match="+ ++++++++ +"/>
+				<hit pos="127" idx="2" rc="n" pvalue="4.6e-05" match="++++++ + +++"/>
+				<hit pos="149" idx="2" rc="n" pvalue="9.6e-05" match="++++ + +++++"/>
+				<hit pos="170" idx="2" rc="n" pvalue="5.8e-05" match="++++ + +++++"/>
+				<hit pos="189" idx="2" rc="n" pvalue="9.6e-05" match="++++ + +++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00000789" comment="" length="200">
+			<score strand="both" combined_pvalue="1.46e-03" evalue="2.4"/>
+			<seg start="76">
+				<data>
+TACCTACTTTTCCACTTTGTTCATGAATTTCTGGAAGATCAAATATGGTGGAAGGTCTCTTCAACTGCAGTACTA
+				</data>
+				<hit pos="78" idx="0" rc="n" pvalue="5.3e-05" match="+++ +++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+TTAACAATCTTATCAGTGCTCTCACCATCAGCGCCAGTGATGACAGAGAT
+				</data>
+				<hit pos="158" idx="4" rc="n" pvalue="1.3e-06" match="++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00006318" comment="" length="200">
+			<score strand="both" combined_pvalue="1.55e-03" evalue="2.6"/>
+			<seg start="1">
+				<data>
+CTCTTCCTATCTCTCATCCTCCCCCAGATCGCTTAGGACCCTCTAATTTGATCCATCTGTCGGATGTCAGCTCCC
+				</data>
+				<hit pos="12" idx="0" rc="n" pvalue="9.1e-05" match="++++ + ++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+TCACTTTTTATCTCTAATCCTCACCGCCGCCCCGGCACTATCTATCAGATTTTACACTTGTATCACTCGGCTCTG
+				</data>
+				<hit pos="100" idx="1" rc="y" pvalue="2.9e-05" match="+++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00022675" comment="" length="200">
+			<score strand="both" combined_pvalue="1.64e-03" evalue="2.7"/>
+			<seg start="1">
+				<data>
+TGCTGCTGCCGGTGGTGGTAGCTGCGGCTCCTGAAGAGATGTTTCTTTTTTCTTTTCACTCCGTTTTTCTCTTTT
+TTCGCCCCGCTCTTGCTCCGCAGAGGAGGCTCCACCCACTTTTTGATAGTATGGAGAGAGCCCTCAGGGGCGACA
+				</data>
+				<hit pos="51" idx="4" rc="n" pvalue="1.6e-05" match="++++ +++ +"/>
+				<hit pos="68" idx="0" rc="n" pvalue="2.7e-05" match="+++++++++ +"/>
+			</seg>
+			<seg start="151">
+				<data>
+CGAAGGAGCAGCTGACGCGGAGGACCTTGTCGTGTGTCGCAGACTCCCAC
+				</data>
+				<hit pos="155" idx="3" rc="y" pvalue="5.8e-05" match="++ +++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00017671" comment="" length="200">
+			<score strand="both" combined_pvalue="1.66e-03" evalue="2.7"/>
+			<seg start="1">
+				<data>
+TCTAATTTCACGAATTTATCACAGCTTAATCTCTCAAAAACAAACCCCTACTCCCTCATAGCAGAGAAAGAAAAA
+				</data>
+				<hit pos="63" idx="0" rc="y" pvalue="7.7e-05" match=" ++++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+AAAGCTCTGAAATTTTTTTGGATACTCTGTTTTTGCTGCTCCATTTGAGCCCACGAGTCGCGTAAGAGAGCCGCG
+CGCGCCGGCTCCTCCCTGCTCTCAAAACTCTTTCACCGTCGGCGTCTCCG
+				</data>
+				<hit pos="110" idx="3" rc="n" pvalue="5.8e-05" match="+++++ ++"/>
+				<hit pos="145" idx="2" rc="n" pvalue="3.0e-05" match=" ++ ++++++++"/>
+				<hit pos="158" idx="3" rc="n" pvalue="3.4e-05" match="+++++ ++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00012168" comment="" length="200">
+			<score strand="both" combined_pvalue="1.76e-03" evalue="2.9"/>
+			<seg start="76">
+				<data>
+TACATCTTATTCTCCCTCTTTTCATCTCAACTTCTCTTGCATCTGCCATCTCTCAATTCTCTGATATCGTCCTTC
+				</data>
+				<hit pos="80" idx="0" rc="n" pvalue="3.6e-05" match="++++ ++++++"/>
+				<hit pos="92" idx="4" rc="n" pvalue="2.3e-05" match="++++ +++ +"/>
+			</seg>
+			<seg start="151">
+				<data>
+TGACTCCGCCCACTTTTCGTTGGCAGCAATCTGTTGTCGCCGCCACACAC
+				</data>
+				<hit pos="188" idx="1" rc="y" pvalue="2.9e-05" match="+++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00019361" comment="" length="200">
+			<score strand="both" combined_pvalue="1.88e-03" evalue="3.1"/>
+			<seg start="1">
+				<data>
+AAGAGTGAATCAGCACGTCTCTACCCTCCTCACTTTCTCCACTCGCTGTACCATTTTTTTGTGTCTACCACGATT
+				</data>
+				<hit pos="30" idx="0" rc="n" pvalue="5.3e-05" match="++ ++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+GAAACAAGTGCTTGTGGGTGTATTCTCAAACCAACTTCGATCGGGGCGTCCCACGCCCCTTCGAGACTCTACACA
+				</data>
+				<hit pos="123" idx="2" rc="n" pvalue="7.8e-05" match="  +++ ++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+GCATCCCGGAGACGCAGATCGTCTCAGCAAGCCGAACGCGGGCTCCGCCC
+				</data>
+				<hit pos="192" idx="3" rc="n" pvalue="8.1e-06" match="++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00019495" comment="" length="200">
+			<score strand="both" combined_pvalue="1.98e-03" evalue="3.3"/>
+			<seg start="1">
+				<data>
+GGCGTTTTACTACAAAATGCCCGTGAAATAAAAAAGTCACTTTCACAAATGCTCCGCCTATTATAAAATCCAACC
+				</data>
+				<hit pos="51" idx="3" rc="n" pvalue="8.1e-06" match="++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+CCCGAAGATTGTTTGCTAACTGATAAGATAAAAATTCCTATAAATGAAACGCATTTAATGTTCCTATGTACTTTC
+				</data>
+				<hit pos="94" idx="4" rc="y" pvalue="1.3e-06" match="++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00022211" comment="" length="200">
+			<score strand="both" combined_pvalue="2.03e-03" evalue="3.3"/>
+			<seg start="76">
+				<data>
+GACTCTCTTCACGTCGTCCGTAACATTATGATCAATCCGAAGATTGTACCAGGTGGCGGAGCTCTTGAAATGGCT
+				</data>
+				<hit pos="130" idx="3" rc="y" pvalue="8.1e-06" match="++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00006818" comment="" length="200">
+			<score strand="both" combined_pvalue="2.29e-03" evalue="3.8"/>
+			<seg start="1">
+				<data>
+CCATTTTTAATTCAACTCTTTTTTCCTTCCCCCCTCTTCAACCCCCTTCTCCGCCCTTCCAAAATCAGTAGAGGT
+				</data>
+				<hit pos="16" idx="0" rc="n" pvalue="3.6e-05" match="+++++++++++"/>
+				<hit pos="42" idx="0" rc="n" pvalue="5.7e-06" match="+++++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+AGGGGTGGAGACCAAGACATAGGGGACCCCCGACCCTTCCGTATACATCT
+				</data>
+				<hit pos="175" idx="2" rc="n" pvalue="5.8e-05" match="  ++++++ +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00019324" comment="" length="200">
+			<score strand="both" combined_pvalue="2.35e-03" evalue="3.9"/>
+			<seg start="1">
+				<data>
+TTTGGAGCATGAAACAATTAAGGCTTCTCCTTCTCCATCCCTGTTCTTTAATTCTCTACGTCTCTTCTCTTCTTA
+				</data>
+				<hit pos="26" idx="0" rc="n" pvalue="1.6e-06" match="+++++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+ATGCGCAAAAAGCCAAGAGCACTCAACGATATTGAAAAGAAGGCGTGGCC
+				</data>
+				<hit pos="181" idx="4" rc="y" pvalue="1.3e-05" match="+ +++ ++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00022610" comment="" length="200">
+			<score strand="both" combined_pvalue="2.48e-03" evalue="4.1"/>
+			<seg start="76">
+				<data>
+CCTGGTACTTATGACCGCCGCCGCCGCCCTCTCCGTTCATATTTTGTCACATGTGACTGTGTGCACATTTTTGGC
+				</data>
+				<hit pos="93" idx="2" rc="n" pvalue="2.1e-06" match="++ +++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00019727" comment="" length="200">
+			<score strand="both" combined_pvalue="2.55e-03" evalue="4.2"/>
+			<seg start="1">
+				<data>
+TATTTTCCTGTGAACTCAATGGATAAATGATGGTAAAAACACATTGGCAGATCATTTTTCATTCGCTCTTGGCGG
+CGCTCTTACCTGATCAGAAAACACGCCCCTCTTTTCTTTTAGTGTGTAAAACTTTAGGTTACCGAGATTCCGTAT
+				</data>
+				<hit pos="71" idx="1" rc="n" pvalue="2.9e-05" match="+++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00011310" comment="" length="200">
+			<score strand="both" combined_pvalue="2.56e-03" evalue="4.2"/>
+			<seg start="1">
+				<data>
+AGGGCGGAGCGGTGTGTTGCTTGGAAGTGAAGAGAGATAGAGAGAGAAAGAATGTGCCCCCGAGAACGCCTCCAT
+				</data>
+				<hit pos="3" idx="3" rc="y" pvalue="8.1e-06" match="++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00021322" comment="" length="200">
+			<score strand="both" combined_pvalue="2.84e-03" evalue="4.7"/>
+			<seg start="1">
+				<data>
+CAGCCACGCCTTGTTTCCTGGCGTCATTTTAGGACTGAAAAGAGTTTTCGTCATTTTCAGAGCCGCTCCCTTTTT
+CATTTTCCATCAAAACTGAAAAAAAAGTGATAATGCAATTTGAAAAAGGGTATGACTATCATAATAAACGAAACG
+				</data>
+				<hit pos="34" idx="4" rc="y" pvalue="6.7e-06" match="+++++ ++++"/>
+				<hit pos="73" idx="0" rc="n" pvalue="1.7e-05" match="++++ ++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+ATAAACGTGCACATACACGCGTTAAGGAGAAAAAGAGGTGGGGAAGAGAA
+				</data>
+				<hit pos="176" idx="0" rc="y" pvalue="7.4e-06" match="+++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00013439" comment="" length="200">
+			<score strand="both" combined_pvalue="2.99e-03" evalue="4.9"/>
+			<seg start="1">
+				<data>
+ATTCGGTGGAGCTTGTAAAAACAAGATGCTCCGCTCCTCCGCCTCTTTGTCTATCAGTTAAACATCAAAATGCTC
+				</data>
+				<hit pos="33" idx="3" rc="n" pvalue="3.4e-05" match="+++++ ++"/>
+			</seg>
+			<seg start="76">
+				<data>
+TCACAAACATTTTGGCTCGTCTTATCATTTCAGTCTCTTGTTCTTGTCTAGTGTGTGTGGTCACTCTATTGTTTT
+				</data>
+				<hit pos="95" idx="4" rc="n" pvalue="8.3e-06" match="++++++++ +"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00004267" comment="" length="200">
+			<score strand="both" combined_pvalue="3.10e-03" evalue="5.1"/>
+			<seg start="1">
+				<data>
+CGCGGAGAGCTCCGCCAAATCCGGTCTTCTTTTTTCCTTGCCTATCGGATTTCACAAACATTCAGTTTGTCACTT
+				</data>
+				<hit pos="9" idx="3" rc="n" pvalue="8.1e-06" match="++++++++"/>
+				<hit pos="27" idx="0" rc="n" pvalue="1.7e-05" match="+++++++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+AAATATTCCGAACGTTTTCCTGATTTCAGGCGGCGGAAACGAAGAAGACC
+				</data>
+				<hit pos="179" idx="1" rc="n" pvalue="2.9e-05" match="+++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00007935" comment="" length="200">
+			<score strand="both" combined_pvalue="3.42e-03" evalue="5.6"/>
+			<seg start="76">
+				<data>
+GTCACCTTCGCGCACCCGAAACTCCTTCATTTTCCGTCACTGACTCGTCTTTCCGCAACCAACCTTTTATTCAGC
+				</data>
+				<hit pos="100" idx="0" rc="n" pvalue="3.6e-05" match="++++ ++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+CACCACTTTTCGTTTCTCCAAATTTACTTCTTATCCCCTATAAGCCATCG
+				</data>
+				<hit pos="159" idx="0" rc="n" pvalue="7.7e-05" match="+++ +++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00015620" comment="" length="200">
+			<score strand="both" combined_pvalue="3.59e-03" evalue="5.9"/>
+			<seg start="76">
+				<data>
+TCCTCGTAATATTTACAAATCTGTCGGAAGACAGTTTCGCACCTCACACCGCAAAAGTGGGCGGCGTGTCCGTGG
+				</data>
+				<hit pos="135" idx="1" rc="n" pvalue="2.9e-05" match="+++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+CGGTGGTGGCCGGGGGTTGCAATGTGTCCACTCAACAGAAGTAACCTGTC
+				</data>
+				<hit pos="155" idx="2" rc="y" pvalue="2.7e-06" match="++ +++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00001400" comment="" length="200">
+			<score strand="both" combined_pvalue="3.62e-03" evalue="6"/>
+			<seg start="76">
+				<data>
+CCCAAGTGCTGGGTCAGCGCTTCACTGACCTCGGTCTGGTGGGAGGAGCTTGAAGTGGCACGAGTCAAAACTGGA
+AGAAGAAGTCATTCGATCTTCGACAAAAGGAAGACCACTTCTACAGTCAA
+				</data>
+				<hit pos="87" idx="5" rc="n" pvalue="4.3e-05" match="++++++ ++"/>
+				<hit pos="97" idx="5" rc="y" pvalue="9.2e-06" match=" ++++++++"/>
+				<hit pos="117" idx="3" rc="y" pvalue="3.4e-05" match="++ +++++"/>
+				<hit pos="148" idx="0" rc="y" pvalue="7.7e-05" match="++++ ++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00000893" comment="" length="200">
+			<score strand="both" combined_pvalue="3.70e-03" evalue="6.1"/>
+			<seg start="76">
+				<data>
+GTCATCGAGTCGCCACCATGCCTTTGTTCTCTAATGAGCGAGGAGCGCATGAGATCGTTTCCCGAAATACTTCCG
+				</data>
+				<hit pos="114" idx="3" rc="y" pvalue="8.5e-05" match=" + +++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+TTCGCCCACCCCCCGTATTCTTGAACTCCTCCTTCACATATTTCTTTGGC
+				</data>
+				<hit pos="153" idx="2" rc="n" pvalue="2.9e-06" match="+++++ ++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00003741" comment="" length="200">
+			<score strand="both" combined_pvalue="3.75e-03" evalue="6.2"/>
+			<seg start="1">
+				<data>
+CCTTCGGCTCCGCCCAAATCACCTCAGATGGGCGGTGCACTTGTCCTAGGACTCTCCCGTGCTATATAACCAGCA
+				</data>
+				<hit pos="7" idx="3" rc="n" pvalue="8.1e-06" match="++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00003175" comment="" length="200">
+			<score strand="both" combined_pvalue="3.81e-03" evalue="6.3"/>
+			<seg start="76">
+				<data>
+TGTTTTTCGGAATTTCATGTCGTCTCCTTTCCCATCCTAAACATGGAGCTCGCGGAGCAAAAAAAGAAACATAGG
+				</data>
+				<hit pos="126" idx="3" rc="y" pvalue="3.4e-05" match=" +++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+AGGGGCGGAGCATGTGTCAACACGGAGAGACGCAGAGAAGGCACGTCTTC
+				</data>
+				<hit pos="154" idx="3" rc="y" pvalue="8.1e-06" match="++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00006778" comment="" length="200">
+			<score strand="both" combined_pvalue="3.92e-03" evalue="6.5"/>
+			<seg start="1">
+				<data>
+AGCTCAGTTGAAGAATAAGAAGACGGAAAGAAGAAGCTGTCAAATAATCTAATTTACTTGACTCTCTCAAACCAA
+				</data>
+				<hit pos="25" idx="0" rc="y" pvalue="9.1e-05" match="+++++ +++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+TCCAAATCAAAAAGAAGGCGTGGCTACCTAGCTCTTCTGGCGGAAAGATGGGTACGGTGGTTGGGGCCGGTGGTG
+				</data>
+				<hit pos="139" idx="2" rc="y" pvalue="6.7e-05" match="+++++++ ++ +"/>
+			</seg>
+			<seg start="151">
+				<data>
+AAGGAGGAGGAGCAGCCGGAGGCGGACGGCGACCAGTCAGCTGCCCCTCT
+				</data>
+				<hit pos="156" idx="3" rc="y" pvalue="3.4e-05" match="++ +++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00013965" comment="" length="200">
+			<score strand="both" combined_pvalue="3.98e-03" evalue="6.6"/>
+			<seg start="1">
+				<data>
+ATTCGGAAACTGAGCACCCTCATGCGCCGTGCTCCTCCGTTCAACAGGGAGGACCTCTCGCCGCCGCGAAACACT
+				</data>
+				<hit pos="31" idx="3" rc="n" pvalue="3.4e-05" match="+++++ ++"/>
+				<hit pos="59" idx="1" rc="y" pvalue="2.9e-05" match="+++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00006468" comment="" length="200">
+			<score strand="both" combined_pvalue="4.20e-03" evalue="6.9"/>
+			<seg start="1">
+				<data>
+ACTTTGTCATATATAAACATTCGTTCCGCAATCAGCGCACCAAGCACTCTTCCTCTCTTCTTCCGCACACTTGCT
+				</data>
+				<hit pos="54" idx="0" rc="n" pvalue="1.7e-05" match="++++++ ++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+CCGTTGGCATTTATAGTTCTTCTCAGTTTGCCATTATTGATACTTTTTAC
+				</data>
+				<hit pos="168" idx="4" rc="n" pvalue="1.9e-05" match="++++ +++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00022410" comment="" length="200">
+			<score strand="both" combined_pvalue="4.21e-03" evalue="7"/>
+			<seg start="1">
+				<data>
+TAGGCGTACTACAATTTGGACGACCAAGCGCCTAGTGAACCGGTCCTCTGATCAGTTCATCCGATTTCTGCCCAC
+				</data>
+				<hit pos="47" idx="4" rc="n" pvalue="5.2e-05" match="+++ ++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+TATTTCCCAGTCTCCTCACCTCCGATAGACCATCATCAGTCTCCAGCGCGCCGGTCGCACATACACCTCCTCCGT
+				</data>
+				<hit pos="116" idx="2" rc="n" pvalue="4.2e-05" match="+ ++ +++++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+CCATTTCACCTTTTCCTTTTACCTCCTGTTTCCAACTTTCTTCACCAACA
+				</data>
+				<hit pos="156" idx="0" rc="n" pvalue="5.3e-05" match="++ ++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00003106" comment="" length="200">
+			<score strand="both" combined_pvalue="4.23e-03" evalue="7"/>
+			<seg start="76">
+				<data>
+TTCAATTAAAATTATGGAACATCTGGACCCCAGTTTTCCCTTCAGAAGCTCCTCCCACCTCCCTTTCTGCAATTG
+				</data>
+				<hit pos="123" idx="3" rc="n" pvalue="3.4e-05" match="+++++ ++"/>
+			</seg>
+			<seg start="151">
+				<data>
+GCCAGCTCCGCCCATTTACTGGCGGAGGGGTGCTTGTGAAATCGGAATTC
+				</data>
+				<hit pos="155" idx="3" rc="n" pvalue="8.1e-06" match="++++++++"/>
+				<hit pos="171" idx="2" rc="y" pvalue="2.0e-05" match="+++++ ++++ +"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00003495" comment="" length="200">
+			<score strand="both" combined_pvalue="4.24e-03" evalue="7"/>
+			<seg start="76">
+				<data>
+TAGGTGTAAGGTTTACAGCACAGATTGTGTCCGTATGTTATACTTTTCTTTTCCCTGAGAGCTCCCGCTCCCGCC
+AGCCCCTCCCACTTATCTGCCAACGACGGCCTCCCGGAGCAAGCACTTTC
+				</data>
+				<hit pos="119" idx="0" rc="n" pvalue="1.7e-05" match="+++++++++++"/>
+				<hit pos="143" idx="2" rc="n" pvalue="4.0e-06" match="+ ++++++ +++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00010660" comment="" length="200">
+			<score strand="both" combined_pvalue="4.30e-03" evalue="7.1"/>
+			<seg start="1">
+				<data>
+TGACGTCTCGCCGCCTGTGCAAATACGTTCTCAATGCGTCAGATAAAGAAATATTTTTCACATAAAAACTGAAAA
+				</data>
+				<hit pos="9" idx="1" rc="y" pvalue="2.9e-05" match="+++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+CCCAGGAAACTGTACTGATTATCTTATCATTTTGTGTCGGTATTCTCACTTGAAACTTTGTCTCTTTTGTATGTC
+				</data>
+				<hit pos="97" idx="4" rc="n" pvalue="8.3e-06" match="++++++++ +"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00022175" comment="" length="200">
+			<score strand="both" combined_pvalue="4.32e-03" evalue="7.1"/>
+			<seg start="151">
+				<data>
+TCTCTCTCTGCAATTCTATCTCTCTCTCTGCTCCGGCGGGCCGCCGCGGC
+				</data>
+				<hit pos="189" idx="2" rc="y" pvalue="3.9e-05" match="++++++++ ++ "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00002224" comment="" length="200">
+			<score strand="both" combined_pvalue="4.44e-03" evalue="7.3"/>
+			<seg start="76">
+				<data>
+TTCGGGACAAACTATAGGAAGGCGAATTTGAGTGGAAGAGAAGCCGTCGGCGGCGCGTTGCCAGGTGACCGGCCG
+				</data>
+				<hit pos="124" idx="1" rc="n" pvalue="2.9e-05" match="+++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00009058" comment="" length="200">
+			<score strand="both" combined_pvalue="4.58e-03" evalue="7.6"/>
+			<seg start="76">
+				<data>
+GTAATGACTTTTTGTGCAATCTTCTCATTTCCATTGAATTTTATTCTTGATCTCACCGCCGCTTTCTCTTTTTCG
+				</data>
+				<hit pos="95" idx="4" rc="n" pvalue="2.7e-05" match="++++ +++ +"/>
+			</seg>
+			<seg start="151">
+				<data>
+CACAGCTCCGCCCTAAGTGTCAGGAGCACTTTTAAATTATTTCATTTCAG
+				</data>
+				<hit pos="155" idx="3" rc="n" pvalue="8.1e-06" match="++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00010057" comment="" length="200">
+			<score strand="both" combined_pvalue="4.77e-03" evalue="7.9"/>
+			<seg start="1">
+				<data>
+AACCCGAAACAGGATCTTGTCTTTCCGCACAAATCCAAATATTATCAGTTGTGTTTGTATGTGTGTGCGGCTCTC
+				</data>
+				<hit pos="40" idx="4" rc="n" pvalue="7.3e-05" match="+ ++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+ATCACCACCACCGGTCGAAACATTTGGAGATGCTCTGGCTCCGCGCGTTCCACTCTCTGCGGCTCTTGATTCGTC
+				</data>
+				<hit pos="113" idx="3" rc="n" pvalue="3.4e-05" match="+++++++ "/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00001398" comment="" length="200">
+			<score strand="both" combined_pvalue="4.81e-03" evalue="7.9"/>
+			<seg start="1">
+				<data>
+CTACACACTCTCTTGTGTCGCGCAGAAAACAACCAACCCACCTTTTCCATACCGGCGTCATGAAATGGTGTGATA
+				</data>
+				<hit pos="38" idx="0" rc="n" pvalue="9.1e-05" match="++ ++++++++"/>
+			</seg>
+			<seg start="76">
+				<data>
+TCAGACGACGGGCAGGGCAAAGGGCCTTGCGTAGTGTAGCTGGAGCTCCGCCCCTATTTAACTACGGAGGTGACC
+				</data>
+				<hit pos="120" idx="3" rc="n" pvalue="8.1e-06" match="++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00021349" comment="" length="200">
+			<score strand="both" combined_pvalue="4.83e-03" evalue="8"/>
+			<seg start="1">
+				<data>
+ATTATCAGAGCCAGTTTCTGATTGTCTTCTTCGGCCGCCGCCTCACCTCATCTCTTCCTCCCACCCCGCGGCTTC
+				</data>
+				<hit pos="36" idx="1" rc="y" pvalue="2.9e-05" match="+++++++"/>
+				<hit pos="51" idx="0" rc="n" pvalue="2.1e-05" match="++++++ ++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00017463" comment="" length="200">
+			<score strand="both" combined_pvalue="4.95e-03" evalue="8.2"/>
+			<seg start="1">
+				<data>
+CCGGGGTCCCCCCGACCATGCGCATAGTAAATGTGTGTGTGTACGAGTGAGTGCCGGTTTTTTTCCGATCCTTCC
+TCTTTTTTCAATCATCTCCCTTATCGAGGCGCGATAACGTGTTGTTCAACGGTTTTTTCTCGCCTTGATTTACAA
+				</data>
+				<hit pos="6" idx="2" rc="n" pvalue="3.3e-05" match="  +++++++ ++"/>
+				<hit pos="74" idx="0" rc="n" pvalue="5.3e-05" match="+++++++++ +"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00012125" comment="" length="200">
+			<score strand="both" combined_pvalue="5.13e-03" evalue="8.5"/>
+			<seg start="1">
+				<data>
+TCTTTTTTTGTGTGTCACGGAGCCGCAAGTAGAAGACGTGAGTTTCAGAGAAGCAGAGCCCGACTTCTTCTTCTT
+CTTCTCCTCAACCGCCCATTTCCTTGTCACTCTGCGTCTTCTCGAGAGAGCGTGAGAGTTGAGAGAAGCTATGTA
+				</data>
+				<hit pos="72" idx="0" rc="n" pvalue="9.6e-06" match="+++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00017576" comment="" length="200">
+			<score strand="both" combined_pvalue="5.17e-03" evalue="8.5"/>
+			<seg start="76">
+				<data>
+TCATATTGAAAATCCCTGAATCCCCGTAATAATATTAATTCAATTTCCCTCATTTTCCGTCTTCCCTTTCCTTAA
+				</data>
+				<hit pos="123" idx="0" rc="n" pvalue="1.4e-05" match="++++ ++++++"/>
+				<hit pos="136" idx="0" rc="n" pvalue="5.3e-05" match="+++++ +++++"/>
+			</seg>
+			<seg start="151">
+				<data>
+AACCCCCACTCTTCCCGTCTGAGACCTCTTCCTTAGGCTCCGCCTCCATT
+				</data>
+				<hit pos="187" idx="3" rc="n" pvalue="8.1e-06" match="++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00007560" comment="" length="200">
+			<score strand="both" combined_pvalue="5.58e-03" evalue="9.2"/>
+			<seg start="1">
+				<data>
+ATCATCGCAAATCACTTATTCCCGAAAGATATACAATGCCTTCAACATCTTATCATTCTTATCATGACCCCGCCC
+CCTGTCCGTTAGCCGATTTATTCACCGACGCTCAGTTCAATTAGCAATGTCGGCTACCTAGCTTAAGCCTCAAGA
+				</data>
+				<hit pos="48" idx="4" rc="n" pvalue="8.3e-06" match="++++++++ +"/>
+				<hit pos="66" idx="2" rc="n" pvalue="1.1e-05" match="  ++++++++++"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00009723" comment="" length="200">
+			<score strand="both" combined_pvalue="5.73e-03" evalue="9.5"/>
+			<seg start="151">
+				<data>
+AGCTCCACCCCCATTGACTGGGCGGCGGCGTGCGATCAACGACTACCGAA
+				</data>
+				<hit pos="171" idx="2" rc="y" pvalue="1.1e-05" match="++++++++ + +"/>
+			</seg>
+		</sequence>
+		<sequence db="0" name="caenorhabditis_elegans_prjna13758|WBGene00022504" comment="" length="200">
+			<score strand="both" combined_pvalue="5.78e-03" evalue="9.5"/>
+			<seg start="1">
+				<data>
+GAAAGTATATGTTTGCGTACCGGTATAAAGGTTATGCATAGCCACAGTCATCCCCCCTCTCTCCTCCAGCAGCCG
+CCCATTCTCCAGGCCGCCTCTTATTCTCATAATAAAACATACAAAATTCTAGTTTGCCACTAACCTGTTCGCACT
+				</data>
+				<hit pos="54" idx="0" rc="n" pvalue="2.7e-05" match="+++++ +++++"/>
+				<hit pos="67" idx="2" rc="n" pvalue="8.4e-05" match="+  + +++++++"/>
+				<hit pos="82" idx="2" rc="n" pvalue="3.0e-05" match="+ ++ +++++++"/>
+			</seg>
+		</sequence>
+	</sequences>
+	<runtime host="node210" when="Mon Feb 25 20:42:24 2019" cycles="128000" seconds="0.128"/>
+</mast>
