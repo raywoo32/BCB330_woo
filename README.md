@@ -1,8 +1,8 @@
 # BCB330_woo
 My BCB330 project lab notebook and scripts
 
-# Please also see my written notes, they will be displayed as a webpage when clicked: 
-BCB330_Stack.html
+# BCB330 Stack.html
+  My notes in written form. Exported from evernote. Open in browser or however, you prefer to view html files. 
 
 # results 
   Contains each module's meme and ame results (raw) 
